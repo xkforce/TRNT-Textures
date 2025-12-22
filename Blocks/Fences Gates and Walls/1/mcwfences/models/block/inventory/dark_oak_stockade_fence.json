@@ -1,0 +1,9 @@
+
+	
+{
+	"parent": "mcwfences:block/parent/inventory/stockade_fence",
+	"textures": {
+		"5": "minecraft:blocks/log_big_oak",
+		"particle": "minecraft:blocks/planks_big_oak"
+	}
+}

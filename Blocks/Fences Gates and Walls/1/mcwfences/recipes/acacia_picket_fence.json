@@ -1,0 +1,37 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+		"CBC",
+		"CAC"
+    ],
+    
+    "key":
+    { 
+        "A":
+        {
+            "item": "minecraft:stick"
+        },  
+
+        "B":
+        {
+            "item": "minecraft:planks",
+            "data": 4
+        },   		
+        
+        "C":
+        {
+            "item": "minecraft:log2",
+            "data": 0
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwfences:acacia_picket_fence",
+        "count": 3
+    }
+}
+
+

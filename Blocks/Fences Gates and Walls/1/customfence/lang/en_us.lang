@@ -1,0 +1,274 @@
+tile.hhoak_fence_gate_closed.name=Fence gate Classic oak
+tile.hhbirch_fence_gate_closed.name=Fence gate Classic birch
+tile.hhspruce_fence_gate_closed.name=Fence gate Classic spruce
+tile.hhbig_oak_fence_gate_closed.name=Fence gate Classic dark oak
+tile.hhacacia_fence_gate_closed.name=Fence gate Classic acacia
+tile.hhjungle_fence_gate_closed.name=Fence gate Classic jungle
+
+tile.hhhoak_fence_gate_closed.name=Fence gate Wildlife oak
+tile.hhhbirch_fence_gate_closed.name=Fence gate Wildlife birch
+tile.hhhspruce_fence_gate_closed.name=Fence gate Wildlife spruce
+tile.hhhbig_oak_fence_gate_closed.name=Fence gate Wildlife dark oak
+tile.hhhacacia_fence_gate_closed.name=Fence gate Wildlife acacia
+tile.hhhjungle_fence_gate_closed.name=Fence gate Wildlife jungle
+
+tile.hhoak_vvoak_fence_gate_closed.name=Fence gate Plank oak
+tile.hhbirch_vvbirch_fence_gate_closed.name=Fence gate Plank birch
+tile.hhspruce_vvspruce_fence_gate_closed.name=Fence gate Plank spruce
+tile.hhbig_oak_vvbig_oak_fence_gate_closed.name=Fence gate Plank dark oak
+tile.hhacacia_vvacacia_fence_gate_closed.name=Fence gate Plank acacia
+tile.hhjungle_vvjungle_fence_gate_closed.name=Fence gate Plank jungle
+
+tile.spruce_hhoak.name=Fence Classic oak (spruce post)
+tile.spruce_hhhoak.name=Fence Wildlife oak (spruce post)
+tile.spruce_hhoak_vspruce.name=Fence Decoration oak (spruce post)
+tile.spruce_hhoak_vspruce_fence_gate_closed.name=Fence gate Decoration oak (spruce post)
+tile.spruce_hhoak_vvoak.name=Fence Plank oak (spruce post)
+tile.spruce_hhspruce_vvvoak.name=Fence Garden oak (spruce post)
+tile.spruce_hhspruce_vvvoak_fence_gate_closed.name=Fence gate Garden oak (spruce post)
+tile.spruce_hhspruce_vvoak.name=Fence Bollard oak (spruce post)
+tile.spruce_hhspruce_vvoak_fence_gate_closed.name=Fence gate Bollard oak (spruce post)
+tile.spruce_hhhoak_vvvvspruce_vvvvspruce.name=Fence Stick oak (spruce post)
+tile.spruce_hhhoak_vvvvspruce_vvvvspruce_fence_gate_closed.name=Fence gate Stick oak (spruce post)
+
+tile.oak_hhbirch.name=Fence Classic birch (oak post)
+tile.oak_hhhbirch.name=Fence Wildlife birch (oak post)
+tile.oak_hhbirch_voak.name=Fence Decoration birch (oak post)
+tile.oak_hhbirch_voak_fence_gate_closed.name=Fence gate Decoration birch (oak post)
+tile.oak_hhbirch_vvbirch.name=Fence Plank birch (oak post)
+tile.oak_hhoak_vvvbirch.name=Fence Garden birch (oak post)
+tile.oak_hhoak_vvvbirch_fence_gate_closed.name=Fence gate Garden birch (oak post)
+tile.oak_hhoak_vvbirch.name=Fence Bollard birch (oak post)
+tile.oak_hhoak_vvbirch_fence_gate_closed.name=Fence gate Bollard birch (oak post)
+tile.oak_hhhbirch_vvvvoak_vvvvoak.name=Fence Stick birch (oak post)
+tile.oak_hhhbirch_vvvvoak_vvvvoak_fence_gate_closed.name=Fence gate Stick birch (oak post)
+
+tile.oak_hhspruce.name=Fence Classic spruce (oak post)
+tile.oak_hhhspruce.name=Fence Wildlife spruce (oak post)
+tile.oak_hhspruce_voak.name=Fence Decoration spruce (oak post)
+tile.oak_hhspruce_voak_fence_gate_closed.name=Fence gate Decoration spruce (oak post)
+tile.oak_hhspruce_vvspruce.name=Fence Plank spruce (oak post)
+tile.oak_hhoak_vvvspruce.name=Fence Garden spruce (oak post)
+tile.oak_hhoak_vvvspruce_fence_gate_closed.name=Fence gate Garden spruce (oak post)
+tile.oak_hhoak_vvspruce.name=Fence Bollard spruce (oak post)
+tile.oak_hhoak_vvspruce_fence_gate_closed.name=Fence gate Bollard spruce (oak post)
+tile.oak_hhhspruce_vvvvoak_vvvvoak.name=Fence Stick spruce (oak post)
+tile.oak_hhhspruce_vvvvoak_vvvvoak_fence_gate_closed.name=Fence gate Stick spruce (oak post)
+
+tile.birch_hhoak.name=Fence Classic oak (birch post)
+tile.birch_hhhoak.name=Fence Wildlife oak (birch post)
+tile.birch_hhoak_vbirch.name=Fence Decoration oak (birch post)
+tile.birch_hhoak_vbirch_fence_gate_closed.name=Fence gate Decoration oak (birch post)
+tile.birch_hhoak_vvoak.name=Fence Plank oak (birch post)
+tile.birch_hhbirch_vvvoak.name=Fence Garden oak (birch post)
+tile.birch_hhbirch_vvvoak_fence_gate_closed.name=Fence gate Garden oak (birch post)
+tile.birch_hhbirch_vvoak.name=Fence Bollard oak (birch post)
+tile.birch_hhbirch_vvoak_fence_gate_closed.name=Fence gate Bollard oak (birch post)
+tile.birch_hhhoak_vvvvbirch_vvvvbirch.name=Fence Stick oak (birch post)
+tile.birch_hhhoak_vvvvbirch_vvvvbirch_fence_gate_closed.name=Fence gate Stick oak (birch post)
+
+tile.spruce_hhbirch.name=Fence Classic birch (spruce post)
+tile.spruce_hhhbirch.name=Fence Wildlife birch (spruce post)
+tile.spruce_hhbirch_vspruce.name=Fence Decoration birch (spruce post)
+tile.spruce_hhbirch_vspruce_fence_gate_closed.name=Fence gate Decoration birch (spruce post)
+tile.spruce_hhbirch_vvbirch.name=Fence Plank birch (spruce post)
+tile.spruce_hhspruce_vvvbirch.name=Fence Garden birch (spruce post)
+tile.spruce_hhspruce_vvvbirch_fence_gate_closed.name=Fence gate Garden birch (spruce post)
+tile.spruce_hhspruce_vvbirch.name=Fence Bollard birch (spruce post)
+tile.spruce_hhspruce_vvbirch_fence_gate_closed.name=Fence gate Bollard birch (spruce post)
+tile.spruce_hhhbirch_vvvvspruce_vvvvspruce.name=Fence Stick birch (spruce post)
+tile.spruce_hhhbirch_vvvvspruce_vvvvspruce_fence_gate_closed.name=Fence gate Stick birch (spruce post)
+
+tile.birch_hhspruce.name=Fence Classic spruce (birch post)
+tile.birch_hhhspruce.name=Fence Wildlife spruce (birch post)
+tile.birch_hhspruce_vbirch.name=Fence Decoration spruce (birch post)
+tile.birch_hhspruce_vbirch_fence_gate_closed.name=Fence gate Decoration spruce (birch post)
+tile.birch_hhspruce_vvspruce.name=Fence Plank spruce (birch post)
+tile.birch_hhbirch_vvvspruce.name=Fence Garden spruce (birch post)
+tile.birch_hhbirch_vvvspruce_fence_gate_closed.name=Fence gate Garden spruce (birch post)
+tile.birch_hhbirch_vvspruce.name=Fence Bollard spruce (birch post)
+tile.birch_hhbirch_vvspruce_fence_gate_closed.name=Fence gate Bollard spruce (birch post)
+tile.birch_hhhspruce_vvvvbirch_vvvvbirch.name=Fence Stick spruce (birch post)
+tile.birch_hhhspruce_vvvvbirch_vvvvbirch_fence_gate_closed.name=Fence gate Stick spruce (birch post)
+
+tile.big_oak_hhspruce.name=Fence Classic spruce (dark oak post)
+tile.big_oak_hhhspruce.name=Fence Wildlife spruce (dark oak post)
+tile.big_oak_hhspruce_vbig_oak.name=Fence Decoration spruce (dark oak post)
+tile.big_oak_hhspruce_vbig_oak_fence_gate_closed.name=Fence gate Decoration spruce (dark oak post)
+tile.big_oak_hhspruce_vvspruce.name=Fence Plank spruce (dark oak post)
+tile.big_oak_hhbig_oak_vvvspruce.name=Fence Garden spruce (dark oak post)
+tile.big_oak_hhbig_oak_vvvspruce_fence_gate_closed.name=Fence gate Garden spruce (dark oak post)
+tile.big_oak_hhbig_oak_vvspruce.name=Fence Bollard spruce (dark oak post)
+tile.big_oak_hhbig_oak_vvspruce_fence_gate_closed.name=Fence gate Bollard spruce (dark oak post)
+tile.big_oak_hhhspruce_vvvvbig_oak_vvvvbig_oak.name=Fence Stick spruce (dark oak post)
+tile.big_oak_hhhspruce_vvvvbig_oak_vvvvbig_oak_fence_gate_closed.name=Fence gate Stick spruce (dark oak post)
+
+tile.spruce_hhbig_oak.name=Fence Classic dark oak (spruce post)
+tile.spruce_hhhbig_oak.name=Fence Wildlife dark oak (spruce post)
+tile.spruce_hhbig_oak_vspruce.name=Fence Decoration dark oak (spruce post)
+tile.spruce_hhbig_oak_vspruce_fence_gate_closed.name=Fence gate Decoration dark oak (spruce post)
+tile.spruce_hhbig_oak_vvbig_oak.name=Fence Plank dark oak (spruce post)
+tile.spruce_hhspruce_vvvbig_oak.name=Fence Garden dark oak (spruce post)
+tile.spruce_hhspruce_vvvbig_oak_fence_gate_closed.name=Fence gate Garden dark oak (spruce post)
+tile.spruce_hhspruce_vvbig_oak.name=Fence Bollard dark oak (spruce post)
+tile.spruce_hhspruce_vvbig_oak_fence_gate_closed.name=Fence gate Bollard dark oak (spruce post)
+tile.spruce_hhhbig_oak_vvvvspruce_vvvvspruce.name=Fence Stick dark oak (spruce post)
+tile.spruce_hhhbig_oak_vvvvspruce_vvvvspruce_fence_gate_closed.name=Fence gate Stick dark oak (spruce post)
+
+tile.big_oak_hhoak.name=Fence Classic oak (dark oak post)
+tile.big_oak_hhhoak.name=Fence Wildlife oak (dark oak post)
+tile.big_oak_hhoak_vbig_oak.name=Fence Decoration oak (dark oak post)
+tile.big_oak_hhoak_vbig_oak_fence_gate_closed.name=Fence gate Decoration oak (dark oak post)
+tile.big_oak_hhoak_vvoak.name=Fence Plank oak (dark oak post)
+tile.big_oak_hhbig_oak_vvvoak.name=Fence Garden oak (dark oak post)
+tile.big_oak_hhbig_oak_vvvoak_fence_gate_closed.name=Fence gate Garden oak (dark oak post)
+tile.big_oak_hhbig_oak_vvoak.name=Fence Bollard oak (dark oak post)
+tile.big_oak_hhbig_oak_vvoak_fence_gate_closed.name=Fence gate Bollard oak (dark oak post)
+tile.big_oak_hhhoak_vvvvbig_oak_vvvvbig_oak.name=Fence Stick oak (dark oak post)
+tile.big_oak_hhhoak_vvvvbig_oak_vvvvbig_oak_fence_gate_closed.name=Fence gate Stick oak (dark oak post)
+
+tile.oak_hhbig_oak.name=Fence Classic dark oak (oak post)
+tile.oak_hhhbig_oak.name=Fence Wildlife dark oak (oak post)
+tile.oak_hhbig_oak_voak.name=Fence Decoration dark oak (oak post)
+tile.oak_hhbig_oak_voak_fence_gate_closed.name=Fence gate Decoration dark oak (oak post)
+tile.oak_hhbig_oak_vvbig_oak.name=Fence Plank dark oak (oak post)
+tile.oak_hhoak_vvvbig_oak.name=Fence Garden dark oak (oak post)
+tile.oak_hhoak_vvvbig_oak_fence_gate_closed.name=Fence gate Garden dark oak (oak post)
+tile.oak_hhoak_vvbig_oak.name=Fence Bollard dark oak (oak post)
+tile.oak_hhoak_vvbig_oak_fence_gate_closed.name=Fence gate Bollard dark oak (oak post)
+tile.oak_hhhbig_oak_vvvvoak_vvvvoak.name=Fence Stick dark oak (oak post)
+tile.oak_hhhbig_oak_vvvvoak_vvvvoak_fence_gate_closed.name=Fence gate Stick dark oak (oak post)
+
+tile.big_oak_hhjungle.name=Fence Classic jungle (dark oak post)
+tile.big_oak_hhhjungle.name=Fence Wildlife jungle (dark oak post)
+tile.big_oak_hhjungle_vbig_oak.name=Fence Decoration jungle (dark oak post)
+tile.big_oak_hhjungle_vbig_oak_fence_gate_closed.name=Fence gate Decoration jungle (dark oak post)
+tile.big_oak_hhjungle_vvjungle.name=Fence Plank jungle (dark oak post)
+tile.big_oak_hhbig_oak_vvvjungle.name=Fence Garden jungle (dark oak post)
+tile.big_oak_hhbig_oak_vvvjungle_fence_gate_closed.name=Fence gate Garden jungle (dark oak post)
+tile.big_oak_hhbig_oak_vvjungle.name=Fence Bollard jungle (dark oak post)
+tile.big_oak_hhbig_oak_vvjungle_fence_gate_closed.name=Fence gate Bollard jungle (dark oak post)
+tile.big_oak_hhhjungle_vvvvbig_oak_vvvvbig_oak.name=Fence Stick jungle (dark oak post)
+tile.big_oak_hhhjungle_vvvvbig_oak_vvvvbig_oak_fence_gate_closed.name=Fence gate Stick jungle (dark oak post)
+
+tile.jungle_hhbig_oak.name=Fence Classic dark oak (jungle post)
+tile.jungle_hhhbig_oak.name=Fence Wildlife dark oak (jungle post)
+tile.jungle_hhbig_oak_vjungle.name=Fence Decoration dark oak (jungle post)
+tile.jungle_hhbig_oak_vjungle_fence_gate_closed.name=Fence gate Decoration dark oak (jungle post)
+tile.jungle_hhbig_oak_vvbig_oak.name=Fence Plank dark oak (jungle post)
+tile.jungle_hhjungle_vvvbig_oak.name=Fence Garden dark oak (jungle post)
+tile.jungle_hhjungle_vvvbig_oak_fence_gate_closed.name=Fence gate Garden dark oak (jungle post)
+tile.jungle_hhjungle_vvbig_oak.name=Fence Bollard dark oak (jungle post)
+tile.jungle_hhjungle_vvbig_oak_fence_gate_closed.name=Fence gate Bollard dark oak (jungle post)
+tile.jungle_hhhbig_oak_vvvvjungle_vvvvjungle.name=Fence Stick dark oak (jungle post)
+tile.jungle_hhhbig_oak_vvvvjungle_vvvvjungle_fence_gate_closed.name=Fence gate Stick dark oak (jungle post)
+
+tile.acacia_hhjungle.name=Fence Classic jungle (acacia post)
+tile.acacia_hhhjungle.name=Fence Wildlife jungle (acacia post)
+tile.acacia_hhjungle_vacacia.name=Fence Decoration jungle (acacia post)
+tile.acacia_hhjungle_vacacia_fence_gate_closed.name=Fence gate Decoration jungle (acacia post)
+tile.acacia_hhjungle_vvjungle.name=Fence Plank jungle (acacia post)
+tile.acacia_hhacacia_vvvjungle.name=Fence Garden jungle (acacia post)
+tile.acacia_hhacacia_vvvjungle_fence_gate_closed.name=Fence gate Garden jungle (acacia post)
+tile.acacia_hhacacia_vvjungle.name=Fence Bollard jungle (acacia post)
+tile.acacia_hhacacia_vvjungle_fence_gate_closed.name=Fence gate Bollard jungle (acacia post)
+tile.acacia_hhhjungle_vvvvacacia_vvvvacacia.name=Fence Stick jungle (acacia post)
+tile.acacia_hhhjungle_vvvvacacia_vvvvacacia_fence_gate_closed.name=Fence gate Stick jungle (acacia post)
+
+tile.jungle_hhacacia.name=Fence Classic acacia (jungle post)
+tile.jungle_hhhacacia.name=Fence Wildlife acacia (jungle post)
+tile.jungle_hhacacia_vjungle.name=Fence Decoration acacia (jungle post)
+tile.jungle_hhacacia_vjungle_fence_gate_closed.name=Fence gate Decoration acacia (jungle post)
+tile.jungle_hhacacia_vvacacia.name=Fence Plank acacia (jungle post)
+tile.jungle_hhjungle_vvvacacia.name=Fence Garden acacia (jungle post)
+tile.jungle_hhjungle_vvvacacia_fence_gate_closed.name=Fence gate Garden acacia (jungle post)
+tile.jungle_hhjungle_vvacacia.name=Fence Bollard acacia (jungle post)
+tile.jungle_hhjungle_vvacacia_fence_gate_closed.name=Fence gate Bollard acacia (jungle post)
+tile.jungle_hhhacacia_vvvvjungle_vvvvjungle.name=Fence Stick acacia (jungle post)
+tile.jungle_hhhacacia_vvvvjungle_vvvvjungle_fence_gate_closed.name=Fence gate Stick acacia (jungle post)
+
+tile.acacia_hhbirch.name=Fence Classic birch (acacia post)
+tile.acacia_hhhbirch.name=Fence Wildlife birch (acacia post)
+tile.acacia_hhbirch_vacacia.name=Fence Decoration birch (acacia post)
+tile.acacia_hhbirch_vacacia_fence_gate_closed.name=Fence gate Decoration birch (acacia post)
+tile.acacia_hhbirch_vvbirch.name=Fence Plank birch (acacia post)
+tile.acacia_hhacacia_vvvbirch.name=Fence Garden birch (acacia post)
+tile.acacia_hhacacia_vvvbirch_fence_gate_closed.name=Fence gate Garden birch (acacia post)
+tile.acacia_hhacacia_vvbirch.name=Fence Bollard birch (acacia post)
+tile.acacia_hhacacia_vvbirch_fence_gate_closed.name=Fence gate Bollard birch (acacia post)
+tile.acacia_hhhbirch_vvvvacacia_vvvvacacia.name=Fence Stick birch (acacia post)
+tile.acacia_hhhbirch_vvvvacacia_vvvvacacia_fence_gate_closed.name=Fence gate Stick birch (acacia post)
+
+tile.birch_hhacacia.name=Fence Classic acacia (birch post)
+tile.birch_hhhacacia.name=Fence Wildlife acacia (birch post)
+tile.birch_hhacacia_vbirch.name=Fence Decoration acacia (birch post)
+tile.birch_hhacacia_vbirch_fence_gate_closed.name=Fence gate Decoration acacia (birch post)
+tile.birch_hhacacia_vvacacia.name=Fence Plank acacia (birch post)
+tile.birch_hhbirch_vvvacacia.name=Fence Garden acacia (birch post)
+tile.birch_hhbirch_vvvacacia_fence_gate_closed.name=Fence gate Garden acacia (birch post)
+tile.birch_hhbirch_vvacacia.name=Fence Bollard acacia (birch post)
+tile.birch_hhbirch_vvacacia_fence_gate_closed.name=Fence gate Bollard acacia (birch post)
+tile.birch_hhhacacia_vvvvbirch_vvvvbirch.name=Fence Stick acacia (birch post)
+tile.birch_hhhacacia_vvvvbirch_vvvvbirch_fence_gate_closed.name=Fence gate Stick acacia (birch post)
+
+tile.jungle_hhbirch.name=Fence Classic birch (jungle post)
+tile.jungle_hhhbirch.name=Fence Wildlife birch (jungle post)
+tile.jungle_hhbirch_vjungle.name=Fence Decoration birch (jungle post)
+tile.jungle_hhbirch_vjungle_fence_gate_closed.name=Fence gate Decoration birch (jungle post)
+tile.jungle_hhbirch_vvbirch.name=Fence Plank birch (jungle post)
+tile.jungle_hhjungle_vvvbirch.name=Fence Garden birch (jungle post)
+tile.jungle_hhjungle_vvvbirch_fence_gate_closed.name=Fence gate Garden birch (jungle post)
+tile.jungle_hhjungle_vvbirch.name=Fence Bollard birch (jungle post)
+tile.jungle_hhjungle_vvbirch_fence_gate_closed.name=Fence gate Bollard birch (jungle post)
+tile.jungle_hhhbirch_vvvvjungle_vvvvjungle.name=Fence Stick birch (jungle post)
+tile.jungle_hhhbirch_vvvvjungle_vvvvjungle_fence_gate_closed.name=Fence gate Stick birch (jungle post)
+
+tile.birch_hhjungle.name=Fence Classic jungle (birch post)
+tile.birch_hhhjungle.name=Fence Wildlife jungle (birch post)
+tile.birch_hhjungle_vbirch.name=Fence Decoration jungle (birch post)
+tile.birch_hhjungle_vbirch_fence_gate_closed.name=Fence gate Decoration jungle (birch post)
+tile.birch_hhjungle_vvjungle.name=Fence Plank jungle (birch post)
+tile.birch_hhbirch_vvvjungle.name=Fence Garden jungle (birch post)
+tile.birch_hhbirch_vvvjungle_fence_gate_closed.name=Fence gate Garden jungle (birch post)
+tile.birch_hhbirch_vvjungle.name=Fence Bollard jungle (birch post)
+tile.birch_hhbirch_vvjungle_fence_gate_closed.name=Fence gate Bollard jungle (birch post)
+tile.birch_hhhjungle_vvvvbirch_vvvvbirch.name=Fence Stick jungle (birch post)
+tile.birch_hhhjungle_vvvvbirch_vvvvbirch_fence_gate_closed.name=Fence gate Stick jungle (birch post)
+
+tile.cobblestone_modern.name=Cobblestone Wall Modern
+tile.cobblestone_castle.name=Cobblestone Wall Castle
+tile.cobblestone_construction.name=Cobblestone Wall Building
+
+tile.cobblestone_mossy_modern.name=Mossy Cobblestone Wall Modern
+tile.cobblestone_mossy_castle.name=Mossy Cobblestone Wall Castle
+tile.cobblestone_mossy_construction.name=Mossy Cobblestone Wall Building
+
+tile.sandstone_normal_classic.name=Yellow Sandstone Wall Classic
+tile.sandstone_normal_modern.name=Yellow Sandstone Wall Modern
+tile.sandstone_normal_castle.name=Yellow Sandstone Wall Castle
+tile.sandstone_normal_construction.name=Yellow Sandstone Wall Building
+
+tile.red_sandstone_normal_classic.name=Red Sandstone Wall Classic
+tile.red_sandstone_normal_modern.name=Red Sandstone Wall Modern
+tile.red_sandstone_normal_castle.name=Red Sandstone Wall Castle
+tile.red_sandstone_normal_construction.name=Red Sandstone Wall Building
+
+tile.stone_classic.name=Stone Wall Classic
+tile.stone_modern.name=Stone Wall Modern
+tile.stone_castle.name=Stone Wall Castle
+tile.stone_construction.name=Stone Wall Building
+
+tile.stone_andesite_classic.name=Andesite Wall Classic
+tile.stone_andesite_modern.name=Andesite Wall Modern
+tile.stone_andesite_castle.name=Andesite Wall Castle
+tile.stone_andesite_construction.name=Andesite Wall Building
+
+tile.stone_diorite_classic.name=Diorite Wall Classic
+tile.stone_diorite_modern.name=Diorite Wall Modern
+tile.stone_diorite_castle.name=Diorite Wall Castle
+tile.stone_diorite_construction.name=Diorite Wall Building
+
+tile.stone_granite_classic.name=Granite Wall Classic
+tile.stone_granite_modern.name=Granite Wall Modern
+tile.stone_granite_castle.name=Granite Wall Castle
+tile.stone_granite_construction.name=Granite Wall Building

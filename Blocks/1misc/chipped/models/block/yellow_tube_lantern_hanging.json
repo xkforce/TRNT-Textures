@@ -1,0 +1,6 @@
+{
+	"parent": "chipped:block/clear_lantern_hanging",
+	"textures": {
+		"lantern": "chipped:block/lantern/yellow_tube_lantern"
+	}
+}

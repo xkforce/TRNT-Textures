@@ -1,0 +1,22 @@
+{
+  "parent": "block/fence_post",
+  "textures": {
+    "particle": "blocks/planks_acacia",
+    "1": "blocks/planks_acacia"
+  },
+  "elements": [
+    {
+      "name": "Zaunpfosten",
+      "from": [6, 0, 6],
+      "to": [10, 16, 10],
+      "faces": {
+        "north": {"texture": "#1"},
+        "east": {"texture": "#1"},
+        "south": {"texture": "#1"},
+        "west": {"texture": "#1"},
+        "up": {"texture": "#1"},
+        "down": {"texture": "#1"}
+      }
+    }
+  ]
+}

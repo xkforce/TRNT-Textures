@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "AAA",
+    "AAA"  ],
+  "key": {
+    "A": [
+      {
+        "item": "minecraft:stone",
+        "data": 3
+      }
+    ]
+  },
+  "result": {
+    "item": "customfence:stone_diorite_classic",
+    "count": 6
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "multipart": [
+    {
+      "apply": { "model": "customfence:oak_hhspruce_voak/oak_hhspruce_voak_post" }
+    },
+    {
+      "when": { "north": "true" },
+      "apply": { "model": "customfence:oak_hhspruce_voak/oak_hhspruce_voak_side", "uvlock": "true" }
+    },
+    {
+      "when": { "east": "true" },
+      "apply": { "model": "customfence:oak_hhspruce_voak/oak_hhspruce_voak_side", "y": 90, "uvlock": "true" }
+    },
+    {
+      "when": { "south": "true" },
+      "apply": { "model": "customfence:oak_hhspruce_voak/oak_hhspruce_voak_side", "y": 180, "uvlock": "true" }
+    },
+    {
+      "when": { "west": "true" },
+      "apply": { "model": "customfence:oak_hhspruce_voak/oak_hhspruce_voak_side", "y": 270, "uvlock": "true" }
+    }
+  ]
+}
