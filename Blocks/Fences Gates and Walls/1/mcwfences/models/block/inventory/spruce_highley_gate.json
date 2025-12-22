@@ -1,9 +1,0 @@
-
-{
-	"parent": "mcwfences:block/parent/inventory/highley_gate",
-	"textures": {
-		"2": "minecraft:blocks/planks_spruce",
-		"particle": "minecraft:blocks/log_spruce",
-		"1_texture": "minecraft:blocks/log_spruce"
-	}
-}
