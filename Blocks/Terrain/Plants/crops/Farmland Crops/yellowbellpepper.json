@@ -1,0 +1,12 @@
+{
+    "variants": {
+        "age=0": { "model": "contentcreator:yellowbellpepper0" },
+        "age=1": { "model": "contentcreator:yellowbellpepper0" },
+        "age=2": { "model": "contentcreator:yellowbellpepper1" },
+        "age=3": { "model": "contentcreator:yellowbellpepper1" },
+        "age=4": { "model": "contentcreator:yellowbellpepper2" },
+        "age=5": { "model": "contentcreator:yellowbellpepper2" },
+        "age=6": { "model": "contentcreator:yellowbellpepper3" },
+        "age=7": { "model": "contentcreator:yellowbellpepper3" }        
+    }
+}

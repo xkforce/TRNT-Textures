@@ -1,0 +1,12 @@
+{
+    "variants": {
+        "age=0": { "model": "contentcreator:redtomato0" },
+        "age=1": { "model": "contentcreator:redtomato0" },
+        "age=2": { "model": "contentcreator:redtomato1" },
+        "age=3": { "model": "contentcreator:redtomato1" },
+        "age=4": { "model": "contentcreator:redtomato2" },
+        "age=5": { "model": "contentcreator:redtomato2" },
+        "age=6": { "model": "contentcreator:redtomato3" },
+        "age=7": { "model": "contentcreator:redtomato3" }        
+    }
+}

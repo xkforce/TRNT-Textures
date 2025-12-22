@@ -1,0 +1,20 @@
+[
+    {
+        "motive": "the scream",
+        "width": 3,
+        "height": 4,
+		"iscreative": true
+    },
+    {
+        "motive": "mona lisa",
+        "width": 2,
+        "height": 3,
+		"iscreative": true
+    },
+    {
+        "motive": "girl with a pearl earring",
+        "width": 2,
+        "height": 3,
+		"iscreative": true
+    }
+]

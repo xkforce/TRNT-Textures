@@ -1,0 +1,32 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+		"ABA",
+		"ABA"
+    ],
+    
+    "key":
+    { 
+        "A":
+        {
+            "item": "minecraft:log",
+            "data": 2
+        },    
+        
+        "B":
+        {
+            "item": "minecraft:planks",
+            "data": 2
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwfences:birch_stockade_fence",
+        "count": 3
+    }
+}
+
+

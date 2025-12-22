@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "AAA",
+    "ABA",
+    "C C"  ],
+  "key": {
+    "A": [
+      {
+        "item": "minecraft:planks",
+        "data": 5
+      }
+    ],
+    "B": [
+      {
+        "item": "minecraft:planks",
+        "data": 3
+      }
+    ],
+    "C": [
+      {
+        "item": "minecraft:stick"
+      }
+    ]
+  },
+  "result": {
+    "item": "customfence:jungle_hhbig_oak_vjungle_fence_gate_closed",
+    "count": 2
+  }
+}

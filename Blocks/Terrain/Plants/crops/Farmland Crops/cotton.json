@@ -1,0 +1,12 @@
+{
+    "variants": {
+        "age=0": { "model": "contentcreator:cotton0" },
+        "age=1": { "model": "contentcreator:cotton0" },
+        "age=2": { "model": "contentcreator:cotton1" },
+        "age=3": { "model": "contentcreator:cotton1" },
+        "age=4": { "model": "contentcreator:cotton2" },
+        "age=5": { "model": "contentcreator:cotton2" },
+        "age=6": { "model": "contentcreator:cotton3" },
+        "age=7": { "model": "contentcreator:cotton3" }        
+    }
+}

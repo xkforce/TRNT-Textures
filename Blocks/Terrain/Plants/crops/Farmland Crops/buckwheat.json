@@ -1,0 +1,12 @@
+{
+    "variants": {
+        "age=0": { "model": "contentcreator:buckwheat0" },
+        "age=1": { "model": "contentcreator:buckwheat0" },
+        "age=2": { "model": "contentcreator:buckwheat1" },
+        "age=3": { "model": "contentcreator:buckwheat1" },
+        "age=4": { "model": "contentcreator:buckwheat2" },
+        "age=5": { "model": "contentcreator:buckwheat2" },
+        "age=6": { "model": "contentcreator:buckwheat3" },
+        "age=7": { "model": "contentcreator:buckwheat3" }        
+    }
+}

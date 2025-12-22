@@ -1,0 +1,10 @@
+
+	
+{
+	"parent": "mcwfences:block/parent/wired_fence_post",
+	"textures": {
+		"1": "minecraft:blocks/log_big_oak_top",
+		"particle": "minecraft:blocks/log_big_oak",
+		"texture": "minecraft:blocks/log_big_oak"
+	}
+}

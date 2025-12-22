@@ -1,0 +1,22 @@
+{
+  "parent": "block/wall_post",
+  "textures": {
+    "particle": "blocks/red_sandstone_normal",
+    "wall": "blocks/red_sandstone_normal"
+  },
+  "elements": [
+    {
+      "name": "Pfeiler",
+      "from": [4, 0, 4],
+      "to": [12, 16, 12],
+      "faces": {
+        "north": {"texture": "#wall"},
+        "east": {"texture": "#wall"},
+        "south": {"texture": "#wall"},
+        "west": {"texture": "#wall"},
+        "up": {"texture": "#wall"},
+        "down": {"texture": "#wall"}
+      }
+    }
+  ]
+}

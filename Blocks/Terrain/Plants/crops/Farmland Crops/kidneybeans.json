@@ -1,0 +1,12 @@
+{
+    "variants": {
+        "age=0": { "model": "contentcreator:kidneybeans0" },
+        "age=1": { "model": "contentcreator:kidneybeans0" },
+        "age=2": { "model": "contentcreator:kidneybeans1" },
+        "age=3": { "model": "contentcreator:kidneybeans1" },
+        "age=4": { "model": "contentcreator:kidneybeans2" },
+        "age=5": { "model": "contentcreator:kidneybeans2" },
+        "age=6": { "model": "contentcreator:kidneybeans3" },
+        "age=7": { "model": "contentcreator:kidneybeans3" }        
+    }
+}

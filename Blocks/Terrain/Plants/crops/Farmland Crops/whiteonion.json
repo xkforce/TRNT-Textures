@@ -1,0 +1,12 @@
+{
+    "variants": {
+        "age=0": { "model": "contentcreator:whiteonion0" },
+        "age=1": { "model": "contentcreator:whiteonion0" },
+        "age=2": { "model": "contentcreator:whiteonion1" },
+        "age=3": { "model": "contentcreator:whiteonion1" },
+        "age=4": { "model": "contentcreator:whiteonion2" },
+        "age=5": { "model": "contentcreator:whiteonion2" },
+        "age=6": { "model": "contentcreator:whiteonion3" },
+        "age=7": { "model": "contentcreator:whiteonion3" }        
+    }
+}

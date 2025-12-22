@@ -1,0 +1,12 @@
+{
+    "variants": {
+        "age=0": { "model": "contentcreator:purplecarrot0" },
+        "age=1": { "model": "contentcreator:purplecarrot0" },
+        "age=2": { "model": "contentcreator:purplecarrot1" },
+        "age=3": { "model": "contentcreator:purplecarrot1" },
+        "age=4": { "model": "contentcreator:purplecarrot2" },
+        "age=5": { "model": "contentcreator:purplecarrot2" },
+        "age=6": { "model": "contentcreator:purplecarrot3" },
+        "age=7": { "model": "contentcreator:purplecarrot3" }        
+    }
+}

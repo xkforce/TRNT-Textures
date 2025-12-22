@@ -1,0 +1,12 @@
+{
+    "variants": {
+        "age=0": { "model": "contentcreator:kiwi0" },
+        "age=1": { "model": "contentcreator:kiwi0" },
+        "age=2": { "model": "contentcreator:kiwi1" },
+        "age=3": { "model": "contentcreator:kiwi1" },
+        "age=4": { "model": "contentcreator:kiwi2" },
+        "age=5": { "model": "contentcreator:kiwi2" },
+        "age=6": { "model": "contentcreator:kiwi3" },
+        "age=7": { "model": "contentcreator:kiwi3" }        
+    }
+}

@@ -1,0 +1,12 @@
+{
+    "variants": {
+        "age=0": { "model": "contentcreator:limabeans0" },
+        "age=1": { "model": "contentcreator:limabeans0" },
+        "age=2": { "model": "contentcreator:limabeans1" },
+        "age=3": { "model": "contentcreator:limabeans1" },
+        "age=4": { "model": "contentcreator:limabeans2" },
+        "age=5": { "model": "contentcreator:limabeans2" },
+        "age=6": { "model": "contentcreator:limabeans3" },
+        "age=7": { "model": "contentcreator:limabeans3" }        
+    }
+}

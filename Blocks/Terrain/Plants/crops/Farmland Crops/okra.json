@@ -1,0 +1,12 @@
+{
+    "variants": {
+        "age=0": { "model": "contentcreator:okra0" },
+        "age=1": { "model": "contentcreator:okra0" },
+        "age=2": { "model": "contentcreator:okra1" },
+        "age=3": { "model": "contentcreator:okra1" },
+        "age=4": { "model": "contentcreator:okra2" },
+        "age=5": { "model": "contentcreator:okra2" },
+        "age=6": { "model": "contentcreator:okra3" },
+        "age=7": { "model": "contentcreator:okra3" }        
+    }
+}

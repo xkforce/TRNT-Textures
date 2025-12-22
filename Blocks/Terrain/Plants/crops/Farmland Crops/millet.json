@@ -1,0 +1,12 @@
+{
+    "variants": {
+        "age=0": { "model": "contentcreator:millet0" },
+        "age=1": { "model": "contentcreator:millet0" },
+        "age=2": { "model": "contentcreator:millet1" },
+        "age=3": { "model": "contentcreator:millet1" },
+        "age=4": { "model": "contentcreator:millet2" },
+        "age=5": { "model": "contentcreator:millet2" },
+        "age=6": { "model": "contentcreator:millet3" },
+        "age=7": { "model": "contentcreator:millet3" }        
+    }
+}

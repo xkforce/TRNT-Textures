@@ -1,0 +1,12 @@
+{
+    "variants": {
+        "age=0": { "model": "contentcreator:jicama0" },
+        "age=1": { "model": "contentcreator:jicama0" },
+        "age=2": { "model": "contentcreator:jicama1" },
+        "age=3": { "model": "contentcreator:jicama1" },
+        "age=4": { "model": "contentcreator:jicama2" },
+        "age=5": { "model": "contentcreator:jicama2" },
+        "age=6": { "model": "contentcreator:jicama3" },
+        "age=7": { "model": "contentcreator:jicama3" }        
+    }
+}

@@ -1,0 +1,12 @@
+{
+    "variants": {
+        "age=0": { "model": "contentcreator:ginger0" },
+        "age=1": { "model": "contentcreator:ginger0" },
+        "age=2": { "model": "contentcreator:ginger1" },
+        "age=3": { "model": "contentcreator:ginger1" },
+        "age=4": { "model": "contentcreator:ginger2" },
+        "age=5": { "model": "contentcreator:ginger2" },
+        "age=6": { "model": "contentcreator:ginger3" },
+        "age=7": { "model": "contentcreator:ginger3" }        
+    }
+}

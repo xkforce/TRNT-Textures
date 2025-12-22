@@ -1,0 +1,12 @@
+{
+    "variants": {
+        "age=0": { "model": "contentcreator:chia0" },
+        "age=1": { "model": "contentcreator:chia0" },
+        "age=2": { "model": "contentcreator:chia1" },
+        "age=3": { "model": "contentcreator:chia1" },
+        "age=4": { "model": "contentcreator:chia2" },
+        "age=5": { "model": "contentcreator:chia2" },
+        "age=6": { "model": "contentcreator:chia3" },
+        "age=7": { "model": "contentcreator:chia3" }        
+    }
+}

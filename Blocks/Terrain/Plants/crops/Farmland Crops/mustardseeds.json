@@ -1,0 +1,12 @@
+{
+    "variants": {
+        "age=0": { "model": "contentcreator:mustardseeds0" },
+        "age=1": { "model": "contentcreator:mustardseeds0" },
+        "age=2": { "model": "contentcreator:mustardseeds1" },
+        "age=3": { "model": "contentcreator:mustardseeds1" },
+        "age=4": { "model": "contentcreator:mustardseeds2" },
+        "age=5": { "model": "contentcreator:mustardseeds2" },
+        "age=6": { "model": "contentcreator:mustardseeds3" },
+        "age=7": { "model": "contentcreator:mustardseeds3" }        
+    }
+}

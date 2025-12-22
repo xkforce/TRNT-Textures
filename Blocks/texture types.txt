@@ -1,0 +1,12 @@
+bricks
+chiseled bricks
+cobblestone
+debossed
+layers [prismarine]
+mosaic
+native
+poison [nether quartz]
+polished
+short bricks
+twisted [nether quartz]
+ 

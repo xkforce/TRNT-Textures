@@ -1,0 +1,12 @@
+{
+    "variants": {
+        "age=0": { "model": "contentcreator:greenlentil0" },
+        "age=1": { "model": "contentcreator:greenlentil0" },
+        "age=2": { "model": "contentcreator:greenlentil1" },
+        "age=3": { "model": "contentcreator:greenlentil1" },
+        "age=4": { "model": "contentcreator:greenlentil2" },
+        "age=5": { "model": "contentcreator:greenlentil2" },
+        "age=6": { "model": "contentcreator:greenlentil3" },
+        "age=7": { "model": "contentcreator:greenlentil3" }        
+    }
+}

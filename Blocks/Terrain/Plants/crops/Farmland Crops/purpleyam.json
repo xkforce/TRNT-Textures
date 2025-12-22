@@ -1,0 +1,12 @@
+{
+    "variants": {
+        "age=0": { "model": "contentcreator:purpleyam0" },
+        "age=1": { "model": "contentcreator:purpleyam0" },
+        "age=2": { "model": "contentcreator:purpleyam1" },
+        "age=3": { "model": "contentcreator:purpleyam1" },
+        "age=4": { "model": "contentcreator:purpleyam2" },
+        "age=5": { "model": "contentcreator:purpleyam2" },
+        "age=6": { "model": "contentcreator:purpleyam3" },
+        "age=7": { "model": "contentcreator:purpleyam3" }        
+    }
+}

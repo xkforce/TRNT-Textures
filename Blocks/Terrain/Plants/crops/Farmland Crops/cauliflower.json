@@ -1,0 +1,12 @@
+{
+    "variants": {
+        "age=0": { "model": "contentcreator:cauliflower0" },
+        "age=1": { "model": "contentcreator:cauliflower0" },
+        "age=2": { "model": "contentcreator:cauliflower1" },
+        "age=3": { "model": "contentcreator:cauliflower1" },
+        "age=4": { "model": "contentcreator:cauliflower2" },
+        "age=5": { "model": "contentcreator:cauliflower2" },
+        "age=6": { "model": "contentcreator:cauliflower3" },
+        "age=7": { "model": "contentcreator:cauliflower3" }        
+    }
+}

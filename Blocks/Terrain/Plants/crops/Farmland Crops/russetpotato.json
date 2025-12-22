@@ -1,0 +1,12 @@
+{
+    "variants": {
+        "age=0": { "model": "contentcreator:russetpotato0" },
+        "age=1": { "model": "contentcreator:russetpotato0" },
+        "age=2": { "model": "contentcreator:russetpotato1" },
+        "age=3": { "model": "contentcreator:russetpotato1" },
+        "age=4": { "model": "contentcreator:russetpotato2" },
+        "age=5": { "model": "contentcreator:russetpotato2" },
+        "age=6": { "model": "contentcreator:russetpotato3" },
+        "age=7": { "model": "contentcreator:russetpotato3" }        
+    }
+}

@@ -1,0 +1,12 @@
+{
+    "variants": {
+        "age=0": { "model": "contentcreator:oats0" },
+        "age=1": { "model": "contentcreator:oats0" },
+        "age=2": { "model": "contentcreator:oats1" },
+        "age=3": { "model": "contentcreator:oats1" },
+        "age=4": { "model": "contentcreator:oats2" },
+        "age=5": { "model": "contentcreator:oats2" },
+        "age=6": { "model": "contentcreator:oats3" },
+        "age=7": { "model": "contentcreator:oats3" }        
+    }
+}

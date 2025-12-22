@@ -1,0 +1,10 @@
+
+	
+{
+	"parent": "mcwfences:block/parent/stockade_fence_side",
+	"textures": {
+		"4": "minecraft:blocks/planks_acacia",
+		"5": "minecraft:blocks/log_acacia",
+		"particle": "minecraft:blocks/planks_acacia"
+	}
+}

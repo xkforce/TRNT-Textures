@@ -1,0 +1,12 @@
+{
+    "variants": {
+        "age=0": { "model": "contentcreator:celery0" },
+        "age=1": { "model": "contentcreator:celery0" },
+        "age=2": { "model": "contentcreator:celery1" },
+        "age=3": { "model": "contentcreator:celery1" },
+        "age=4": { "model": "contentcreator:celery2" },
+        "age=5": { "model": "contentcreator:celery2" },
+        "age=6": { "model": "contentcreator:celery3" },
+        "age=7": { "model": "contentcreator:celery3" }        
+    }
+}

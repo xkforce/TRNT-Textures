@@ -1,0 +1,31 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+		"ABA",
+		"ABA"
+    ],
+    
+    "key":
+    { 
+        "B":
+        {
+            "item": "minecraft:stick"
+        },    
+        
+        "A":
+        {
+            "item": "minecraft:log2",
+            "data": 0
+        }
+    },
+    
+    "result":
+    {
+        "item":  "mcwfences:acacia_horse_fence",
+        "count": 3
+    }
+}
+
+

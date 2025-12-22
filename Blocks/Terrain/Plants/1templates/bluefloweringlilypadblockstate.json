@@ -1,0 +1,10 @@
+{
+    "variants": {
+		"normal": [
+            { "model": "theroadnottakenblocks:bluefloweringlilypad" },
+            { "model": "theroadnottakenblocks:bluefloweringlilypad", "y": 90 },
+            { "model": "theroadnottakenblocks:bluefloweringlilypad", "y": 180 },
+            { "model": "theroadnottakenblocks:bluefloweringlilypad", "y": 270 }
+        ]
+    }
+}

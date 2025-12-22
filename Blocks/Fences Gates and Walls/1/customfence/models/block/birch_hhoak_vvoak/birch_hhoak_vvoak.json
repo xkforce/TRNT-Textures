@@ -1,0 +1,87 @@
+{
+  "parent": "block/fence_inventory",
+  "textures": {
+    "1": "blocks/planks_birch",
+    "2": "blocks/planks_oak"
+  },
+  "elements": [
+    {
+      "name": "Zaunpfosten links",
+      "from": [6, 0, 0],
+      "to": [10, 16, 4],
+      "faces": {
+        "north": {"texture": "#1"},
+        "east": {"texture": "#1"},
+        "south": {"texture": "#1"},
+        "west": {"texture": "#1"},
+        "up": {"texture": "#1"},
+        "down": {"texture": "#1"}
+      }
+    },
+    {
+      "name": "Zaunpfosten rechts",
+      "from": [6, 0, 12],
+      "to": [10, 16, 16],
+      "faces": {
+        "north": {"texture": "#1"},
+        "east": {"texture": "#1"},
+        "south": {"texture": "#1"},
+        "west": {"texture": "#1"},
+        "up": {"texture": "#1"},
+        "down": {"texture": "#1"}
+      }
+    },
+    {
+      "name": "Brett Unten",
+      "from": [7, 3, 4],
+      "to": [9, 5, 12],
+      "faces": {
+        "north": {"texture": "#2"},
+        "east": {"texture": "#2"},
+        "south": {"texture": "#2"},
+        "west": {"texture": "#2"},
+        "up": {"texture": "#2"},
+        "down": {"texture": "#2"}
+      }
+    },
+    {
+      "name": "Brett Oben",
+      "from": [7, 13, 4],
+      "to": [9, 15, 12],
+      "faces": {
+        "north": {"texture": "#2"},
+        "east": {"texture": "#2"},
+        "south": {"texture": "#2"},
+        "west": {"texture": "#2"},
+        "up": {"texture": "#2"},
+        "down": {"texture": "#2"}
+      }
+    },
+    {
+      "name": "Planke links",
+      "from": [7, 5, 5],
+      "to": [9, 13, 7],
+      "faces": {
+        "north": {"texture": "#2"},
+        "east": {"texture": "#2"},
+        "south": {"texture": "#2"},
+        "west": {"texture": "#2"},
+        "up": {"texture": "#2"},
+        "down": {"texture": "#2"}
+      }
+    },
+    {
+      "name": "Planke rechts",
+      "from": [7, 5, 9],
+      "to": [9, 13, 11],
+      "faces": {
+        "north": {"texture": "#2"},
+        "east": {"texture": "#2"},
+        "south": {"texture": "#2"},
+        "west": {"texture": "#2"},
+        "up": {"texture": "#2"},
+        "down": {"texture": "#2"}
+      }
+    }
+  ]
+}

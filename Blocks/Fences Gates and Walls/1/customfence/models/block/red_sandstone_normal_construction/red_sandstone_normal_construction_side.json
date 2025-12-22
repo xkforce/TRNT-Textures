@@ -1,0 +1,34 @@
+{
+  "parent": "block/wall_side",
+  "textures": {
+    "wall": "blocks/red_sandstone_normal"
+  },
+  "elements": [
+    {
+      "name": "Pfeiler",
+      "from": [4, 0, 4],
+      "to": [12, 16, 12],
+      "faces": {
+        "north": {"texture": "#wall"},
+        "east": {"texture": "#wall"},
+        "south": {"texture": "#wall"},
+        "west": {"texture": "#wall"},
+        "up": {"texture": "#wall"},
+        "down": {"texture": "#wall"}
+      }
+    },
+    {
+      "name": "Verbindung",
+      "from": [4, 0, 0],
+      "to": [12, 16, 4],
+      "faces": {
+        "north": {"texture": "#wall"},
+        "east": {"texture": "#wall"},
+        "south": {"texture": "#wall"},
+        "west": {"texture": "#wall"},
+        "up": {"texture": "#wall"},
+        "down": {"texture": "#wall"}
+      }
+    }
+  ]
+}
