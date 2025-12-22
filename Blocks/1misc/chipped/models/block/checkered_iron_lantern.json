@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/template_lantern",
-  "textures": {
-    "lantern": "chipped:block/lantern/checkered_iron_lantern"
-  }
-}
