@@ -1,0 +1,12 @@
+[project]
+name = "pngblender2"
+version = "0.1.0"
+description = "tool for batch editing PNG/PNM textures using a YAML configuration file"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "numpy>=2.4.0",
+    "pillow>=12.0.0",
+    "pymixbox>=2.0.0",
+    "pyyaml>=6.0.3",
+]

@@ -1,0 +1,133 @@
+//unless otherwise stated, ores have the same mining level, hardness and resistance as stone
+//obsidian ores have the same mining level, hardness and resistance as obsidian
+//gem ores that are not embedded in obsidian or jovianite have the same mining level as vanilla emerald ore
+//aquamarine, topaz, morganite, sapphire and ruby are always embedded in jovianite. Jupiter, Saturn, Uranus, Neptune and Persephone ores are also embedded in jovianite
+//coal, gem. lapis and redstone type ores smelt to 1 of their respective item
+//phorphorus ore is made from smelting quartz and phosphorus ore in the oven
+//metal and native metal ores smelt to 1 metal ingot
+//pallasite ores cannot be smelted for technical reasons
+
+//coal ores drop coal in the same quantity as vanilla coal ore
+martiancoalore
+venusiancoalore
+
+//gem ores drop gems in the same quantity as diamond ore
+amethystore
+aquamarineore
+citrineore
+jupiterdiamondore
+lunardiamondore
+martiandiamondore
+martianemeraldore
+mercuriandiamondore
+mercurianemeraldoreore
+moonstoneore
+morganiteore
+neptunediamondore
+obsidiandiamondore
+obsidianemeraldore
+opalore
+persephonediamondore
+rubyore
+sapphireore
+saturndiamondore
+topazore
+uranusdiamondore
+venusiandiamondore
+venusianemeraldore
+zirconore
+
+//lapis like ores drop items in the same quantities as lapis lazuli ore does
+martianlapisore
+martianmalachite
+obsidianlapisore
+obsidianmalachiteore
+venusianlapisore
+venusianmalachite
+
+//iron ore like ores drop their blocks
+bismuthore
+jupitercopperore
+jupitergoldore
+jupiterironore
+jupitertinore
+jupiterzincore
+martiancopperore
+martiangoldore
+martianironore
+martiantinore
+martianzincore
+neptunecopperore
+neptunegoldore
+neptuneironore
+neptunetinore
+neptunezincore
+obsidiancopperore
+obsidiangoldore
+obsidianironore
+obsidiantinore
+obsidianzincore
+persephonecopperore
+persephonegoldore
+persephoneironore
+persephonetinore
+persephonezincore
+phosphorusore
+saturncopperore
+saturngoldore
+saturnironore
+saturntinore
+saturnzincore
+uranuscopperore
+uranusgoldore
+uranusironore
+uranustinore
+uranuszincore
+venusiancopperore
+venusiangoldore
+venusianironore
+venusiantinore
+venusianzincore
+
+//native metal ores drop the metal as nuggets in the same quantities as lapis lazuli ore does
+electrumore
+lunarcopperore
+lunargoldore
+lunarironore
+lunartinore
+lunarzincore
+mercuriancopperore
+mercuriangoldore
+mercurianironore
+mercuriantinore
+mercurianzincore
+nativecopperore
+nativegoldore
+nativeironore
+nativetinore
+nativezincore
+nethergoldore
+silverore
+
+//pallasite drops the metal and gem as nuggets in the same quantities of each that redstone ore does
+//meteor iron pallasite drops iridium nuggets at 10% the rate that it drops meteor iron nuggets
+copperdiamondpallasite
+copperperidotpallasite
+electrumdiamondpallasite
+electrumperidotpallasite
+golddiamondpallasite
+goldperidotpallasite
+meteorirondiamondpallasite
+meteorironperidotpallasite
+
+//redstone like ores drop items in the same quantities as redstone ore does
+martianredstoneore
+obsidianredstoneore
+venusianredstoneore
+
+
+
+
+
+
+
