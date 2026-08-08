@@ -1,0 +1,9 @@
+import crafttweaker.item.IItemStack;
+import crafttweaker.player.IPlayer;
+import crafttweaker.world.IBlockPos;
+import crafttweaker.world.IWorld;
+
+zenClass IDestroyCreative {
+    
+    function (arg0 as IWorld, arg1 as IBlockPos, arg2 as IItemStack, arg3 as IPlayer) as bool;
+}

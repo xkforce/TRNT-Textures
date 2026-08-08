@@ -1,0 +1,247 @@
+import contentcreator.block.IColor;
+import contentcreator.block.ISubItem;
+import contentcreator.block.SoundType;
+import contentcreator.block.functions.IActivated;
+import contentcreator.block.functions.IAdded;
+import contentcreator.block.functions.IBeaconBase;
+import contentcreator.block.functions.IBeaconMultiplier;
+import contentcreator.block.functions.IBlockSound;
+import contentcreator.block.functions.IBoundingBox;
+import contentcreator.block.functions.IBreak;
+import contentcreator.block.functions.ICollisionBox;
+import contentcreator.block.functions.IConnectRedstone;
+import contentcreator.block.functions.IDestroyed;
+import contentcreator.block.functions.IDestroyedExplosion;
+import contentcreator.block.functions.IDrop;
+import contentcreator.block.functions.IEnchantPowerBonus;
+import contentcreator.block.functions.IEntityCollide;
+import contentcreator.block.functions.IEntityDestroy;
+import contentcreator.block.functions.IEntityWalk;
+import contentcreator.block.functions.IFaceShape;
+import contentcreator.block.functions.IFlame;
+import contentcreator.block.functions.IFlameSource;
+import contentcreator.block.functions.IHardness;
+import contentcreator.block.functions.IHarvested;
+import contentcreator.block.functions.ILadder;
+import contentcreator.block.functions.ILight;
+import contentcreator.block.functions.IMapColor;
+import contentcreator.block.functions.IMaterial;
+import contentcreator.block.functions.IOffset;
+import contentcreator.block.functions.IPassable;
+import contentcreator.block.functions.IPlaceBlockAt;
+import contentcreator.block.functions.IPlaceBlockOnSide;
+import contentcreator.block.functions.IPlaceTorchOnTop;
+import contentcreator.block.functions.IPlacedBy;
+import contentcreator.block.functions.IRedstonePower;
+import contentcreator.block.functions.IRemovedByPlayer;
+import contentcreator.block.functions.IResistance;
+import contentcreator.block.functions.ISlipperiness;
+import contentcreator.block.functions.IStateAtViewpoint;
+import contentcreator.block.functions.IStateBoolean;
+import contentcreator.block.functions.IStateForPlacement;
+import contentcreator.block.functions.ITickRate;
+import contentcreator.block.functions.IUpdateTick;
+import contentcreator.block.functions.NeighborChanged;
+import contentcreator.item.functions.IUnlocalizedName;
+import crafttweaker.block.IBlockStateMatcher;
+import crafttweaker.block.IMaterial;
+import crafttweaker.item.IItemDefinition;
+import crafttweaker.item.IItemStack;
+import crafttweaker.util.IAxisAlignedBB;
+import crafttweaker.world.IBlockPos;
+import crafttweaker.world.IFacing;
+import crafttweaker.world.IWorld;
+
+zenClass Block {
+    
+    static function create(arg0 as IMaterial, arg1 as string) as Block;
+    
+    static function getBlock(arg0 as IItemDefinition) as Block;
+    
+    static function getBlock(arg0 as IItemStack) as Block;
+    
+    static function getBlock(arg0 as string) as Block;
+    
+    static function setFacing(arg0 as string) as void;
+    
+    static function setFacing(arg0 as string, ...arg1 as IFacing) as void;
+    
+    static function setInteger(arg0 as string, arg1 as int) as void;
+    
+    static function setInteger(arg0 as string, arg1 as int, arg2 as int) as void;
+    
+    function addCollisionBox(arg0 as IAxisAlignedBB) as Block;
+    
+    function addCollisionBox(arg0 as double, arg1 as double, arg2 as double, arg3 as double, arg4 as double, arg5 as double) as Block;
+    
+    function canConnectRedstone(arg0 as IConnectRedstone) as Block;
+    
+    function canEntityDestroy(arg0 as IEntityDestroy) as Block;
+    
+    function canPlace(arg0 as IPlaceBlockAt) as Block;
+    
+    function canPlaceSide(arg0 as IPlaceBlockOnSide) as Block;
+    
+    function canPlaceTorchOnTop(arg0 as IPlaceTorchOnTop) as Block;
+    
+    function checkAndDropBlock() as Block;
+    
+    function dropBlock(arg0 as IWorld, arg1 as IBlockPos, arg2 as float = 0.0, arg3 as int = 0) as void;
+    
+    function isFireSource(arg0 as IFlameSource) as Block;
+    
+    function isLadder(arg0 as ILadder) as Block;
+    
+    function isSticky(arg0 as IStateBoolean) as Block;
+    
+    function onBlockExploded(arg0 as IDestroyedExplosion) as Block;
+    
+    function onRemovedByPlayer(arg0 as IRemovedByPlayer) as Block;
+    
+    function setBeaconBase(arg0 as IBeaconBase) as Block;
+    
+    function setBeaconMultiplier(arg0 as IBeaconMultiplier) as Block;
+    
+    function setBeaconMultiplier(arg0 as float[]) as Block;
+    
+    function setBlockActivated(arg0 as IActivated) as Block;
+    
+    function setBlockAdded(arg0 as IAdded) as Block;
+    
+    function setBlockBreak(arg0 as IBreak) as Block;
+    
+    function setBlockDestroyedByPlayer(arg0 as IDestroyed) as Block;
+    
+    function setBlockHarvest(arg0 as IHarvested) as Block;
+    
+    function setBoundingBox(arg0 as IBoundingBox) as Block;
+    
+    function setBoundingBox(arg0 as IAxisAlignedBB) as Block;
+    
+    function setBoundingBox(arg0 as double, arg1 as double, arg2 as double, arg3 as double, arg4 as double, arg5 as double) as Block;
+    
+    function setCollisionBox(arg0 as ICollisionBox) as Block;
+    
+    function setColor(arg0 as IColor) as Block;
+    
+    function setColor(arg0 as int) as Block;
+    
+    function setConnectRedstone() as Block;
+    
+    function setDisplayTick(arg0 as IUpdateTick) as Block;
+    
+    function setDrops(arg0 as IDrop) as Block;
+    
+    function setDrops(arg0 as IItemStack[]) as Block;
+    
+    function setEnchantPower(arg0 as IEnchantPowerBonus) as Block;
+    
+    function setEntityCollide(arg0 as IEntityCollide) as Block;
+    
+    function setEntityWalk(arg0 as IEntityWalk) as Block;
+    
+    function setFaceShape(arg0 as IFaceShape) as Block;
+    
+    function setFaceShape(arg0 as string) as Block;
+    
+    function setFireSource() as Block;
+    
+    function setFireSpread(arg0 as IFlame) as Block;
+    
+    function setFireSpread(arg0 as int) as Block;
+    
+    function setFlammability(arg0 as IFlame) as Block;
+    
+    function setFlammability(arg0 as int) as Block;
+    
+    function setHardness(arg0 as IHardness) as Block;
+    
+    function setHardness(arg0 as float) as Block;
+    
+    function setHarvestLevel(arg0 as string, arg1 as int) as Block;
+    
+    function setHarvestLevel(arg0 as string, arg1 as int, arg2 as IBlockStateMatcher) as Block;
+    
+    function setHarvestLevel(arg0 as string, arg1 as int, arg2 as int[]) as Block;
+    
+    function setLadder() as Block;
+    
+    function setLightOpacity(arg0 as ILight) as Block;
+    
+    function setLightOpacity(arg0 as int) as Block;
+    
+    function setLightValue(arg0 as ILight) as Block;
+    
+    function setLightValue(arg0 as int) as Block;
+    
+    
+    function setMapColor(arg0 as IMapColor) as Block;
+    
+    function setMaterial(arg0 as IMaterial) as Block;
+    
+    function setNeighborChange(arg0 as NeighborChanged) as Block;
+    
+    function setNonOpaque() as Block;
+    
+    function setOffset(arg0 as IOffset) as Block;
+    
+    function setOffset(arg0 as string) as Block;
+    
+    function setOpaque(arg0 as IStateBoolean) as Block;
+    
+    function setPassable() as Block;
+    
+    function setPassable(arg0 as IPassable) as Block;
+    
+    function setPlacedBy(arg0 as IPlacedBy) as Block;
+    
+    function setRenderLayer(arg0 as string) as Block;
+    
+    function setResistance(arg0 as IResistance) as Block;
+    
+    function setResistance(arg0 as float) as Block;
+    
+    function setSelectedBox(arg0 as IAxisAlignedBB) as Block;
+    
+    function setSelectedBox(arg0 as double, arg1 as double, arg2 as double, arg3 as double, arg4 as double, arg5 as double) as Block;
+    
+    function setSlipperiness(arg0 as ISlipperiness) as Block;
+    
+    function setSlipperiness(arg0 as float) as Block;
+    
+    function setSoundType(arg0 as SoundType) as Block;
+    
+    function setSoundType(arg0 as IBlockSound) as Block;
+    
+    function setStateAtViewpoint(arg0 as IStateAtViewpoint) as Block;
+    
+    function setStateForPlacement(arg0 as IStateForPlacement) as Block;
+    
+    function setSticky() as Block;
+    
+    function setStrongPower(arg0 as IRedstonePower) as Block;
+    
+    function setStrongPower(arg0 as int) as Block;
+    
+    function setSubItem() as Block;
+    
+    function setSubItems() as Block;
+    
+    function setSubItems(arg0 as ISubItem) as Block;
+    
+    function setSuffocation() as Block;
+    
+    function setSuffocation(arg0 as IStateBoolean) as Block;
+    
+    function setTickRate(arg0 as ITickRate) as Block;
+    
+    function setUnbreakable() as Block;
+    
+    function setUnlocalizedName(arg0 as IUnlocalizedName) as Block;
+    
+    function setUpdateTick(arg0 as IUpdateTick) as Block;
+    
+    function setWeakPower(arg0 as IRedstonePower) as Block;
+    
+    function setWeakPower(arg0 as int) as Block;
+}

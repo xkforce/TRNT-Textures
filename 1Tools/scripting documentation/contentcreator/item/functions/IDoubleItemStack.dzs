@@ -1,0 +1,6 @@
+import crafttweaker.item.IItemStack;
+
+zenClass IDoubleItemStack {
+    
+    function (arg0 as IItemStack) as double;
+}

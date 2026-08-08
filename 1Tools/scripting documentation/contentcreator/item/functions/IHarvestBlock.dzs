@@ -1,0 +1,7 @@
+import crafttweaker.block.IBlockState;
+import crafttweaker.item.IItemStack;
+
+zenClass IHarvestBlock {
+    
+    function (arg0 as IBlockState, arg1 as IItemStack) as bool;
+}

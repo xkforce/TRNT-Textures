@@ -1,0 +1,30 @@
+import contentcreator.item.SubItem;
+import crafttweaker.item.IItemDefinition;
+import crafttweaker.item.IItemStack;
+
+zenClass Item {
+    
+    static function create(arg0 as string) as Item;
+    
+    static function getItem(arg0 as IItemDefinition) as Item;
+    
+    static function getItem(arg0 as IItemStack) as Item;
+    
+    static function getItem(arg0 as string) as Item;
+    
+    static function getSubItem(arg0 as string, arg1 as int) as SubItem;
+    
+    static function sub() as SubItem;
+    
+    static function sub(arg0 as int) as SubItem;
+    
+    function add(...arg0 as SubItem) as Item;
+    
+    function getItem(arg0 as int) as SubItem;
+    
+    function hasItem(arg0 as int) as bool;
+    
+    function register() as void;
+    
+    function setModelVariant() as Item;
+}

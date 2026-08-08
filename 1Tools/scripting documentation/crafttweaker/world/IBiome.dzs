@@ -1,0 +1,17 @@
+import crafttweaker.world.IBiomeType;
+
+zenClass IBiome {
+    val baseHeight as float;
+    val canRain as bool;
+    val heightVariation as float;
+    val highHumidity as bool;
+    val id as string;
+    val ignorePlayerSpawnSuitability as bool;
+    val isSnowyBiome as bool;
+    val name as string;
+    val rainfall as float;
+    val spawningChance as float;
+    val temperature as float;
+    val types as [IBiomeType];
+    val waterColorMultiplier as int;
+}

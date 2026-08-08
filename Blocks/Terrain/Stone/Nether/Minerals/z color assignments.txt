@@ -1,0 +1,39 @@
+pink = cattieriteblock
+lime = chloriteblock
+purple = cobaltiteblock
+black = djurleiteblock
+yellow = foolsgoldblock
+light blue = geeriteblock
+green = kesteriteblock
+white = montbrayiteblock
+brown = pyrrhotiteblock
+blue = bornite
+cyan = 
+gray = 
+light gray = 
+magenta = 
+orange = 
+red = 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 

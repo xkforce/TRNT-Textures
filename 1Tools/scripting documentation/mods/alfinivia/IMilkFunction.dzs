@@ -1,0 +1,8 @@
+import crafttweaker.entity.IEntity;
+import crafttweaker.item.IItemStack;
+import crafttweaker.player.IPlayer;
+
+zenClass IMilkFunction {
+    
+    function (arg0 as IEntity, arg1 as IItemStack, arg2 as IPlayer) as IItemStack;
+}

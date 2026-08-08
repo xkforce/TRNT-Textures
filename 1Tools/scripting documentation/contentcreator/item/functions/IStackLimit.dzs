@@ -1,0 +1,6 @@
+import crafttweaker.item.IItemStack;
+
+zenClass IStackLimit {
+    
+    function (arg0 as IItemStack) as int;
+}

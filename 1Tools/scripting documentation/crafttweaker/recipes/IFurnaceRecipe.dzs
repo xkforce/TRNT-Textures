@@ -1,0 +1,10 @@
+import crafttweaker.item.IItemStack;
+
+zenClass IFurnaceRecipe {
+    val commandString as string;
+    val input as IItemStack;
+    val output as IItemStack;
+    val xp as float;
+    
+    function toCommandString() as string;
+}

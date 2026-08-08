@@ -1,0 +1,7 @@
+import crafttweaker.entity.IEntityLivingBase;
+import crafttweaker.item.IItemStack;
+
+zenClass IEntitySwing {
+    
+    function (arg0 as IEntityLivingBase, arg1 as IItemStack) as bool;
+}

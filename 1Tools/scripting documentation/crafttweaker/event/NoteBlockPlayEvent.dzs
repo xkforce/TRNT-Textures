@@ -1,0 +1,10 @@
+import crafttweaker.event.IEventCancelable;
+import crafttweaker.event.INoteBlockEvent;
+
+zenClass NoteBlockPlayEvent extends IEventCancelable, INoteBlockEvent {
+    var instrument as string;
+    
+    function getInstrument() as string;
+    
+    function setInstrument(instrument as string) as void;
+}

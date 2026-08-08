@@ -1,0 +1,34 @@
+import crafttweaker.player.IPlayer;
+import crafttweaker.text.ITextComponent;
+
+zenClass IAdvancement {
+    val children as [IAdvancement];
+    val criterion as [string];
+    val description as ITextComponent;
+    val displayText as ITextComponent;
+    val id as string;
+    val parent as IAdvancement;
+    val requirementCount as int;
+    val requirements as string[][];
+    val title as ITextComponent;
+    
+    function applyRewards(player as IPlayer) as void;
+    
+    function getChildren() as [IAdvancement];
+    
+    function getCriterion() as [string];
+    
+    function getDescription() as ITextComponent;
+    
+    function getDisplayText() as ITextComponent;
+    
+    function getId() as string;
+    
+    function getParent() as IAdvancement;
+    
+    function getRequirementCount() as int;
+    
+    function getRequirements() as string[][];
+    
+    function getTitle() as ITextComponent;
+}

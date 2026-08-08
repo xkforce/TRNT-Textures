@@ -1,0 +1,12 @@
+import crafttweaker.data.IData;
+import mods.zenutils.config.ModMetaData;
+import mods.zenutils.config.elements.ConfigGroup;
+
+zenClass ConfigUtils {
+    
+    static function createMeta(name as string) as ModMetaData;
+    
+    static function dataMap(dataMap as any[string]) as IData;
+    
+    static function named(name as string) as ConfigGroup;
+}

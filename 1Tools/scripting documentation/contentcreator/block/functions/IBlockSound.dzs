@@ -1,0 +1,10 @@
+import contentcreator.block.SoundType;
+import crafttweaker.block.IBlockState;
+import crafttweaker.entity.IEntity;
+import crafttweaker.world.IBlockPos;
+import crafttweaker.world.IWorld;
+
+zenClass IBlockSound {
+    
+    function (arg0 as IBlockState, arg1 as IWorld, arg2 as IBlockPos, arg3 as IEntity) as SoundType;
+}

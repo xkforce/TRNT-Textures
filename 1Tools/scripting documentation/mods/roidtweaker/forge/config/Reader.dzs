@@ -1,0 +1,8 @@
+import mods.roidtweaker.forge.config.IConfigFile;
+
+zenClass Reader {
+    
+    static function getConfig(path as string) as IConfigFile;
+    
+    static function getConfigFile(path as string) as IConfigFile;
+}

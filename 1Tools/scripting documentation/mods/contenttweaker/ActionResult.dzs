@@ -1,0 +1,21 @@
+
+zenClass ActionResult {
+    
+    static function fail() as ActionResult;
+    
+    static function pass() as ActionResult;
+    
+    static function success() as ActionResult;
+    
+    operator ==(actionResult as ActionResult) as bool;
+    
+    operator !=(actionResult as ActionResult) as bool;
+    
+    operator >(actionResult as ActionResult) as bool;
+    
+    operator >=(actionResult as ActionResult) as bool;
+    
+    operator <(actionResult as ActionResult) as bool;
+    
+    operator <=(actionResult as ActionResult) as bool;
+}

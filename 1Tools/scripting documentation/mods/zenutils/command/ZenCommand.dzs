@@ -1,0 +1,18 @@
+import mods.zenutils.command.ICommandExecute;
+import mods.zenutils.command.IGetCommandUsage;
+import mods.zenutils.command.IGetTabCompletion;
+import mods.zenutils.command.IZenCommand;
+import mods.zenutils.command.TabCompletion;
+
+zenClass ZenCommand extends IZenCommand {
+    var execute as ICommandExecute;
+    var getCommandUsage as IGetCommandUsage;
+    val name as string;
+    var requiredPermissionLevel as int;
+    var tabCompletion as TabCompletion;
+    var tabCompletionGetters as IGetTabCompletion[];
+    
+    static function create(name as string) as ZenCommand;
+    
+    
+}

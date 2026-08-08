@@ -1,0 +1,14 @@
+
+zenClass RegexMatcher {
+    val CANNON_EQ as int;
+    val CASE_INSENSITIVE as int;
+    val COMMENTS as int;
+    val DOTALL as int;
+    val LITERAL as int;
+    val MULTILINE as int;
+    val UNICODE_CASE as int;
+    val UNICODE_CHARACTER_CLASS as int;
+    val UNIX_LINES as int;
+    
+    static function find(input as string, regex as string, options as int = 0) as bool;
+}

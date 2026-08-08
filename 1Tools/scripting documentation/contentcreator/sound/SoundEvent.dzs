@@ -1,0 +1,9 @@
+
+zenClass SoundEvent {
+    
+    static function create(arg0 as string) as any;
+    
+    static function get(arg0 as string) as SoundEvent;
+    
+    function getName() as string;
+}

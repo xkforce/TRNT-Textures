@@ -1,0 +1,9 @@
+
+zenClass EquipmentSlot {
+    static chest as EquipmentSlot;
+    static feet as EquipmentSlot;
+    static head as EquipmentSlot;
+    static legs as EquipmentSlot;
+    static mainHand as EquipmentSlot;
+    static offHand as EquipmentSlot;
+}

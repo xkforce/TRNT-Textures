@@ -1,0 +1,12 @@
+import crafttweaker.item.IItemStack;
+
+zenClass Registry {
+    
+    static function allow(arg0 as string, arg1 as IItemStack) as bool;
+    
+    static function allow(arg0 as string, arg1 as string) as bool;
+    
+    static function forbid(arg0 as string, arg1 as IItemStack) as bool;
+    
+    static function forbid(arg0 as string, arg1 as string) as bool;
+}

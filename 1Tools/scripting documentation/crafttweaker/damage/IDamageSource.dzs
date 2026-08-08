@@ -1,0 +1,128 @@
+import crafttweaker.entity.IEntity;
+import crafttweaker.entity.IEntityLivingBase;
+import crafttweaker.player.IPlayer;
+import crafttweaker.world.IVector3d;
+
+zenClass IDamageSource {
+    val creativePlayer as bool;
+    val damageAbsolute as bool;
+    val damageLocation as IVector3d;
+    val damageType as string;
+    val damageUnblockable as bool;
+    val difficultyScaled as bool;
+    val explosion as bool;
+    val fireDamage as bool;
+    val harmInCreative as bool;
+    val hunderDamage as float;
+    val hungerDamage as float;
+    val immediateSource as IEntity;
+    val magicDamage as bool;
+    val projectile as bool;
+    val trueSource as IEntity;
+    
+    static function ANVIL() as IDamageSource;
+    
+    static function CACTUS() as IDamageSource;
+    
+    static function CRAMMING() as IDamageSource;
+    
+    static function DRAGON_BREATH() as IDamageSource;
+    
+    static function DROWN() as IDamageSource;
+    
+    static function FALL() as IDamageSource;
+    
+    static function FALLING_BLOCK() as IDamageSource;
+    
+    static function FIREWORKS() as IDamageSource;
+    
+    static function FLY_INTO_WALL() as IDamageSource;
+    
+    static function GENERIC() as IDamageSource;
+    
+    static function HOT_FLOOR() as IDamageSource;
+    
+    static function IN_FIRE() as IDamageSource;
+    
+    static function IN_WALL() as IDamageSource;
+    
+    static function LAVA() as IDamageSource;
+    
+    static function LIGHTNING_BOLT() as IDamageSource;
+    
+    static function MAGIC() as IDamageSource;
+    
+    static function ON_FIRE() as IDamageSource;
+    
+    static function OUT_OF_WORLD() as IDamageSource;
+    
+    static function STARVE() as IDamageSource;
+    
+    static function WITHER() as IDamageSource;
+    
+    static function createEntityDamage(damagetype as string, source as IEntity) as IDamageSource;
+    
+    static function createExplosionDamage(entityLivingBaseIn as IEntityLivingBase = null) as IDamageSource;
+    
+    static function createIndirectDamage(source as IEntity, indirectEntityIn as IEntityLivingBase) as IDamageSource;
+    
+    static function createIndirectDamage(damagetype as string, source as IEntity, indirectEntity as IEntity) as IDamageSource;
+    
+    static function createIndirectMagicDamage(source as IEntity, indirectEntityIn as IEntity = null) as IDamageSource;
+    
+    static function createMobDamage(mob as IEntityLivingBase) as IDamageSource;
+    
+    static function createOfType(type as string) as IDamageSource;
+    
+    static function createPlayerDamage(player as IPlayer) as IDamageSource;
+    
+    static function createThornsDamage(source as IEntity) as IDamageSource;
+    
+    static function createThrownDamage(source as IEntity, indirectEntityIn as IEntity = null) as IDamageSource;
+    
+    function canHarmInCreative() as bool;
+    
+    function getDamageLocation() as IVector3d;
+    
+    function getDamageType() as string;
+    
+    function getDeathMessage(entity as IEntity) as string;
+    
+    function getHungerDamage() as float;
+    
+    function getImmediateSource() as IEntity;
+    
+    function getTrueSource() as IEntity;
+    
+    function isCreativePlayer() as bool;
+    
+    function isDamageAbsolute() as bool;
+    
+    function isDamageUnblockable() as bool;
+    
+    function isDifficultyScaled() as bool;
+    
+    function isExplosion() as bool;
+    
+    function isFireDamage() as bool;
+    
+    function isMagicDamage() as bool;
+    
+    function isProjectile() as bool;
+    
+    function setDamageAllowedInCreativeMode() as IDamageSource;
+    
+    function setDamageBypassesArmor() as IDamageSource;
+    
+    function setDamageIsAbsolute() as IDamageSource;
+    
+    function setDifficultyScaled() as IDamageSource;
+    
+    function setExplosion() as IDamageSource;
+    
+    function setFireDamage() as IDamageSource;
+    
+    function setMagicDamage() as IDamageSource;
+    
+    function setProjectile() as IDamageSource;
+}

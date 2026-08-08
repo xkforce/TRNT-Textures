@@ -1,0 +1,21 @@
+import mods.alfinivia.IDamageFunction;
+import mods.alfinivia.IEntityFunction;
+
+zenClass DamageBuilder {
+    
+    static function get(arg0 as string) as DamageBuilder;
+    
+    function addAttribute(arg0 as float, arg1 as float, arg2 as float) as void;
+    
+    function build() as void;
+    
+    function matchDamageSource(arg0 as string) as void;
+    
+    function matchEntity(arg0 as IEntityFunction) as void;
+    
+    function matchSource(arg0 as IEntityFunction) as void;
+    
+    function multiplyAttribute(arg0 as float, arg1 as float, arg2 as float) as void;
+    
+    function setFunction(arg0 as IDamageFunction) as void;
+}

@@ -1,0 +1,12 @@
+import crafttweaker.event.IEventCancelable;
+import crafttweaker.event.IPlayerEvent;
+import crafttweaker.item.IItemStack;
+
+zenClass PlayerAnvilUpdateEvent extends IEventCancelable, IPlayerEvent {
+    val itemName as string;
+    val leftItem as IItemStack;
+    var materialCost as int;
+    var outputItem as IItemStack;
+    val rightItem as IItemStack;
+    var xpCost as int;
+}

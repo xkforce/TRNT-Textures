@@ -1,0 +1,20 @@
+
+zenClass IGameRules {
+    val rules as string[];
+    
+    function addGameRule(key as string, value as string, type as string) as void;
+    
+    function getBoolean(name as string) as bool;
+    
+    function getDouble(name as string) as double;
+    
+    function getInt(name as string) as int;
+    
+    function getRules() as string[];
+    
+    function getString(name as string) as string;
+    
+    function hasRule(name as string) as bool;
+    
+    function setOrCreateGameRule(key as string, value as string) as void;
+}

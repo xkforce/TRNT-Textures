@@ -1,0 +1,8 @@
+import crafttweaker.block.IBlockState;
+import crafttweaker.world.IBlockAccess;
+import crafttweaker.world.IBlockPos;
+
+zenClass IMapColor {
+    
+    function (arg0 as IBlockState, arg1 as IBlockAccess, arg2 as IBlockPos) as any;
+}

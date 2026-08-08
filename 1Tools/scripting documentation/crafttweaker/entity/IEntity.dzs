@@ -1,0 +1,244 @@
+import crafttweaker.block.IBlockDefinition;
+import crafttweaker.block.IMaterial;
+import crafttweaker.command.ICommandSender;
+import crafttweaker.damage.IDamageSource;
+import crafttweaker.data.IData;
+import crafttweaker.entity.IEntityDefinition;
+import crafttweaker.entity.IEntityItem;
+import crafttweaker.game.ITeam;
+import crafttweaker.item.IItemStack;
+import crafttweaker.util.IAxisAlignedBB;
+import crafttweaker.util.Position3f;
+import crafttweaker.world.IBlockPos;
+import crafttweaker.world.IFacing;
+import crafttweaker.world.IRayTraceResult;
+import crafttweaker.world.IVector3d;
+import crafttweaker.world.IWorld;
+import mods.zenutils.UUID;
+
+zenClass IEntity extends ICommandSender {
+    var air as int;
+    val alive as bool;
+    var alwaysRenderNameTag as bool;
+    val armorInventory as [IItemStack];
+    var boundingBox as IAxisAlignedBB;
+    val canBeAttackedWithItem as bool;
+    val canBeCollidedWith as bool;
+    val canBePushed as bool;
+    val canPassengerSteer as bool;
+    val canRiderInteract as bool;
+    val controllingPassenger as IEntity;
+    var customName as string;
+    val definition as IEntityDefinition;
+    var dimension as int;
+    val doesTriggerPressurePlate as bool;
+    val equipmentAndArmor as [IItemStack];
+    val eyeHeight as float;
+    var fire as int;
+    val forgeData as IData;
+    val hasCustomName as bool;
+    var hasNoGravity as bool;
+    val heldEquipment as [IItemStack];
+    val horizontalFacing as IFacing;
+    var id as int;
+    val immuneToFire as bool;
+    var inPortal as bool;
+    val isBeingRidden as bool;
+    val isBoss as bool;
+    val isBurning as bool;
+    var isGlowing as bool;
+    val isImmuneToExplosions as bool;
+    val isInLava as bool;
+    val isInWater as bool;
+    val isInsideOpaqueBlock as bool;
+    var isInvisible as bool;
+    var isInvulnerable as bool;
+    var isOutsideBorder as bool;
+    val isOverWater as bool;
+    val isPushedByWater as bool;
+    val isRiding as bool;
+    var isSilent as bool;
+    var isSneaking as bool;
+    var isSprinting as bool;
+    var lastPortalDirection as IFacing;
+    var lastPortalPos as IBlockPos;
+    var lastPortalVec as IVector3d;
+    val lookingDirection as IVector3d;
+    val lowestRidingEntity as IEntity;
+    val maxFallHeight as int;
+    val maxInPortalTime as int;
+    var motionX as double;
+    var motionY as double;
+    var motionZ as double;
+    var nbt as IData;
+    val onGround as bool;
+    val passengers as [IEntity];
+    val passengersRecursive as [IEntity];
+    val portalCooldown as int;
+    var portalCounter as int;
+    var posX as double;
+    var posY as double;
+    var posZ as double;
+    var position as IBlockPos;
+    var position3f as Position3f;
+    val ridingEntity as IEntity;
+    var rotationPitch as float;
+    var rotationYaw as float;
+    val shouldRiderSit as bool;
+    var stepHeight as float;
+    val tags as [string];
+    var team as ITeam;
+    var updateBlocked as bool;
+    val uuid as string;
+    val wet as bool;
+    var world as IWorld;
+    val x as double;
+    val y as double;
+    val z as double;
+    
+    function addTag(tag as string) as void;
+    
+    function attackEntityFrom(source as IDamageSource, amount as float) as bool;
+    
+    function canTrample(world as IWorld, block as IBlockDefinition, pos as IBlockPos, fall as float) as bool;
+    
+    function dismountRidingEntity() as void;
+    
+    function doWaterSplashEffect() as void;
+    
+    function dropItem(itemStack as IItemStack, offset as float = 0.0) as IEntityItem;
+    
+    function extinguish() as void;
+    
+    function getAir() as int;
+    
+    function getBoundingBox() as IAxisAlignedBB;
+    
+    function getCustomName() as string;
+    
+    function getDimension() as int;
+    
+    function getDistanceSqToEntity(entity as IEntity) as double;
+    
+    function getHorizontalFacing() as IFacing;
+    
+    function getInPortal() as bool;
+    
+    function getLastPortalDirection() as IFacing;
+    
+    function getLastPortalPos() as IBlockPos;
+    
+    function getLastPortalVec() as IVector3d;
+    
+    function getNBT() as IData;
+    
+    function getPassengers() as [IEntity];
+    
+    function getPickedResult() as IItemStack;
+    
+    function getPortalCounter() as int;
+    
+    function getPosition3f() as Position3f;
+    
+    function getRayTrace(blockReachDistance as double, partialTicks as float, stopOnLiquid as bool = false, ignoreBlockWithoutBoundingBox as bool = false, returnLastUncollidableBlock as bool = true) as IRayTraceResult;
+    
+    function getRidingEntity() as IEntity;
+    
+    function getStepHeight() as float;
+    
+    function getUUID() as string;
+    
+    function getUUIDObject() as UUID;
+    
+    function getUpdateBlocked() as bool;
+    
+    function getX() as double;
+    
+    function getY() as double;
+    
+    function getZ() as double;
+    
+    function hasDefinition(definition as IEntityDefinition) as bool;
+    
+    function isAlive() as bool;
+    
+    function isEntityEqual(other as IEntity) as bool;
+    
+    function isImmuneToFire() as bool;
+    
+    function isInsideOfMaterial(material as IMaterial) as bool;
+    
+    function isInvulnerableTo(source as IDamageSource) as bool;
+    
+    function isOnSameTeam(other as IEntity) as bool;
+    
+    function isPassenger(entity as IEntity) as bool;
+    
+    function isRidingSameEntity(other as IEntity) as bool;
+    
+    function isWet() as bool;
+    
+    function onEntityUpdate() as void;
+    
+    function onGround() as bool;
+    
+    function onKillCommand() as void;
+    
+    function onUpdate() as void;
+    
+    function parts() as IEntity[];
+    
+    function removeFromWorld() as void;
+    
+    function removePassengers() as void;
+    
+    function removeTag(tag as string) as void;
+    
+    function setAir(seconds as int) as void;
+    
+    function setBoundingBox(aabb as IAxisAlignedBB) as void;
+    
+    function setCustomName(name as string) as void;
+    
+    function setDead() as void;
+    
+    function setDimension(dimensionID as int) as void;
+    
+    function setFire(seconds as int) as void;
+    
+    function setInPortal(inPortal as bool) as void;
+    
+    function setInWeb() as void;
+    
+    function setLastPortalDirection(teleportDirection as IFacing) as void;
+    
+    function setLastPortalPos(lastPortalPos as IBlockPos) as void;
+    
+    function setLastPortalVec(lastPortalVec as IVector3d) as void;
+    
+    function setMotionVector(vector as IVector3d) as void;
+    
+    function setNBT(data as IData) as void;
+    
+    function setPortalCounter(portalCounter as int) as void;
+    
+    function setPosition(position as IBlockPos) as void;
+    
+    function setPosition3f(position3f as Position3f) as void;
+    
+    function setStepHeight(stepHeight as float) as void;
+    
+    function setTeam(team as ITeam) as void;
+    
+    function setToLocationFrom(other as IEntity) as void;
+    
+    function setUpdateBlocked(updateBlocked as bool) as void;
+    
+    function shouldRiderDismountInWater(rider as IEntity) as bool;
+    
+    function spawnRunningParticles() as void;
+    
+    function update(data as IData) as void;
+    
+    function updateNBT(data as IData) as void;
+}

@@ -1,0 +1,12 @@
+import crafttweaker.liquid.ILiquidStack;
+import mods.zenutils.ILiquidTankProperties;
+
+zenClass LiquidHandler {
+    val tankProperties as [ILiquidTankProperties];
+    
+    function drain(resource as ILiquidStack, doDrain as bool) as ILiquidStack;
+    
+    function drain(maxDrain as int, doDrain as bool) as ILiquidStack;
+    
+    function fill(resource as ILiquidStack, doFill as bool) as int;
+}

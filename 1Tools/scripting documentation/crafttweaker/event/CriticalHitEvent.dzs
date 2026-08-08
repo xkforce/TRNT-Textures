@@ -1,0 +1,10 @@
+import crafttweaker.entity.IEntity;
+import crafttweaker.event.IEventHasResult;
+import crafttweaker.event.IPlayerEvent;
+
+zenClass CriticalHitEvent extends IEventHasResult, IPlayerEvent {
+    var damageModifier as float;
+    val isVanillaCrit as bool;
+    val oldDamageModifier as float;
+    val target as IEntity;
+}

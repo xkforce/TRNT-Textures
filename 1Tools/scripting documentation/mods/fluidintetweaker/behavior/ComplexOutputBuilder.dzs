@@ -1,0 +1,6 @@
+import mods.fluidintetweaker.behavior.BehaviorEventBuilder;
+
+zenClass ComplexOutputBuilder {
+    
+    function addEvent(arg0 as BehaviorEventBuilder) as ComplexOutputBuilder;
+}

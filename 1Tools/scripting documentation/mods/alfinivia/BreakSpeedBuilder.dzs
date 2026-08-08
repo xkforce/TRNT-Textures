@@ -1,0 +1,29 @@
+import crafttweaker.block.IBlockDefinition;
+import crafttweaker.item.IIngredient;
+import crafttweaker.item.IItemStack;
+import mods.alfinivia.IBlockSpeedFunction;
+
+zenClass BreakSpeedBuilder {
+    
+    static function get(arg0 as string) as BreakSpeedBuilder;
+    
+    function addBlock(arg0 as IItemStack) as void;
+    
+    function addBlock(arg0 as IBlockDefinition, arg1 as int) as void;
+    
+    function addBlock(arg0 as string, arg1 as int) as void;
+    
+    function addBlocks(arg0 as IItemStack[]) as void;
+    
+    function addTool(arg0 as IIngredient) as void;
+    
+    function build() as void;
+    
+    function setAttribute(arg0 as float, arg1 as float, arg2 as float) as void;
+    
+    function setFunction(arg0 as IBlockSpeedFunction) as void;
+    
+    function setMultiplier(arg0 as float) as void;
+    
+    function setTool(arg0 as IIngredient) as void;
+}

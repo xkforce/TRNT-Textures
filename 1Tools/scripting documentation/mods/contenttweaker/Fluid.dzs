@@ -1,0 +1,84 @@
+import mods.contenttweaker.BlockMaterial;
+import mods.contenttweaker.SoundEvent;
+
+zenClass Fluid {
+    var color as int;
+    var colorize as bool;
+    var density as int;
+    var emptySound as SoundEvent;
+    var fillSound as SoundEvent;
+    var flowingLocation as string;
+    var gaseous as bool;
+    var luminosity as int;
+    var material as BlockMaterial;
+    var rarity as string;
+    var stillLocation as string;
+    var temperature as int;
+    var unlocalizedName as string;
+    var vaporize as bool;
+    var viscosity as int;
+    
+    function getColor() as int;
+    
+    function getDensity() as int;
+    
+    function getEmptySound() as SoundEvent;
+    
+    function getFillSound() as SoundEvent;
+    
+    function getFlowingLocation() as string;
+    
+    function getLuminosity() as int;
+    
+    function getMaterial() as BlockMaterial;
+    
+    function getName() as string;
+    
+    function getRarity() as string;
+    
+    function getStillLocation() as string;
+    
+    function getTemperature() as int;
+    
+    function getUnlocalizedName() as string;
+    
+    function getViscosity() as int;
+    
+    function isColorize() as bool;
+    
+    function isGaseous() as bool;
+    
+    function isVaporize() as bool;
+    
+    function register() as void;
+    
+    function setColor(color as int) as void;
+    
+    function setColorize(colorize as bool) as void;
+    
+    function setDensity(density as int) as void;
+    
+    function setEmptySound(emptySound as SoundEvent) as void;
+    
+    function setFillSound(fillSound as SoundEvent) as void;
+    
+    function setFlowingLocation(flowingLocation as string) as void;
+    
+    function setGaseous(gaseous as bool) as void;
+    
+    function setLuminosity(luminosity as int) as void;
+    
+    function setMaterial(material as BlockMaterial) as void;
+    
+    function setRarity(rarity as string) as void;
+    
+    function setStillLocation(stillLocation as string) as void;
+    
+    function setTemperature(temperature as int) as void;
+    
+    function setUnlocalizedName(unlocalizedName as string) as void;
+    
+    function setVaporize(vaporize as bool) as void;
+    
+    function setViscosity(viscosity as int) as void;
+}

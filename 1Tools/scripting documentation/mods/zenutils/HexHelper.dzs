@@ -1,0 +1,7 @@
+
+zenClass HexHelper {
+    
+    static function toDecInteger(hex as string) as int;
+    
+    static function toHexString(i as int) as string;
+}

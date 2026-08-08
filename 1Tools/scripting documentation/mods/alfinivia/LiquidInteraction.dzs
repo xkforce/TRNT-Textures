@@ -1,0 +1,7 @@
+import crafttweaker.item.IIngredient;
+import crafttweaker.item.IItemStack;
+
+zenClass LiquidInteraction {
+    
+    static function add(arg0 as IIngredient, arg1 as IIngredient, arg2 as IItemStack) as void;
+}

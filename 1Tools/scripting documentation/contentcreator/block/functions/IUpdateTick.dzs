@@ -1,0 +1,9 @@
+import crafttweaker.block.IBlockState;
+import crafttweaker.util.IRandom;
+import crafttweaker.world.IBlockPos;
+import crafttweaker.world.IWorld;
+
+zenClass IUpdateTick {
+    
+    function (arg0 as IWorld, arg1 as IBlockPos, arg2 as IBlockState, arg3 as IRandom) as void;
+}

@@ -1,0 +1,13 @@
+
+zenClass ModMetaData {
+    
+    function addAuthor(_string as string) as ModMetaData;
+    
+    function setCredits(_string as string) as ModMetaData;
+    
+    function setDescription(_string as string) as ModMetaData;
+    
+    function setLogoLocation(_string as string) as ModMetaData;
+    
+    function setVersion(_string as string) as ModMetaData;
+}

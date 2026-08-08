@@ -1,0 +1,5 @@
+
+zenClass IMinEnchantability {
+    
+    function (arg0 as int) as int;
+}

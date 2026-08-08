@@ -1,0 +1,10 @@
+import crafttweaker.block.IBlockState;
+
+zenClass Bee {
+    
+    static function addFlower(arg0 as IBlockState) as void;
+    
+    static function clearValidFlowers() as void;
+    
+    static function removeFlower(arg0 as IBlockState) as void;
+}

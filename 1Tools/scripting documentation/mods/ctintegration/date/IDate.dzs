@@ -1,0 +1,36 @@
+
+zenClass IDate {
+    var day as int;
+    var dayInWeek as int;
+    var hour as int;
+    var milliSecond as int;
+    var minute as int;
+    var month as int;
+    var second as int;
+    var timeInMillis as long;
+    var year as int;
+    
+    static function getInstance() as IDate;
+    
+    function format(formatString as string) as string;
+    
+    function getField(field as int) as int;
+    
+    function setField(field as int, value as int) as void;
+    
+    function toString() as string;
+    
+    operator +(with as IDate) as IDate;
+    
+    operator ==(with as IDate) as bool;
+    
+    operator !=(with as IDate) as bool;
+    
+    operator >(with as IDate) as bool;
+    
+    operator >=(with as IDate) as bool;
+    
+    operator <(with as IDate) as bool;
+    
+    operator <=(with as IDate) as bool;
+}

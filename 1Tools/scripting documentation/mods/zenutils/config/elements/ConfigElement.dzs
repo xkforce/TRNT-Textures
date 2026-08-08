@@ -1,0 +1,36 @@
+import mods.zenutils.config.elements.ConfigGroup;
+
+zenClass ConfigElement {
+    
+    function add() as ConfigGroup;
+    
+    function comment(...comment as string) as ConfigElement;
+    
+    function displayName(displayName as string) as ConfigElement;
+    
+    function getAbsoluteName() as string;
+    
+    function getComment() as string[];
+    
+    function getDisplayName() as string;
+    
+    function getLangKey() as string;
+    
+    function getName() as string;
+    
+    function getParent() as ConfigGroup;
+    
+    function isRequiresMcRestart() as bool;
+    
+    function isRequiresWorldRestart() as bool;
+    
+    function isSlidingOption() as bool;
+    
+    function langKey(langKey as string) as ConfigElement;
+    
+    function requiresMcRestart() as ConfigElement;
+    
+    function requiresWorldRestart() as ConfigElement;
+    
+    function sliding() as ConfigElement;
+}

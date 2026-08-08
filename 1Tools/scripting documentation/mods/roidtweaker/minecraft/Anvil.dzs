@@ -1,0 +1,19 @@
+import crafttweaker.item.IIngredient;
+import crafttweaker.item.IItemStack;
+
+zenClass Anvil {
+    
+    static function addRecipe(left as IIngredient, right as IIngredient, output as IItemStack, xpCost as int) as void;
+    
+    static function addRecipeShapeless(left as IIngredient, right as IIngredient, output as IItemStack, xpCost as int) as void;
+    
+    static function addRecipes(left as IIngredient, right as IIngredient[], output as IItemStack[], xpCost as int[]) as void;
+    
+    static function addRepair(repaired as IIngredient, material as IIngredient, amount as float, xpCost as int = 0) as void;
+    
+    static function addRepair(repaired as IIngredient, material as IIngredient, amount as int, xpCost as int = 0) as void;
+    
+    static function remove(output as IIngredient) as void;
+    
+    static function remove(inputs as IIngredient[]) as void;
+}

@@ -1,0 +1,58 @@
+import mods.zenutils.StringPredicate;
+
+zenClass StringList {
+    val size as int;
+    
+    
+    static function create(objects as any[]) as StringList;
+    
+    static function empty() as StringList;
+    
+    static function singletonList(object as any) as StringList;
+    
+    function add(obj as any) as bool;
+    
+    function add(s as string) as bool;
+    
+    function clear() as void;
+    
+    function contains(obj as any) as bool;
+    
+    function contains(s as string) as bool;
+    
+    function get(index as int) as string;
+    
+    function getInner() as [string];
+    
+    function indexOf(s as string) as int;
+    
+    function insert(index as int, s as string) as void;
+    
+    function lastIndexOf(s as string) as int;
+    
+    function remove(obj as any) as bool;
+    
+    function remove(s as string) as bool;
+    
+    function removeIf(predicate as StringPredicate) as bool;
+    
+    function set(index as int, obj as any) as string;
+    
+    function shuffle() as void;
+    
+    function size() as int;
+    
+    function subList(fromIndex as int, toIndex as int) as StringList;
+    
+    function toArray() as string[];
+    
+    operator [](index as int) as string;
+    
+    operator []=(index as int, obj as any) as string;
+    
+    operator has(s as string) as bool;
+    
+    operator has(obj as any) as bool;
+    
+    operator for_in() as [string];
+}

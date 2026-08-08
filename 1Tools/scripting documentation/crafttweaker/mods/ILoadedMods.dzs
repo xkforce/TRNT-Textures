@@ -1,0 +1,12 @@
+import crafttweaker.mods.IMod;
+
+zenClass ILoadedMods {
+    
+    function contains(name as string) as bool;
+    
+    operator [](name as string) as IMod;
+    
+    operator has(name as string) as bool;
+    
+    operator for_in() as [IMod];
+}

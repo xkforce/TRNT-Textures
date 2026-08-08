@@ -1,0 +1,9 @@
+import crafttweaker.block.IBlockState;
+import crafttweaker.world.IBlockAccess;
+import crafttweaker.world.IBlockPos;
+import crafttweaker.world.IVector3d;
+
+zenClass IStateAtViewpoint {
+    
+    function (arg0 as IBlockState, arg1 as IBlockAccess, arg2 as IBlockPos, arg3 as IVector3d) as IBlockState;
+}

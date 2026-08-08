@@ -1,0 +1,59 @@
+
+zenClass ZenUtils {
+    
+    static function addRegexLogFilter(regex as string) as void;
+    
+    static function addReloadableLoader(loaderName as string) as void;
+    
+    static function arrayOf(length as int, value as any = null) as any[];
+    
+    static function boolArrayOf(length as int, value as bool = false) as bool[];
+    
+    static function byteArrayOf(length as int, value as byte = 0) as byte[];
+    
+    static function currentLoader() as string;
+    
+    static function doubleArrayOf(length as int, value as double = 0.0) as double[];
+    
+    static function floatArrayOf(length as int, value as float = 0.0) as float[];
+    
+    static function intArrayOf(length as int, value as int = 0) as int[];
+    
+    static function isBool(object as any) as bool;
+    
+    static function isByte(object as any) as bool;
+    
+    static function isDouble(object as any) as bool;
+    
+    static function isFloat(object as any) as bool;
+    
+    static function isInt(object as any) as bool;
+    
+    static function isLong(object as any) as bool;
+    
+    static function isShort(object as any) as bool;
+    
+    static function longArrayOf(length as int, value as long = 0) as long[];
+    
+    static function scriptStatus() as int;
+    
+    static function shortArrayOf(length as int, value as short = 0) as short[];
+    
+    static function toString(object as any) as string;
+    
+    static function typeof(object as any) as string;
+    
+    static function typeof(unused as bool) as string;
+    
+    static function typeof(unused as byte) as string;
+    
+    static function typeof(unused as double) as string;
+    
+    static function typeof(unused as float) as string;
+    
+    static function typeof(unused as int) as string;
+    
+    static function typeof(unused as long) as string;
+    
+    static function typeof(unused as short) as string;
+}

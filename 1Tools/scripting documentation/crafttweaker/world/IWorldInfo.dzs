@@ -1,0 +1,102 @@
+
+zenClass IWorldInfo {
+    val boderLerpTarget as double;
+    val boderLerpTime as long;
+    val borderCenterX as double;
+    val borderCenterZ as double;
+    val borderDamagePerBlock as double;
+    val borderLerpTarget as double;
+    val borderLerpTime as long;
+    val borderSafeZone as double;
+    val borderSize as double;
+    val borderWarningDistance as int;
+    val borderWarningTime as int;
+    val cleanWeatherTime as double;
+    val commandsAllowed as bool;
+    val difficulty as string;
+    val difficultyLocked as bool;
+    val generatorOptions as string;
+    val hardcoreModeEnabled as bool;
+    val initialized as bool;
+    val lastTimePlayed as long;
+    val mapFeaturesEnabled as bool;
+    val rainTime as int;
+    val saveVersion as int;
+    val seed as long;
+    val spawnX as int;
+    val spawnY as int;
+    val spawnZ as int;
+    val thunderTime as int;
+    val thundering as bool;
+    val versionId as int;
+    val versionName as string;
+    val versionSnapshot as bool;
+    val worldName as string;
+    val worldTotalTime as long;
+    
+    function getBoderLerpTarget() as double;
+    
+    function getBoderLerpTime() as long;
+    
+    function getBorderCenterX() as double;
+    
+    function getBorderCenterZ() as double;
+    
+    function getBorderDamagePerBlock() as double;
+    
+    function getBorderLerpTarget() as double;
+    
+    function getBorderLerpTime() as long;
+    
+    function getBorderSafeZone() as double;
+    
+    function getBorderSize() as double;
+    
+    function getBorderWarningDistance() as int;
+    
+    function getBorderWarningTime() as int;
+    
+    function getCleanWeatherTime() as double;
+    
+    function getDifficulty() as string;
+    
+    function getGeneratorOptions() as string;
+    
+    function getLastTimePlayed() as long;
+    
+    function getRainTime() as int;
+    
+    function getSaveVersion() as int;
+    
+    function getSeed() as long;
+    
+    function getSpawnX() as int;
+    
+    function getSpawnY() as int;
+    
+    function getSpawnZ() as int;
+    
+    function getThunderTime() as int;
+    
+    function getVersionId() as int;
+    
+    function getVersionName() as string;
+    
+    function getWorldName() as string;
+    
+    function getWorldTotalTime() as long;
+    
+    function isCommandsAllowed() as bool;
+    
+    function isDifficultyLocked() as bool;
+    
+    function isHardcoreModeEnabled() as bool;
+    
+    function isInitialized() as bool;
+    
+    function isMapFeaturesEnabled() as bool;
+    
+    function isThundering() as bool;
+    
+    function isVersionSnapshot() as bool;
+}

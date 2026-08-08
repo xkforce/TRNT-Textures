@@ -1,0 +1,5 @@
+
+zenClass RawLogger {
+    
+    static function logRaw(message as string) as void;
+}

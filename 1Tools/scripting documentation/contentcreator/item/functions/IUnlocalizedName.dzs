@@ -1,0 +1,6 @@
+import crafttweaker.item.IItemStack;
+
+zenClass IUnlocalizedName {
+    
+    function (arg0 as IItemStack) as string;
+}

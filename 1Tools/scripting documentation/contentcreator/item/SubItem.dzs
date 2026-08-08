@@ -1,0 +1,209 @@
+import contentcreator.item.functions.BlockDestroyed;
+import contentcreator.item.functions.Color;
+import contentcreator.item.functions.IApplyEnchantment;
+import contentcreator.item.functions.IBlockBreakReset;
+import contentcreator.item.functions.IBlockStartBreak;
+import contentcreator.item.functions.IBooleanItemStack;
+import contentcreator.item.functions.IContainerItem;
+import contentcreator.item.functions.IContinueUsing;
+import contentcreator.item.functions.ICreated;
+import contentcreator.item.functions.ICustomEntity;
+import contentcreator.item.functions.IDestroyCreative;
+import contentcreator.item.functions.IDisableShield;
+import contentcreator.item.functions.IDoubleItemStack;
+import contentcreator.item.functions.IEntityItemLifespan;
+import contentcreator.item.functions.IEntityItemUpdate;
+import contentcreator.item.functions.IEntitySwing;
+import contentcreator.item.functions.IFloatItemStack;
+import contentcreator.item.functions.IHarvestBlock;
+import contentcreator.item.functions.IHighlightTip;
+import contentcreator.item.functions.IItemDestroySpeed;
+import contentcreator.item.functions.IItemProperty;
+import contentcreator.item.functions.IItemUse;
+import contentcreator.item.functions.ILeftClickEntity;
+import contentcreator.item.functions.IPlayerDropped;
+import contentcreator.item.functions.IReequipAnimation;
+import contentcreator.item.functions.IRightClick;
+import contentcreator.item.functions.ISetDamage;
+import contentcreator.item.functions.IStackLimit;
+import contentcreator.item.functions.IStringItemStack;
+import contentcreator.item.functions.IUnlocalizedName;
+import contentcreator.item.functions.IUsingTick;
+import contenttweaker.item.functions.AttributeModifier;
+import crafttweaker.block.IBlockState;
+import crafttweaker.item.IItemStack;
+
+zenClass SubItem {
+    
+    function addProperty(arg0 as string, arg1 as IItemProperty) as SubItem;
+    
+    function addToolClass(arg0 as string, arg1 as int) as SubItem;
+    
+    function canApplyEnchantment(arg0 as IApplyEnchantment) as SubItem;
+    
+    function canDestroyInCreative(arg0 as IDestroyCreative) as SubItem;
+    
+    function canDisableShield() as SubItem;
+    
+    function canDisableShield(arg0 as IDisableShield) as SubItem;
+    
+    function canHarvestBlock(arg0 as IHarvestBlock) as SubItem;
+    
+    function causeBlockBreakReset(arg0 as IBlockBreakReset) as SubItem;
+    
+    function causeReequipAnimation(arg0 as IReequipAnimation) as SubItem;
+    
+    function continueUsing(arg0 as IContinueUsing) as SubItem;
+    
+    function disableCreativeBlockDestroy() as SubItem;
+    
+    function setAlwaysEdible() as SubItem;
+    
+    function setAlwaysEdible(arg0 as IBooleanItemStack) as SubItem;
+    
+    function setAttackDamage(arg0 as AttributeModifier) as SubItem;
+    
+    function setAttackDamage(arg0 as double) as SubItem;
+    
+    function setAttackSpeed(arg0 as AttributeModifier) as SubItem;
+    
+    function setAttackSpeed(arg0 as double) as SubItem;
+    
+    
+    function setBackgroundColor(arg0 as int) as SubItem;
+    
+    
+    function setBackgroundSize(arg0 as int) as SubItem;
+    
+    
+    function setBackgroundTexture(arg0 as int) as SubItem;
+    
+    function setBackgroundTexture(arg0 as string) as SubItem;
+    
+    function setBeaconPayment() as SubItem;
+    
+    function setBeaconPayment(arg0 as IBooleanItemStack) as SubItem;
+    
+    function setBlock(arg0 as IBlockState) as SubItem;
+    
+    function setBlockDestroyed(arg0 as BlockDestroyed) as SubItem;
+    
+    function setBlockStartBreak(arg0 as IBlockStartBreak) as SubItem;
+    
+    function setBurnTime(arg0 as IStackLimit) as SubItem;
+    
+    function setBurnTime(arg0 as int) as SubItem;
+    
+    function setColor(arg0 as Color) as SubItem;
+    
+    function setContainerItem(arg0 as IContainerItem) as SubItem;
+    
+    function setContainerItem(arg0 as IItemStack) as SubItem;
+    
+    function setContainerItem(arg0 as string) as SubItem;
+    
+    function setContinueUsing() as SubItem;
+    
+    function setCreatorModId(arg0 as IStringItemStack) as SubItem;
+    
+    function setCustomEntity(arg0 as ICustomEntity) as SubItem;
+    
+    function setDamageSetter(arg0 as ISetDamage) as SubItem;
+    
+    function setDestroySpeed(arg0 as IItemDestroySpeed) as SubItem;
+    
+    function setDestroySpeed(arg0 as float) as SubItem;
+    
+    function setDurabilityColor(arg0 as IStackLimit) as SubItem;
+    
+    function setDurabilityDisplay(arg0 as IDoubleItemStack) as SubItem;
+    
+    function setEffect() as SubItem;
+    
+    function setEffect(arg0 as IBooleanItemStack) as SubItem;
+    
+    function setEnchantability(arg0 as IStackLimit) as SubItem;
+    
+    function setEnchantability(arg0 as int) as SubItem;
+    
+    
+    
+    function setEntityItemUpdate(arg0 as IEntityItemUpdate) as SubItem;
+    
+    function setEntityLifespan(arg0 as IEntityItemLifespan) as SubItem;
+    
+    function setEntityLifespan(arg0 as int) as SubItem;
+    
+    function setEntitySwing(arg0 as IEntitySwing) as SubItem;
+    
+    function setHealAmount(arg0 as IStackLimit) as SubItem;
+    
+    function setHealAmount(arg0 as int) as SubItem;
+    
+    function setHighlightTip(arg0 as IHighlightTip) as SubItem;
+    
+    function setItemCreated(arg0 as ICreated) as SubItem;
+    
+    function setItemDamageGetter(arg0 as IStackLimit) as SubItem;
+    
+    function setItemUse(arg0 as IItemUse) as SubItem;
+    
+    function setItemUseFirst(arg0 as IItemUse) as SubItem;
+    
+    function setLeftClickEntity(arg0 as ILeftClickEntity) as SubItem;
+    
+    function setMaxDamageGetter(arg0 as IStackLimit) as SubItem;
+    
+    function setMaxStackSize(arg0 as IStackLimit) as SubItem;
+    
+    function setMaxStackSize(arg0 as int) as SubItem;
+    
+    function setMaxUseDuration(arg0 as IStackLimit) as SubItem;
+    
+    function setMaxUseDuration(arg0 as int) as SubItem;
+    
+    function setOres(...arg0 as string) as SubItem;
+    
+    function setPlayerDropped(arg0 as IPlayerDropped) as SubItem;
+    
+    function setPulseEffect() as SubItem;
+    
+    
+    function setRarity(arg0 as IStringItemStack) as SubItem;
+    
+    function setRarity(arg0 as string) as SubItem;
+    
+    function setRightClick(arg0 as IRightClick) as SubItem;
+    
+    function setSaturation(arg0 as IFloatItemStack) as SubItem;
+    
+    function setSaturation(arg0 as float) as SubItem;
+    
+    function setTool(arg0 as string, arg1 as int, arg2 as int, arg3 as float, arg4 as int = 0, arg5 as double = 0.0, arg6 as double = 0.0) as SubItem;
+    
+    
+    function setTooltip(...arg0 as string) as SubItem;
+    
+    function setUnlocalizedName(arg0 as IUnlocalizedName) as SubItem;
+    
+    function setUnlocalizedName(arg0 as string) as SubItem;
+    
+    function setUseAction(arg0 as IStringItemStack) as SubItem;
+    
+    function setUseAction(arg0 as string) as SubItem;
+    
+    
+    function setUsingTick(arg0 as IUsingTick) as SubItem;
+    
+    function setWeapon(arg0 as int, arg1 as double, arg2 as double = 0.0, arg3 as int = 0) as SubItem;
+    
+    function setWolfsFavorite() as SubItem;
+    
+    function setWolfsFavorite(arg0 as IBooleanItemStack) as SubItem;
+    
+    function setXpRepair(arg0 as IFloatItemStack) as SubItem;
+    
+    function setXpRepair(arg0 as float) as SubItem;
+    
+    function shouldShowDurabilityBar(arg0 as IBooleanItemStack) as SubItem;
+}

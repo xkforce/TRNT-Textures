@@ -1,0 +1,7 @@
+import modtweaker.tconstruct.ITICMaterial;
+
+zenClass ITICMaterialDefinition {
+    val displayName as string;
+    val name as string;
+    val stack as ITICMaterial;
+}

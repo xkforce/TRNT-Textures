@@ -1,0 +1,10 @@
+import crafttweaker.block.IBlockState;
+import crafttweaker.entity.IEntity;
+import crafttweaker.util.IAxisAlignedBB;
+import crafttweaker.world.IBlockPos;
+import crafttweaker.world.IWorld;
+
+zenClass ICollisionBox {
+    
+    function (arg0 as IWorld, arg1 as IBlockPos, arg2 as IBlockState, arg3 as IAxisAlignedBB, arg4 as IEntity, arg5 as bool) as IAxisAlignedBB[];
+}

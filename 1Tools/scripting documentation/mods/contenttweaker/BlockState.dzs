@@ -1,0 +1,43 @@
+import crafttweaker.block.IBlock;
+import crafttweaker.block.IBlockState;
+import mods.contenttweaker.BlockPos;
+import mods.contenttweaker.Facing;
+import mods.contenttweaker.PushReaction;
+import mods.contenttweaker.World;
+
+zenClass BlockState {
+    val block as IBlock;
+    val meta as int;
+    
+    function canProvidePower() as bool;
+    
+    function compare(other as BlockState) as int;
+    
+    function getBlock() as IBlock;
+    
+    function getComparatorInputOverride(world as World, blockPos as BlockPos) as int;
+    
+    function getLightValue(world as World, blockPos as BlockPos) as int;
+    
+    function getMeta() as int;
+    
+    function getMobilityFlag() as PushReaction;
+    
+    function getWeakPower(world as World, blockPos as BlockPos, facing as Facing) as int;
+    
+    function isReplaceable(world as World, blockPos as BlockPos) as bool;
+    
+    operator ==(other as BlockState) as bool;
+    
+    operator !=(other as BlockState) as bool;
+    
+    operator >(other as BlockState) as bool;
+    
+    operator >=(other as BlockState) as bool;
+    
+    operator <(other as BlockState) as bool;
+    
+    operator <=(other as BlockState) as bool;
+    
+    operator as() as IBlockState;
+}

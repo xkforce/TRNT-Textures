@@ -1,0 +1,32 @@
+import crafttweaker.entity.IEntity;
+import crafttweaker.item.IItemStack;
+import crafttweaker.potions.IPotion;
+
+zenClass IPotionEffect {
+    val amplifier as int;
+    val curativeItems as [IItemStack];
+    val doesShowParticles as bool;
+    val duration as int;
+    val effectName as string;
+    val isAmbient as bool;
+    var isPotionDurationMax as bool;
+    val potion as IPotion;
+    
+    function combine(other as IPotionEffect) as void;
+    
+    function isCurativeItem(item as IItemStack) as bool;
+    
+    function performEffect(entity as IEntity) as void;
+    
+    operator ==(other as IPotion) as bool;
+    
+    operator !=(other as IPotion) as bool;
+    
+    operator >(other as IPotion) as bool;
+    
+    operator >=(other as IPotion) as bool;
+    
+    operator <(other as IPotion) as bool;
+    
+    operator <=(other as IPotion) as bool;
+}

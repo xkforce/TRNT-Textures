@@ -1,0 +1,246 @@
+import crafttweaker.block.IBlock;
+import crafttweaker.block.IBlockState;
+import crafttweaker.data.IData;
+import crafttweaker.entity.IEntity;
+import crafttweaker.entity.IEntityDefinition;
+import crafttweaker.entity.IEntityItem;
+import crafttweaker.entity.IEntityLivingBase;
+import crafttweaker.entity.IEntityXp;
+import crafttweaker.game.ITeam;
+import crafttweaker.item.IItemStack;
+import crafttweaker.player.IPlayer;
+import crafttweaker.util.IAxisAlignedBB;
+import crafttweaker.util.IRandom;
+import crafttweaker.util.Position3f;
+import crafttweaker.world.IBiome;
+import crafttweaker.world.IBlockAccess;
+import crafttweaker.world.IBlockPos;
+import crafttweaker.world.IExplosion;
+import crafttweaker.world.IFacing;
+import crafttweaker.world.IRayTraceResult;
+import crafttweaker.world.IVector3d;
+import crafttweaker.world.IWorldInfo;
+import crafttweaker.world.IWorldProvider;
+import mods.contenttweaker.World;
+import mods.ctutils.world.IGameRules;
+import mods.zenutils.EnergyStorage;
+import mods.zenutils.GameRuleHelper;
+import mods.zenutils.ICatenationBuilder;
+import mods.zenutils.INearbyEntityList;
+import mods.zenutils.ItemHandler;
+import mods.zenutils.LiquidHandler;
+import mods.zenutils.PersistedCatenationStarter;
+import mods.zenutils.UUID;
+import mods.zenutils.cotx.TileEntityInGame;
+
+zenClass IWorld extends IBlockAccess {
+    val dayTime as bool;
+    val dimension as int;
+    val dimensionType as string;
+    val fakePlayer as IPlayer;
+    val gameRuleHelper as GameRuleHelper;
+    val gameRules as IGameRules;
+    val moonPhase as int;
+    val provider as IWorldProvider;
+    val raining as bool;
+    val random as IRandom;
+    val remote as bool;
+    val seaLevel as int;
+    val surfaceWorld as bool;
+    val teams as [ITeam];
+    val time as long;
+    val worldInfo as IWorldInfo;
+    val worldType as string;
+    
+    static function getFromID(id as int) as IWorld;
+    
+    function addWeatherEffect(entity as IEntity) as bool;
+    
+    function canBlockFreeze(pos as IBlockPos, noWaterAdj as bool) as bool;
+    
+    function canSeeSky(pos as IBlockPos) as bool;
+    
+    function canSnowAt(pos as IBlockPos, lightCheck as bool) as bool;
+    
+    function catenation() as ICatenationBuilder;
+    
+    function createEntityXp(value as int) as IEntityXp;
+    
+    function createExplosion(exploder as IEntity, x as double, y as double, z as double, strength as float, causesFire as bool, damagesTerrain as bool) as IExplosion;
+    
+    function createLightningBolt(x as double, y as double, z as double, effectOnly as bool = false) as IEntity;
+    
+    function createTeam(name as string) as ITeam;
+    
+    function destroyBlock(pos as IBlockPos, dropBlock as bool) as void;
+    
+    function extinguishFire(player as IPlayer, pos as IBlockPos, side as IFacing) as bool;
+    
+    function findNearestEntityWithinAABB(aabb as IAxisAlignedBB, closestTo as IEntity) as IEntity;
+    
+    function getAllPlayers() as [IPlayer];
+    
+    function getBiome(position as Position3f) as IBiome;
+    
+    function getBiome(position as IBlockPos) as IBiome;
+    
+    function getBlock(pos as IBlockPos) as IBlock;
+    
+    function getBlock(x as int, y as int, z as int) as IBlock;
+    
+    function getBlockBrightness(pos as IBlockPos) as int;
+    
+    function getBlockLight(pos as IBlockPos) as int;
+    
+    function getBrightness(position as IBlockPos) as int;
+    
+    function getBrightness(x as int, y as int, z as int) as int;
+    
+    function getBrightnessSubtracted(pos as IBlockPos) as int;
+    
+    function getClosestPlayer(posX as double, posY as double, posZ as double, distance as double, spectator as bool) as IPlayer;
+    
+    function getClosestPlayerToEntity(iEntity as IEntity, distance as double, spectator as bool) as IPlayer;
+    
+    function getCustomChunkData(posToGetChunk as IBlockPos) as IData;
+    
+    function getCustomTileEntity(pos as IBlockPos) as TileEntityInGame;
+    
+    function getCustomWorldData() as IData;
+    
+    function getDimension() as int;
+    
+    function getDimensionType() as string;
+    
+    function getEnergyStorage(pos as IBlockPos, facing as IFacing = null) as EnergyStorage;
+    
+    function getEntities() as [IEntity];
+    
+    function getEntitiesInArea(start as Position3f, end as Position3f = null) as [IEntity];
+    
+    function getEntitiesWithinAABB(aabb as IAxisAlignedBB) as IEntity[];
+    
+    function getEntitiesWithinAABB(aabb as IAxisAlignedBB, entity as IEntityDefinition) as IEntity[];
+    
+    function getEntitiesWithinAABBExcludingEntity(aabb as IAxisAlignedBB, entity as IEntity) as IEntity[];
+    
+    function getEntityItems() as [IEntityItem];
+    
+    function getEntityItemsWithinAABB(aabb as IAxisAlignedBB) as IEntityItem[];
+    
+    function getFakePlayer() as IPlayer;
+    
+    function getGameRuleHelper() as GameRuleHelper;
+    
+    function getGameRules() as IGameRules;
+    
+    function getItemHandler(pos as IBlockPos, facing as IFacing = null) as ItemHandler;
+    
+    function getLiquidHandler(pos as IBlockPos, facing as IFacing = null) as LiquidHandler;
+    
+    function getMoonPhase() as int;
+    
+    function getPickedBlock(pos as IBlockPos, rayTraceResult as IRayTraceResult, player as IPlayer) as IItemStack;
+    
+    function getPlayerByName(name as string) as IPlayer;
+    
+    function getPlayerByUUID(uuid as UUID) as IPlayer;
+    
+    function getPlayers() as [IPlayer];
+    
+    function getProvider() as IWorldProvider;
+    
+    function getRandom() as IRandom;
+    
+    function getSeaLevel() as int;
+    
+    function getSkyBrightness(pos as IBlockPos, subtracted as bool = false) as int;
+    
+    function getSkyLight(pos as IBlockPos) as int;
+    
+    function getTeam(name as string) as ITeam;
+    
+    function getTopBlock(pos as IBlockPos) as IBlockPos;
+    
+    function getTopSolidBlock(pos as IBlockPos) as IBlockPos;
+    
+    function getWorldInfo() as IWorldInfo;
+    
+    function getWorldTime() as long;
+    
+    function getWorldType() as string;
+    
+    function isBlockLoaded(pos as IBlockPos) as bool;
+    
+    function isBloodMoon() as bool;
+    
+    function isDayTime() as bool;
+    
+    function isFullMoon() as bool;
+    
+    function isHarvestMoon() as bool;
+    
+    function isHyxcateBloodMoon() as bool;
+    
+    function isHyxcateBlueMoon() as bool;
+    
+    function isHyxcateFullMoon() as bool;
+    
+    function isHyxcateGrimEclipse() as bool;
+    
+    function isHyxcateRedGiant() as bool;
+    
+    function isHyxcateStarShower() as bool;
+    
+    function isRaining() as bool;
+    
+    function isRemote() as bool;
+    
+    function isSpawnChunk(x as int, z as int) as bool;
+    
+    function isStarShower() as bool;
+    
+    function isSurfaceWorld() as bool;
+    
+    function nearbyEntities(entity as IEntity, radius as double, excludeSelf as bool = false) as INearbyEntityList;
+    
+    function nearbyEntities(pos as IVector3d, radius as double, exclude as IEntity = null) as INearbyEntityList;
+    
+    function performExplosion(explosion as IExplosion) as IExplosion;
+    
+    function performExplosion(exploder as IEntity, x as double, y as double, z as double, strength as float, causesFire as bool, damagesTerrain as bool) as IExplosion;
+    
+    function persistedCatenation(catenationKey as string) as PersistedCatenationStarter;
+    
+    function playSound(soundResourceLocation as string, soundCategory as string, location as Position3f, volume as float, pitch as float, distanceDelay as bool = false) as void;
+    
+    function rayTraceBlocks(begin as IVector3d, ray as IVector3d, stopOnLiquid as bool = false, ignoreBlockWithoutBoundingBox as bool = false, returnLastUncollidableBlock as bool = true) as IRayTraceResult;
+    
+    function removeEntity(entity as IEntity) as void;
+    
+    function removeTeam(name as string) as void;
+    
+    function setBlockState(state as IBlockState, pos as IBlockPos) as bool;
+    
+    function setBlockState(state as IBlockState, tileEntityData as IData, pos as IBlockPos) as bool;
+    
+    function setCustomChunkData(data as IData, posToGetChunk as IBlockPos) as void;
+    
+    function setCustomWorldData(data as IData) as void;
+    
+    function setSpawnerEntity(pos as IBlockPos, entity as IEntityLivingBase) as bool;
+    
+    function spawnEntity(entity as IEntity) as bool;
+    
+    function spawnEntityXp(value as int, pos as IBlockPos) as void;
+    
+    function summonLightningBolt(x as double, y as double, z as double, effectOnly as bool = false) as IEntity;
+    
+    function toContentTweakerWorld() as World;
+    
+    function updateCustomChunkData(data as IData, posToGetChunk as IBlockPos) as void;
+    
+    function updateCustomWorldData(data as IData) as void;
+    
+    operator as() as World;
+}

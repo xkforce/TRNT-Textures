@@ -1,0 +1,117 @@
+import mods.contenttweaker.CreativeTab;
+import mods.contenttweaker.IItemColorSupplier;
+import mods.contenttweaker.IItemDestroySpeed;
+import mods.contenttweaker.IItemDestroyedBlock;
+import mods.contenttweaker.IItemGetContainerItem;
+import mods.contenttweaker.IItemRightClick;
+import mods.contenttweaker.IItemUpdate;
+import mods.contenttweaker.IItemUse;
+import mods.contenttweaker.IItemUseFinish;
+import mods.contenttweaker.LocalizedNameSupplier;
+import mods.contenttweaker.ResourceLocation;
+
+zenClass Item {
+    var beaconPayment as bool;
+    var creativeTab as CreativeTab;
+    var glowing as bool;
+    var itemColorSupplier as IItemColorSupplier;
+    var itemDestroySpeed as IItemDestroySpeed;
+    var itemDestroyedBlock as IItemDestroyedBlock;
+    var itemGetContainerItem as IItemGetContainerItem;
+    var itemRightClick as IItemRightClick;
+    var itemUseAction as string;
+    var localizedNameSupplier as LocalizedNameSupplier;
+    var maxDamage as int;
+    var maxStackSize as int;
+    var onItemUpdate as IItemUpdate;
+    var onItemUse as IItemUse;
+    var onItemUseFinish as IItemUseFinish;
+    var rarity as string;
+    var smeltingExperience as float;
+    var textureLocation as ResourceLocation;
+    var toolClass as string;
+    var toolLevel as int;
+    var unlocalizedName as string;
+    
+    function getCreativeTab() as CreativeTab;
+    
+    function getItemColorSupplier() as IItemColorSupplier;
+    
+    function getItemDestroySpeed() as IItemDestroySpeed;
+    
+    function getItemDestroyedBlock() as IItemDestroyedBlock;
+    
+    function getItemGetContainerItem() as IItemGetContainerItem;
+    
+    function getItemRightClick() as IItemRightClick;
+    
+    function getItemUseAction() as string;
+    
+    function getLocalizedNameSupplier() as LocalizedNameSupplier;
+    
+    function getMaxDamage() as int;
+    
+    function getMaxStackSize() as int;
+    
+    function getOnItemUse() as IItemUse;
+    
+    function getOnItemUseFinish() as IItemUseFinish;
+    
+    function getRarity() as string;
+    
+    function getSmeltingExperience() as float;
+    
+    function getTextureLocation() as ResourceLocation;
+    
+    function getToolClass() as string;
+    
+    function getToolLevel() as int;
+    
+    function getUnlocalizedName() as string;
+    
+    function isBeaconPayment() as bool;
+    
+    function isGlowing() as bool;
+    
+    function register() as void;
+    
+    function setBeaconPayment(beaconPayment as bool) as void;
+    
+    function setCreativeTab(creativeTab as CreativeTab) as void;
+    
+    function setGlowing(glowing as bool) as void;
+    
+    function setItemColorSupplier(itemColorSupplier as IItemColorSupplier) as void;
+    
+    function setItemDestroySpeed(itemDestroySpeed as IItemDestroySpeed) as void;
+    
+    function setItemDestroyedBlock(itemDestroyedBlock as IItemDestroyedBlock) as void;
+    
+    function setItemGetContainerItem(itemGetContainerItem as IItemGetContainerItem) as void;
+    
+    function setItemRightClick(itemRightClick as IItemRightClick) as void;
+    
+    function setItemUseAction(itemUseAction as string) as void;
+    
+    function setLocalizedNameSupplier(localizedNameSupplier as LocalizedNameSupplier) as void;
+    
+    function setMaxDamage(maxDamage as int) as void;
+    
+    function setMaxStackSize(maxStackSize as int) as void;
+    
+    function setOnItemUse(itemUse as IItemUse) as void;
+    
+    function setOnItemUseFinish(onItemUseFinish as IItemUseFinish) as void;
+    
+    function setRarity(rarity as string) as void;
+    
+    function setSmeltingExperience(smeltingExperience as float) as void;
+    
+    function setTextureLocation(resourceLocation as ResourceLocation) as void;
+    
+    function setToolClass(toolClass as string) as void;
+    
+    function setToolLevel(toolLevel as int) as void;
+    
+    function setUnlocalizedName(unlocalizedName as string) as void;
+}

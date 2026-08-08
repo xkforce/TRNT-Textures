@@ -1,0 +1,10 @@
+import crafttweaker.block.IBlockState;
+import crafttweaker.entity.IEntityLivingBase;
+import crafttweaker.world.IBlockPos;
+import crafttweaker.world.IFacing;
+import crafttweaker.world.IWorld;
+
+zenClass IStateForPlacement {
+    
+    function (arg0 as IWorld, arg1 as IBlockPos, arg2 as IFacing, arg3 as float, arg4 as float, arg5 as float, arg6 as int, arg7 as IEntityLivingBase) as IBlockState;
+}

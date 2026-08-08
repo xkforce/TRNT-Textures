@@ -1,0 +1,15 @@
+import crafttweaker.item.IItemStack;
+
+zenClass IContainer {
+    val containerSize as int;
+    
+    function asString() as string;
+    
+    function getStack(i as int) as IItemStack;
+    
+    function setStack(i as int, stack as IItemStack) as void;
+    
+    operator for_in() as [IItemStack];
+    
+    operator as() as string;
+}

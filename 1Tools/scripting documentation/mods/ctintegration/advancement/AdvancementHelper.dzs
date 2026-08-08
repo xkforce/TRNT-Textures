@@ -1,0 +1,9 @@
+import crafttweaker.server.IServer;
+import mods.ctintegration.advancement.IAdvancement;
+
+zenClass AdvancementHelper {
+    
+    static function getAdvancementById(server as IServer, id as string) as IAdvancement;
+    
+    static function getAdvancements(server as IServer) as [IAdvancement];
+}

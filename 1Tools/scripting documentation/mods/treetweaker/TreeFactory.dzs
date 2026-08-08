@@ -1,0 +1,5 @@
+
+zenClass TreeFactory {
+    
+    static function createTree(arg0 as string) as any;
+}

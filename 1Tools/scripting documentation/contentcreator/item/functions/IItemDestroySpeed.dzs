@@ -1,0 +1,7 @@
+import crafttweaker.block.IBlockState;
+import crafttweaker.item.IItemStack;
+
+zenClass IItemDestroySpeed {
+    
+    function (arg0 as IItemStack, arg1 as IBlockState) as float;
+}

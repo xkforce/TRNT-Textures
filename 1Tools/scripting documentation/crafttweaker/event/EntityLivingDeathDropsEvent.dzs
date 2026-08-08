@@ -1,0 +1,16 @@
+import crafttweaker.damage.IDamageSource;
+import crafttweaker.entity.IEntityItem;
+import crafttweaker.event.IEventCancelable;
+import crafttweaker.event.ILivingEvent;
+import crafttweaker.item.IItemStack;
+
+zenClass EntityLivingDeathDropsEvent extends IEventCancelable, ILivingEvent {
+    val damageSource as IDamageSource;
+    var drops as [IEntityItem];
+    val isRecentlyHit as bool;
+    val lootingLevel as int;
+    
+    function addItem(entityItem as IEntityItem) as void;
+    
+    function addItem(item as IItemStack) as void;
+}

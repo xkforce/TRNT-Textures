@@ -1,0 +1,22 @@
+import crafttweaker.entity.IEntityDefinition;
+import crafttweaker.item.IIngredient;
+import mods.fluidintetweaker.behavior.Condition;
+
+zenClass BehaviorEventBuilder {
+    
+    function addCondition(arg0 as Condition, arg1 as any[]) as BehaviorEventBuilder;
+    
+    function createBreakSurroundingEvent(arg0 as IIngredient) as BehaviorEventBuilder;
+    
+    function createEntityConversionEvent(arg0 as IEntityDefinition, arg1 as IEntityDefinition) as BehaviorEventBuilder;
+    
+    function createExtinguishFireEvent() as BehaviorEventBuilder;
+    
+    function createPotionEffectEvent(arg0 as string, arg1 as int, arg2 as int) as BehaviorEventBuilder;
+    
+    function createSetFireEvent() as BehaviorEventBuilder;
+    
+    function createSetSnowEvent() as BehaviorEventBuilder;
+    
+    function createTeleportEvent(arg0 as int, arg1 as int) as BehaviorEventBuilder;
+}

@@ -1,0 +1,8 @@
+import crafttweaker.block.IBlockState;
+
+zenClass ISubItem {
+    
+    function (arg0 as IBlockState) as bool;
+    
+    function check(arg0 as IBlockState) as bool;
+}

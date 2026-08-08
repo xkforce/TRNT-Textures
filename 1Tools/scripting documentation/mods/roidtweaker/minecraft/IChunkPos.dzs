@@ -1,0 +1,10 @@
+import crafttweaker.world.IBlockPos;
+
+zenClass IChunkPos {
+    
+    static function getChunkPos(pos as IBlockPos) as IChunkPos;
+    
+    static function getChunkPos(x as int, z as int) as IChunkPos;
+    
+    function getBlockPos(x as int, y as int, z as int) as IBlockPos;
+}

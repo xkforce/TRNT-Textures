@@ -1,0 +1,8 @@
+import crafttweaker.world.IBlockAccess;
+import crafttweaker.world.IBlockPos;
+import crafttweaker.world.IFacing;
+
+zenClass IFlame {
+    
+    function (arg0 as IBlockAccess, arg1 as IBlockPos, arg2 as IFacing) as int;
+}

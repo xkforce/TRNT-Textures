@@ -1,0 +1,21 @@
+
+zenClass IConfigFile {
+    
+    function getBool(category as string, name as string, defaultValue as bool = false, comment as string = null) as bool;
+    
+    function getBoolean(category as string, name as string, defaultValue as bool = false, comment as string = null) as bool;
+    
+    function getBooleanArray(category as string, name as string, defaultValue as bool[] = null, comment as string = null, isLengthFixed as bool = false, maxLength as int = 0) as bool[];
+    
+    function getDouble(category as string, name as string, defaultValue as double = 0.0, comment as string = null, min as double = 0.0, max as double = 0.0) as double;
+    
+    function getInt(category as string, name as string, defaultValue as int = 0, comment as string = null, min as int = 0, max as int = 0) as int;
+    
+    function getIntArray(category as string, name as string, defaultValue as int[] = null, comment as string = null, min as int = 0, max as int = 0, isLengthFixed as bool = false, maxLength as int = 0) as int[];
+    
+    function getLong(category as string, name as string, defaultValue as long = 0, comment as string = null, min as long = 0, max as long = 0) as long;
+    
+    function getString(category as string, name as string, defaultValue as string = null, comment as string = null) as string;
+    
+    function getStringArray(category as string, name as string, defaultValue as string[] = null, comment as string = null, isLengthFixed as bool = false, maxLength as int = 0) as string[];
+}

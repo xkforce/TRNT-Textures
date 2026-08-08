@@ -1,0 +1,9 @@
+import crafttweaker.block.IBlockState;
+import crafttweaker.util.IAxisAlignedBB;
+import crafttweaker.world.IBlockAccess;
+import crafttweaker.world.IBlockPos;
+
+zenClass IBoundingBox {
+    
+    function (arg0 as IBlockAccess, arg1 as IBlockPos, arg2 as IBlockState) as IAxisAlignedBB;
+}

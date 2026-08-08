@@ -1,0 +1,7 @@
+import crafttweaker.world.IBlockAccess;
+import crafttweaker.world.IBlockPos;
+
+zenClass IPassable {
+    
+    function (arg0 as IBlockAccess, arg1 as IBlockPos) as bool;
+}

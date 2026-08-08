@@ -1,0 +1,77 @@
+import contentcreator.block.SoundType;
+import contentcreator.sound.SoundEvent;
+import crafttweaker.block.IBlockState;
+import crafttweaker.block.IMaterial;
+
+zenClass GenericBlock {
+    
+    static function createBlockColored(arg0 as IMaterial, arg1 as string, arg2 as bool = false) as GenericBlock;
+    
+    static function createBlockFalling(arg0 as string) as GenericBlock;
+    
+    static function createButton(arg0 as string, arg1 as bool, arg2 as int = 0, arg3 as SoundEvent = null, arg4 as SoundEvent = null) as GenericBlock;
+    
+    static function createCake(arg0 as string, arg1 as int = 0, arg2 as float = 0.0) as GenericBlock;
+    
+    static function createCocoaCrop(arg0 as string, arg1 as string, arg2 as int = 0, arg3 as int = 0, arg4 as int = 0) as GenericBlock;
+    
+    static function createCrop(arg0 as string, arg1 as string, arg2 as int = 0, arg3 as int = 0, arg4 as int = 0) as GenericBlock;
+    
+    static function createCropRestrictedByBlock(arg0 as string, arg1 as string, arg2 as string, arg3 as int = 0, arg4 as int = 0, arg5 as int = 0, arg6 as int = 0) as GenericBlock;
+    
+    static function createCropRestrictedByOreDictionary(arg0 as string, arg1 as string, arg2 as string, arg3 as int = 0, arg4 as int = 0, arg5 as int = 0) as GenericBlock;
+    
+    static function createCropTall(arg0 as string, arg1 as string, arg2 as int = 0, arg3 as int = 0, arg4 as int = 0) as GenericBlock;
+    
+    static function createCropTallRestrictedByBlock(arg0 as string, arg1 as string, arg2 as string, arg3 as int = 0, arg4 as int = 0, arg5 as int = 0, arg6 as int = 0) as GenericBlock;
+    
+    static function createCropTallRestrictedByOreDictionary(arg0 as string, arg1 as string, arg2 as string, arg3 as int = 0, arg4 as int = 0, arg5 as int = 0) as GenericBlock;
+    
+    static function createDoor(arg0 as IMaterial, arg1 as string) as GenericBlock;
+    
+    static function createFence(arg0 as IMaterial, arg1 as string) as GenericBlock;
+    
+    
+    static function createFenceGate(arg0 as IMaterial, arg1 as string) as GenericBlock;
+    
+    
+    static function createGlass(arg0 as IMaterial, arg1 as string, arg2 as bool = false, arg3 as bool = false) as GenericBlock;
+    
+    static function createHorizontal(arg0 as IMaterial, arg1 as string) as GenericBlock;
+    
+    
+    static function createPillar(arg0 as IMaterial, arg1 as string) as GenericBlock;
+    
+    
+    static function createPressurePlate(arg0 as IMaterial, arg1 as int, arg2 as string) as GenericBlock;
+    
+    static function createPressurePlateWeighted(arg0 as IMaterial, arg1 as int, arg2 as string) as GenericBlock;
+    
+    
+    static function createSlab(arg0 as IMaterial, arg1 as string) as GenericBlock;
+    
+    
+    static function createStairs(arg0 as string) as GenericBlock;
+    
+    static function createStairs(arg0 as string, arg1 as IBlockState) as GenericBlock;
+    
+    static function createStem(arg0 as string, arg1 as string, arg2 as int = 0) as GenericBlock;
+    
+    function register() as void;
+    
+    function setHardness(arg0 as float) as GenericBlock;
+    
+    function setHarvestLevel(arg0 as string, arg1 as int) as GenericBlock;
+    
+    function setLightLevel(arg0 as int) as GenericBlock;
+    
+    function setLightOpacity(arg0 as int) as GenericBlock;
+    
+    function setSlipperiness(arg0 as float) as GenericBlock;
+    
+    function setSoundType(arg0 as SoundType) as GenericBlock;
+    
+    function setStrength(arg0 as float, arg1 as float) as GenericBlock;
+    
+    function setUnbreakable() as GenericBlock;
+}

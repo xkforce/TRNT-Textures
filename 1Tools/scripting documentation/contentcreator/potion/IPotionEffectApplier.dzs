@@ -1,0 +1,8 @@
+import crafttweaker.entity.IEntityLivingBase;
+
+zenClass IPotionEffectApplier {
+    
+    function (arg0 as IEntityLivingBase, arg1 as int) as void;
+    
+    function applyEffect(arg0 as IEntityLivingBase, arg1 as int) as void;
+}

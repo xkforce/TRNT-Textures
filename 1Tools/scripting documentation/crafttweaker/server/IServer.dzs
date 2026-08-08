@@ -1,0 +1,36 @@
+import crafttweaker.command.ICommandManager;
+import crafttweaker.command.ICommandSender;
+import crafttweaker.event.IEventHandler;
+import crafttweaker.event.PlayerLoggedInEvent;
+import crafttweaker.event.PlayerLoggedOutEvent;
+import crafttweaker.player.IPlayer;
+import crafttweaker.text.ITextComponent;
+
+zenClass IServer extends ICommandSender {
+    val commandManager as ICommandManager;
+    val maxPlayers as int;
+    val playerCount as int;
+    val players as IPlayer[];
+    
+    static function getServerCommandSender() as ICommandSender;
+    
+    function broadcastMessage(message as ITextComponent, isSystem as bool = false) as void;
+    
+    function changePlayerDimension(player as IPlayer, dimensionId as int) as void;
+    
+    function getMaxPlayers() as int;
+    
+    function getPlayerByUUID(uuid as string) as IPlayer;
+    
+    function getPlayerByUsername(name as string) as IPlayer;
+    
+    function getPlayerCount() as int;
+    
+    function getPlayers() as IPlayer[];
+    
+    function isOp(player as IPlayer) as bool;
+    
+    function onPlayerLoggedIn(ev as function(PlayerLoggedInEvent)void) as IEventHandler;
+    
+    function onPlayerLoggedOut(ev as function(PlayerLoggedOutEvent)void) as IEventHandler;
+}

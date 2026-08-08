@@ -1,0 +1,12 @@
+import crafttweaker.block.IBlockState;
+import crafttweaker.event.IEventCancelable;
+import crafttweaker.event.IEventPositionable;
+import crafttweaker.world.IWorld;
+
+zenClass CustomFluidInteractionEvent extends IEventCancelable, IEventPositionable {
+    val blockStateBeforeInteraction as IBlockState;
+    val isInitiatorAbove as bool;
+    val isLiquidAboveAndBelowCase as bool;
+    val liquidInteractionRecipeKey as string;
+    val world as IWorld;
+}

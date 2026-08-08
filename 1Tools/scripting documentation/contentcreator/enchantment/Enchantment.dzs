@@ -1,0 +1,37 @@
+import contentcreator.enchantment.EnchantmentType;
+import contentcreator.enchantment.EquipmentSlot;
+import contentcreator.enchantment.Rarity;
+import contentcreator.enchantment.functions.ICalcModifierDamage;
+import contentcreator.enchantment.functions.IMaxEnchantability;
+import contentcreator.enchantment.functions.IMinEnchantability;
+import contentcreator.enchantment.functions.IOnEntityDamaged;
+import contentcreator.enchantment.functions.IOnUserHurt;
+
+zenClass Enchantment {
+    
+    static function create(arg0 as string, arg1 as Rarity, arg2 as EnchantmentType, arg3 as EquipmentSlot[]) as Enchantment;
+    
+    function addIncompatible(arg0 as string) as Enchantment;
+    
+    function register() as void;
+    
+    function setAllowedOnBooks(arg0 as bool) as Enchantment;
+    
+    function setCalcModifierDamage(arg0 as ICalcModifierDamage) as Enchantment;
+    
+    function setCurse(arg0 as bool) as Enchantment;
+    
+    function setMaxEnchantability(arg0 as IMaxEnchantability) as Enchantment;
+    
+    function setMaxLevel(arg0 as int) as Enchantment;
+    
+    function setMinEnchantability(arg0 as IMinEnchantability) as Enchantment;
+    
+    function setMinLevel(arg0 as int) as Enchantment;
+    
+    function setOnEntityDamaged(arg0 as IOnEntityDamaged) as Enchantment;
+    
+    function setOnUserHurt(arg0 as IOnUserHurt) as Enchantment;
+    
+    function setTreasure(arg0 as bool) as Enchantment;
+}

@@ -1,0 +1,8 @@
+import crafttweaker.entity.IEntityLivingBase;
+import crafttweaker.item.IItemStack;
+import crafttweaker.world.IWorld;
+
+zenClass IItemProperty {
+    
+    function (arg0 as IItemStack, arg1 as IWorld, arg2 as IEntityLivingBase) as float;
+}

@@ -1,0 +1,48 @@
+import crafttweaker.block.IBlockDefinition;
+import crafttweaker.creativetabs.ICreativeTab;
+import crafttweaker.enchantments.IEnchantmentDefinition;
+import crafttweaker.entity.IEntityDefinition;
+import crafttweaker.item.IItemDefinition;
+import crafttweaker.liquid.ILiquidDefinition;
+import crafttweaker.liquid.ILiquidStack;
+import crafttweaker.oredict.IOreDictEntry;
+import crafttweaker.potions.IPotion;
+import crafttweaker.potions.IPotionType;
+import crafttweaker.world.IBiome;
+import crafttweaker.world.IBiomeType;
+
+zenClass IGame {
+    val biomes as [IBiome];
+    val blocks as [IBlockDefinition];
+    val enchantments as [IEnchantmentDefinition];
+    val entities as [IEntityDefinition];
+    val items as [IItemDefinition];
+    val liquids as [ILiquidDefinition];
+    val potions as [IPotion];
+    
+    function getBiome(name as string) as IBiome;
+    
+    function getBiomeType(name as string) as IBiomeType;
+    
+    function getCreativeTab(name as string) as ICreativeTab;
+    
+    function getEnchantment(name as string) as IEnchantmentDefinition;
+    
+    function getEntity(entityName as string) as IEntityDefinition;
+    
+    function getLiquid(name as string) as ILiquidStack;
+    
+    function getOreDictEntry(name as string) as IOreDictEntry;
+    
+    function getPotion(name as string) as IPotion;
+    
+    function getPotionType(name as string) as IPotionType;
+    
+    function localize(key as string) as string;
+    
+    function localize(key as string, lang as string) as string;
+    
+    function setLocalization(key as string, value as string) as void;
+    
+    function setLocalization(lang as string, key as string, value as string) as void;
+}

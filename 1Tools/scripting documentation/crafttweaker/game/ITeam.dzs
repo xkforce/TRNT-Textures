@@ -1,0 +1,11 @@
+
+zenClass ITeam {
+    val allowFriendlyFire as bool;
+    val collisionRule as string;
+    val colorPrefix as string;
+    val deathMessageVisibility as string;
+    val membershipCollection as [string];
+    val name as string;
+    
+    function formatString(input as string) as string;
+}

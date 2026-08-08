@@ -1,0 +1,8 @@
+import crafttweaker.entity.IEntityEquipmentSlot;
+import crafttweaker.player.IPlayer;
+import crafttweaker.world.IWorld;
+
+zenClass IRightClick {
+    
+    function (arg0 as IWorld, arg1 as IPlayer, arg2 as IEntityEquipmentSlot) as string;
+}

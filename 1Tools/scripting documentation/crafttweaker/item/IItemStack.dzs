@@ -1,0 +1,147 @@
+import crafttweaker.block.IBlock;
+import crafttweaker.block.IBlockDefinition;
+import crafttweaker.block.IBlockState;
+import crafttweaker.data.IData;
+import crafttweaker.enchantments.IEnchantment;
+import crafttweaker.enchantments.IEnchantmentDefinition;
+import crafttweaker.entity.AttributeModifier;
+import crafttweaker.entity.IEntity;
+import crafttweaker.entity.IEntityEquipmentSlot;
+import crafttweaker.entity.IEntityItem;
+import crafttweaker.item.IIngredient;
+import crafttweaker.item.IItemDefinition;
+import crafttweaker.item.IMutableItemStack;
+import crafttweaker.item.WeightedItemStack;
+import crafttweaker.liquid.ILiquidStack;
+import crafttweaker.oredict.IOreDictEntry;
+import crafttweaker.player.IPlayer;
+import crafttweaker.world.IBlockPos;
+import crafttweaker.world.IWorld;
+import mods.ctintegration.IEnergyStorage;
+
+zenClass IItemStack extends IIngredient {
+    val burnTime as int;
+    val canEditBlocks as bool;
+    val capNBT as IData;
+    val containerItem as IItemStack;
+    val damage as int;
+    val definition as IItemDefinition;
+    var displayName as string;
+    val enchantments as [IEnchantment];
+    val energy as IEnergyStorage;
+    var hardness as float;
+    val hasContainerItem as bool;
+    val hasCustomEntity as bool;
+    val hasDisplayName as bool;
+    val hasEffect as bool;
+    val hasSubtypes as bool;
+    val hasTag as bool;
+    val healAmount as int;
+    val isBeaconPayment as bool;
+    val isBlock as bool;
+    val isDamageable as bool;
+    val isDamaged as bool;
+    val isEmpty as bool;
+    val isEnchantable as bool;
+    val isEnchanted as bool;
+    val isFood as bool;
+    val isItemBlock as bool;
+    val isOnItemFrame as bool;
+    val isStackable as bool;
+    val itemEnchantability as int;
+    val liquid as ILiquidStack;
+    val matchTagExact as bool;
+    var maxDamage as int;
+    val maxItemUseDuration as int;
+    var maxStackSize as int;
+    val metadata as int;
+    val name as string;
+    val ores as [IOreDictEntry];
+    var repairCost as int;
+    val saturation as float;
+    val showsDurabilityBar as bool;
+    val tag as IData;
+    val toolClasses as [string];
+    
+    static function fromData(data as IData) as IItemStack;
+    
+    function addAttributeModifier(attributeName as string, modifier as AttributeModifier, equipmentSlot as IEntityEquipmentSlot) as void;
+    
+    function addEnchantment(enchantment as IEnchantment) as void;
+    
+    function amount(amount as int) as IIngredient;
+    
+    function amount(amount as int) as IItemStack;
+    
+    function anyAmount() as IItemStack;
+    
+    function anyDamage() as IIngredient;
+    
+    function asBlock() as IBlock;
+    
+    function asData() as IData;
+    
+    function canApplyAtEnchantingTable(enchantment as IEnchantmentDefinition) as bool;
+    
+    function canDestroy(block as IBlockDefinition) as bool;
+    
+    function canHarvestBlock(block as IBlockState) as bool;
+    
+    function canPlaceOn(block as IBlockDefinition) as bool;
+    
+    function clearCustomName() as void;
+    
+    function createEntityItem(world as IWorld, pos as IBlockPos) as IEntityItem;
+    
+    function createEntityItem(world as IWorld, x as float, y as float, z as float) as IEntityItem;
+    
+    function createEntityItem(world as IWorld, x as int, y as int, z as int) as IEntityItem;
+    
+    function damageItem(amount as int, entity as IEntity) as void;
+    
+    function getCapNBT() as IData;
+    
+    function getEnergy() as IEnergyStorage;
+    
+    function getHarvestLevel(toolClass as string) as int;
+    
+    function getHarvestLevel(toolClass as string, player as IPlayer, blockState as IBlockState) as int;
+    
+    function getMaxItemUseDuration() as int;
+    
+    function getStrengthAgainstBlock(blockState as IBlockState) as float;
+    
+    function isBlock() as bool;
+    
+    function isEnergyStorage() as bool;
+    
+    function mutable() as IMutableItemStack;
+    
+    function removeTag(tag as string) as IItemStack;
+    
+    function splitStack(amount as int) as IItemStack;
+    
+    function updateTag(tagUpdate as IData, matchTagExact as bool = true) as IItemStack;
+    
+    function weight(p as float) as WeightedItemStack;
+    
+    function withAmount(amount as int) as IItemStack;
+    
+    function withCapNBT(capNBT as IData) as IItemStack;
+    
+    function withDamage(damage as int) as IItemStack;
+    
+    function withDisplayName(name as string) as IItemStack;
+    
+    function withEmptyTag() as IItemStack;
+    
+    function withLore(lore as string[]) as IItemStack;
+    
+    function withTag(tag as IData, matchTagExact as bool = true) as IItemStack;
+    
+    operator *(amount as int) as IItemStack;
+    
+    operator %(p as float) as WeightedItemStack;
+    
+    operator as() as IBlock & IData & WeightedItemStack;
+}

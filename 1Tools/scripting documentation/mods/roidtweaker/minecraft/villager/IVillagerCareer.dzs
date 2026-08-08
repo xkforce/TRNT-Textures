@@ -1,0 +1,12 @@
+import crafttweaker.item.IIngredient;
+
+zenClass IVillagerCareer {
+    
+    
+    
+    function addTradeForEnchantedItem(level as int, sell as IIngredient, buy1 as IIngredient, buy2 as IIngredient = null, minLevel as int = 0, maxLevel as int = 0) as void;
+    
+    function addTradeForPotionItem(level as int, sell as IIngredient, buy1 as IIngredient, buy2 as IIngredient = null, potionKeys as string[] = null) as void;
+    
+    function removeTrade(level as int = 0, index as int = 0) as void;
+}

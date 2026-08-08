@@ -1,0 +1,10 @@
+import crafttweaker.potions.IPotion;
+
+zenClass BrewingCauldron {
+    
+    static function addWeightedPotion(arg0 as string, arg1 as IPotion, arg2 as int) as void;
+    
+    static function clearWeightedList(arg0 as string) as void;
+    
+    static function removeWeightedPotion(arg0 as string, arg1 as IPotion) as void;
+}

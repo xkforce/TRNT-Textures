@@ -1,0 +1,15 @@
+
+zenClass EnchantmentType {
+    static all as EnchantmentType;
+    static armor as EnchantmentType;
+    static armorChest as EnchantmentType;
+    static armorFeet as EnchantmentType;
+    static armorHead as EnchantmentType;
+    static armorLegs as EnchantmentType;
+    static bow as EnchantmentType;
+    static breakable as EnchantmentType;
+    static digger as EnchantmentType;
+    static fishingRod as EnchantmentType;
+    static weapon as EnchantmentType;
+    static wearable as EnchantmentType;
+}

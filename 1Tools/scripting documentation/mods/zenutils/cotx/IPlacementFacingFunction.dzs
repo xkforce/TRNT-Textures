@@ -1,0 +1,17 @@
+import crafttweaker.entity.IEntityLivingBase;
+import mods.contenttweaker.BlockPos;
+import mods.contenttweaker.Facing;
+import mods.contenttweaker.Hand;
+import mods.contenttweaker.World;
+import mods.zenutils.cotx.DirectionalBlock;
+
+zenClass IPlacementFacingFunction {
+    
+    static function placer(blockRepresentation as DirectionalBlock) as IPlacementFacingFunction;
+    
+    static function side() as IPlacementFacingFunction;
+    
+    function (world as World, pos as BlockPos, facing as Facing, hitX as float, hitY as float, hitZ as float, meta as int, placer as IEntityLivingBase, hand as Hand) as Facing;
+    
+    function apply(world as World, pos as BlockPos, facing as Facing, hitX as float, hitY as float, hitZ as float, meta as int, placer as IEntityLivingBase, hand as Hand) as Facing;
+}

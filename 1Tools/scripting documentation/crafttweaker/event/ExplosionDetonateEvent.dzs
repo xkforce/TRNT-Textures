@@ -1,0 +1,16 @@
+import crafttweaker.entity.IEntity;
+import crafttweaker.event.IExplosionEvent;
+import crafttweaker.world.IBlockPos;
+
+zenClass ExplosionDetonateEvent extends IExplosionEvent {
+    var affectedEntities as [IEntity];
+    var affectedPositions as [IBlockPos];
+    
+    function getAffectedEntities() as [IEntity];
+    
+    function getAffectedPositions() as [IBlockPos];
+    
+    function setAffectedEntities(entities as [IEntity]) as void;
+    
+    function setAffectedPositions(positions as [IBlockPos]) as void;
+}

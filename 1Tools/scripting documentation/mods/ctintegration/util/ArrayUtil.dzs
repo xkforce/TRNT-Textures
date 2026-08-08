@@ -1,0 +1,61 @@
+import crafttweaker.data.IData;
+
+zenClass ArrayUtil {
+    
+    static function createArray(element as IData, amount as int) as IData[];
+    
+    
+    static function fill(array as byte[], element as byte) as void;
+    
+    static function fill(array as IData[], element as IData) as void;
+    
+    static function fill(array as double[], element as double) as void;
+    
+    static function fill(array as float[], element as float) as void;
+    
+    static function fill(array as int[], element as int) as void;
+    
+    static function fill(array as long[], element as long) as void;
+    
+    static function fill(array as short[], element as short) as void;
+    
+    static function fill(array as string[], element as string) as void;
+    
+    static function merge(array1 as IData[], array2 as IData[]) as IData[];
+    
+    static function reverse(array as any[]) as void;
+    
+    static function reverse(array as byte[]) as void;
+    
+    static function reverse(array as IData[]) as void;
+    
+    static function reverse(array as double[]) as void;
+    
+    static function reverse(array as float[]) as void;
+    
+    static function reverse(array as int[]) as void;
+    
+    static function reverse(array as long[]) as void;
+    
+    static function reverse(array as short[]) as void;
+    
+    static function reverse(array as string[]) as void;
+    
+    static function sort(array as byte[]) as void;
+    
+    static function sort(array as double[]) as void;
+    
+    static function sort(array as float[]) as void;
+    
+    static function sort(array as int[]) as void;
+    
+    static function sort(array as long[]) as void;
+    
+    static function sort(array as short[]) as void;
+    
+    static function sort(array as string[]) as void;
+    
+    static function toString(array as IData[]) as string;
+    
+    static function trim(array as IData[], startIndexInclusive as int, endIndexExclusive as int) as IData[];
+}

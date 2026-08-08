@@ -1,0 +1,18 @@
+import crafttweaker.liquid.ILiquidStack;
+import mods.fluidintetweaker.behavior.BehaviorEventBuilder;
+import mods.fluidintetweaker.behavior.ComplexOutputBuilder;
+
+zenClass FBTweaker {
+    
+    static function addJEIRecipeWrapper(liquid as ILiquidStack, fluidState as int, complexOutputBuilder as ComplexOutputBuilder) as void;
+    
+    static function addRecipe(liquid as ILiquidStack, complexOutputBuilder as ComplexOutputBuilder) as [string];
+    
+    static function addRecipe(liquid as ILiquidStack, isSource as bool, complexOutputBuilder as ComplexOutputBuilder) as [string];
+    
+    static function autoAddJEIRecipe(flag as bool) as void;
+    
+    static function eventBuilder() as BehaviorEventBuilder;
+    
+    static function outputBuilder() as ComplexOutputBuilder;
+}

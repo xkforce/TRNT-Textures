@@ -1,0 +1,20 @@
+import mods.roidtweaker.minecraft.villager.IVillagerCareer;
+
+zenClass Villager {
+    
+    static function addCareer(profession as string, career as string) as void;
+    
+    static function addCareers(profession as string, career as string[]) as void;
+    
+    static function addProfession(name as string, texture as string = null, zombie as string = null) as void;
+    
+    static function clearCareers(profession as string) as void;
+    
+    static function getCareer(profession as string, index as int) as IVillagerCareer;
+    
+    static function getCareer(profession as string, name as string) as IVillagerCareer;
+    
+    static function removeCareer(career as string) as void;
+    
+    static function removeProfession(name as string) as void;
+}

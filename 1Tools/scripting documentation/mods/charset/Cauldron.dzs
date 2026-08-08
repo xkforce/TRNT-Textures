@@ -1,0 +1,14 @@
+import crafttweaker.item.IIngredient;
+import crafttweaker.item.IItemStack;
+import crafttweaker.liquid.ILiquidStack;
+
+zenClass Cauldron {
+    
+    static function addItemFluidRecipe(arg0 as IIngredient, arg1 as ILiquidStack, arg2 as IItemStack, arg3 as ILiquidStack) as void;
+    
+    static function addItemFluidRecipe(arg0 as IIngredient, arg1 as ILiquidStack, arg2 as IItemStack, arg3 as ILiquidStack, arg4 as bool) as void;
+    
+    static function addItemRecipe(arg0 as IIngredient, arg1 as ILiquidStack, arg2 as IItemStack) as void;
+    
+    static function addItemRecipe(arg0 as IIngredient, arg1 as ILiquidStack, arg2 as IItemStack, arg3 as bool) as void;
+}

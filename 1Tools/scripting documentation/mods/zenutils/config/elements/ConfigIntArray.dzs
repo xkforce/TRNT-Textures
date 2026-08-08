@@ -1,0 +1,5 @@
+import mods.zenutils.config.elements.ConfigPrimitive;
+
+zenClass ConfigIntArray extends ConfigPrimitive {
+    
+}

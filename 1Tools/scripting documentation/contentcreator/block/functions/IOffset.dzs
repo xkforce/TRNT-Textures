@@ -1,0 +1,9 @@
+import crafttweaker.block.IBlockState;
+import crafttweaker.world.IBlockAccess;
+import crafttweaker.world.IBlockPos;
+import crafttweaker.world.IVector3d;
+
+zenClass IOffset {
+    
+    function (arg0 as IBlockState, arg1 as IBlockAccess, arg2 as IBlockPos) as IVector3d;
+}

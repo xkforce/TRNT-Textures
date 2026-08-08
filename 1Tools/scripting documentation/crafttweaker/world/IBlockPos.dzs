@@ -1,0 +1,22 @@
+import crafttweaker.util.Position3f;
+import crafttweaker.world.IFacing;
+
+zenClass IBlockPos {
+    val x as int;
+    val y as int;
+    val z as int;
+    
+    static function create(x as int, y as int, z as int) as IBlockPos;
+    
+    function asPosition3f() as Position3f;
+    
+    function getOffset(direction as IFacing, offset as int) as IBlockPos;
+    
+    function getX() as int;
+    
+    function getY() as int;
+    
+    function getZ() as int;
+    
+    operator as() as Position3f;
+}

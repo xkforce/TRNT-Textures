@@ -1,0 +1,6 @@
+
+zenClass CustomTypes {
+    
+    
+    static function registerCustomTypeWithMetadata(arg0 as string, arg1 as string, arg2 as int) as void;
+}

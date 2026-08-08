@@ -1,0 +1,7 @@
+
+zenClass Rarity {
+    static common as Rarity;
+    static rare as Rarity;
+    static uncommon as Rarity;
+    static veryRare as Rarity;
+}

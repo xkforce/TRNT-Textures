@@ -1,0 +1,10 @@
+import crafttweaker.entity.IEntityEquipmentSlot;
+import crafttweaker.player.IPlayer;
+import crafttweaker.world.IBlockPos;
+import crafttweaker.world.IFacing;
+import crafttweaker.world.IWorld;
+
+zenClass IItemUse {
+    
+    function (arg0 as IPlayer, arg1 as IWorld, arg2 as IBlockPos, arg3 as IEntityEquipmentSlot, arg4 as IFacing, arg5 as float, arg6 as float, arg7 as float) as string;
+}

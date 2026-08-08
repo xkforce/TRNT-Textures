@@ -1,0 +1,5 @@
+
+zenClass TextureMap {
+    
+    static function registerSprite(arg0 as string) as void;
+}

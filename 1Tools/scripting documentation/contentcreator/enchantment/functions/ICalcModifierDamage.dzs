@@ -1,0 +1,6 @@
+import crafttweaker.damage.IDamageSource;
+
+zenClass ICalcModifierDamage {
+    
+    function (arg0 as int, arg1 as IDamageSource) as int;
+}

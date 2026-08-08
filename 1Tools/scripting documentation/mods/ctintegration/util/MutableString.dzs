@@ -1,0 +1,68 @@
+
+zenClass MutableString {
+    val length as int;
+    
+    static function create() as MutableString;
+    
+    static function create(str as string) as MutableString;
+    
+    static function format(format as string, ...args as any) as MutableString;
+    
+    function append(s as any) as MutableString;
+    
+    function append(s as bool) as MutableString;
+    
+    function append(s as byte) as MutableString;
+    
+    function append(s as double) as MutableString;
+    
+    function append(s as float) as MutableString;
+    
+    function append(s as int) as MutableString;
+    
+    function append(s as long) as MutableString;
+    
+    function append(s as short) as MutableString;
+    
+    function append(s as string) as MutableString;
+    
+    function build() as string;
+    
+    function delete(start as int, end as int) as MutableString;
+    
+    function deleteCharAt(pos as int) as MutableString;
+    
+    function equals(obj as any) as bool;
+    
+    function getLength() as int;
+    
+    function hashCode() as int;
+    
+    function indexOf(character as string) as int;
+    
+    function insert(offset as int, s as any) as MutableString;
+    
+    function insert(offset as int, s as bool) as MutableString;
+    
+    function insert(offset as int, s as byte) as MutableString;
+    
+    function insert(offset as int, s as double) as MutableString;
+    
+    function insert(offset as int, s as float) as MutableString;
+    
+    function insert(offset as int, s as int) as MutableString;
+    
+    function insert(offset as int, s as long) as MutableString;
+    
+    function insert(offset as int, s as short) as MutableString;
+    
+    function insert(offset as int, s as string) as MutableString;
+    
+    function reverse() as MutableString;
+    
+    operator ==(obj as any) as bool;
+    
+    operator !=(obj as any) as bool;
+    
+    operator as() as string;
+}

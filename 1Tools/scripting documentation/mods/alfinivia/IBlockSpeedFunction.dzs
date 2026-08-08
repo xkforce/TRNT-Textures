@@ -1,0 +1,8 @@
+import crafttweaker.player.IPlayer;
+import crafttweaker.world.IBlockPos;
+import crafttweaker.world.IWorld;
+
+zenClass IBlockSpeedFunction {
+    
+    function (arg0 as IPlayer, arg1 as IWorld, arg2 as IBlockPos) as float;
+}

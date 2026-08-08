@@ -1,0 +1,9 @@
+import crafttweaker.block.IBlockState;
+import crafttweaker.entity.IEntityLivingBase;
+import crafttweaker.world.IBlockAccess;
+import crafttweaker.world.IBlockPos;
+
+zenClass ILadder {
+    
+    function (arg0 as IBlockState, arg1 as IBlockAccess, arg2 as IBlockPos, arg3 as IEntityLivingBase) as bool;
+}

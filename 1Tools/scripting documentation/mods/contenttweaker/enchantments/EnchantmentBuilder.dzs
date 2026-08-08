@@ -1,0 +1,90 @@
+import crafttweaker.enchantments.IEnchantmentDefinition;
+import crafttweaker.entity.IEntityEquipmentSlot;
+import mods.contenttweaker.enchantments.CalcCanApply;
+import mods.contenttweaker.enchantments.CalcCanApplyTogether;
+import mods.contenttweaker.enchantments.CalcDamageByCreature;
+import mods.contenttweaker.enchantments.CalcEnchantability;
+import mods.contenttweaker.enchantments.CalcModifierDamage;
+import mods.contenttweaker.enchantments.CalcTranslatedName;
+import mods.contenttweaker.enchantments.OnEntityDamaged;
+import mods.contenttweaker.enchantments.OnUserHurt;
+import mods.enchantmentcontrol.VanillaSystemOverride;
+
+zenClass EnchantmentBuilder {
+    var allowedOnBooks as bool;
+    var applicableSlots as IEntityEquipmentSlot[];
+    var calcDamageByCreature as CalcDamageByCreature;
+    var calcEnchantabilityMax as CalcEnchantability;
+    var calcEnchantabilityMin as CalcEnchantability;
+    var calcModifierDamage as CalcModifierDamage;
+    var calcTranslatedName as CalcTranslatedName;
+    var canApply as CalcCanApply;
+    var canApplyAtEnchantmentTable as CalcCanApply;
+    var canApplyTogether as CalcCanApplyTogether;
+    var curse as bool;
+    var displayColor as string;
+    var domain as string;
+    var doublePrice as bool;
+    val enchLvlSpan as int;
+    val enchMaxMode as string;
+    val enchMin as int;
+    val enchRange as int;
+    var maxLevel as int;
+    var minLevel as int;
+    var name as string;
+    var onEntityDamaged as OnEntityDamaged;
+    var onUserHurt as OnUserHurt;
+    var rarity as string;
+    var treasure as bool;
+    var type as string;
+    
+    static function create(name as string) as EnchantmentBuilder;
+    
+    function register() as IEnchantmentDefinition;
+    
+    function setEnchantabilityCalc(arg1 as int, arg2 as int, arg3 as int) as void;
+    
+    function setEnchantabilityCalc(arg1 as int, arg2 as int, arg3 as int, arg4 as string) as void;
+    
+    function setIncompatibleTo(arg1 as string[]) as void;
+    
+    function setRarityCommon() as void;
+    
+    function setRarityRare() as void;
+    
+    function setRarityUncommon() as void;
+    
+    function setRarityVeryRare() as void;
+    
+    function setTypeAll() as void;
+    
+    function setTypeArmor() as void;
+    
+    function setTypeBow() as void;
+    
+    function setTypeBreakable() as void;
+    
+    function setTypeChest() as void;
+    
+    function setTypeDigger() as void;
+    
+    function setTypeFeed() as void;
+    
+    function setTypeFishingRod() as void;
+    
+    function setTypeHead() as void;
+    
+    function setTypeLegs() as void;
+    
+    function setTypeWeapon() as void;
+    
+    function setTypeWearable() as void;
+    
+    function setTypes(arg1 as string[]) as void;
+    
+    function setTypesForAnvil(arg1 as string[]) as void;
+    
+    function setVanillaOverride(arg1 as string, arg2 as float) as void;
+    
+    function setVanillaOverride(arg1 as string, arg2 as VanillaSystemOverride) as void;
+}

@@ -1,0 +1,5 @@
+import mods.zenutils.config.elements.ConfigInt;
+
+zenClass ConfigRangedInt extends ConfigInt {
+    
+}

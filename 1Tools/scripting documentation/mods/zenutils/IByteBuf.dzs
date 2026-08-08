@@ -1,0 +1,51 @@
+import crafttweaker.data.IData;
+import crafttweaker.item.IItemStack;
+import crafttweaker.world.IBlockPos;
+import mods.zenutils.UUID;
+
+zenClass IByteBuf {
+    
+    function readBlockPos() as IBlockPos;
+    
+    function readBoolean() as bool;
+    
+    function readByte() as byte;
+    
+    function readData() as IData;
+    
+    function readDouble() as double;
+    
+    function readFloat() as float;
+    
+    function readInt() as int;
+    
+    function readItemStack() as IItemStack;
+    
+    function readLong() as long;
+    
+    function readString() as string;
+    
+    function readUUID() as UUID;
+    
+    function writeBlockPos(pos as IBlockPos) as void;
+    
+    function writeBoolean(value as bool) as void;
+    
+    function writeByte(value as byte) as void;
+    
+    function writeData(data as IData) as void;
+    
+    function writeDouble(value as double) as void;
+    
+    function writeFloat(value as float) as void;
+    
+    function writeInt(value as int) as void;
+    
+    function writeItemStack(itemStack as IItemStack) as void;
+    
+    function writeLong(value as long) as void;
+    
+    function writeString(_string as string) as void;
+    
+    function writeUUID(uuid as UUID) as void;
+}

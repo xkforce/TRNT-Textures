@@ -1,0 +1,16 @@
+import crafttweaker.entity.IEntityLiving;
+import crafttweaker.world.IBlockPos;
+
+zenClass IEntityCreature extends IEntityLiving {
+    val hasHome as bool;
+    val hasPath as bool;
+    val homePosition as IBlockPos;
+    val isWithinHomeDistance as bool;
+    val maximumHomeDistance as float;
+    
+    function detachHome() as void;
+    
+    function isPositionWithinHomeDistance(pos as IBlockPos) as bool;
+    
+    function setHomePositionAndDistance(pos as IBlockPos, distance as int) as void;
+}

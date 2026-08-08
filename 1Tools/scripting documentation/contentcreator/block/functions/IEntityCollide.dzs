@@ -1,0 +1,9 @@
+import crafttweaker.block.IBlockState;
+import crafttweaker.entity.IEntity;
+import crafttweaker.world.IBlockPos;
+import crafttweaker.world.IWorld;
+
+zenClass IEntityCollide {
+    
+    function (arg0 as IWorld, arg1 as IBlockPos, arg2 as IBlockState, arg3 as IEntity) as void;
+}

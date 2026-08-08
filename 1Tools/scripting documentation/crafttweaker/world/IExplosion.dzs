@@ -1,0 +1,22 @@
+import crafttweaker.entity.IEntityLivingBase;
+import crafttweaker.player.IPlayer;
+import crafttweaker.util.Position3f;
+import crafttweaker.world.IBlockPos;
+import crafttweaker.world.IVector3d;
+import crafttweaker.world.IWorld;
+
+zenClass IExplosion {
+    var affectedBlockPositions as [IBlockPos];
+    val placedBy as IEntityLivingBase;
+    val playerKnockbackMap as IVector3d[IPlayer];
+    val position as Position3f;
+    val world as IWorld;
+    
+    function clearAffectedBlockPositions() as void;
+    
+    function doExplosionA() as void;
+    
+    function doExplosionB(spawnParticles as bool) as void;
+    
+    function onExplosionStart(world as IWorld) as bool;
+}

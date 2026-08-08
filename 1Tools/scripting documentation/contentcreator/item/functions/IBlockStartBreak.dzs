@@ -1,0 +1,8 @@
+import crafttweaker.item.IItemStack;
+import crafttweaker.player.IPlayer;
+import crafttweaker.world.IBlockPos;
+
+zenClass IBlockStartBreak {
+    
+    function (arg0 as IItemStack, arg1 as IBlockPos, arg2 as IPlayer) as bool;
+}

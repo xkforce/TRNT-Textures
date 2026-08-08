@@ -1,0 +1,10 @@
+import crafttweaker.event.IEventCancelable;
+import crafttweaker.event.MinecartEvent;
+import crafttweaker.item.IItemStack;
+import crafttweaker.player.IPlayer;
+
+zenClass MinecartInteractEvent extends IEventCancelable, MinecartEvent {
+    val hand as string;
+    val item as IItemStack;
+    val player as IPlayer;
+}

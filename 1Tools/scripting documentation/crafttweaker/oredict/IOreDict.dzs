@@ -1,0 +1,15 @@
+import crafttweaker.oredict.IOreDictEntry;
+
+zenClass IOreDict {
+    val entries as [IOreDictEntry];
+    
+    function contains(name as string) as bool;
+    
+    function get(name as string) as IOreDictEntry;
+    
+    operator has(name as string) as bool;
+    
+    operator .(name as string) as IOreDictEntry;
+    
+    operator for_in() as [IOreDictEntry];
+}

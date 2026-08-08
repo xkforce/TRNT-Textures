@@ -1,0 +1,140 @@
+import crafttweaker.util.IAxisAlignedBB;
+import crafttweaker.util.IRandom;
+import crafttweaker.world.IWorld;
+
+zenClass IParticle {
+    val canCollide as bool;
+    val height as float;
+    val isExpired as bool;
+    val motionX as double;
+    val motionY as double;
+    val motionZ as double;
+    val onGround as bool;
+    val particleAge as int;
+    val particleAlpha as float;
+    val particleAngle as float;
+    val particleBlue as float;
+    val particleGravity as float;
+    val particleGreen as float;
+    val particleMaxAge as int;
+    val particleRed as float;
+    val particleScale as float;
+    val particleTextureIndexX as int;
+    val particleTextureIndexY as int;
+    val particleTextureJitterX as float;
+    val particleTextureJitterY as float;
+    val posX as double;
+    val posY as double;
+    val posZ as double;
+    val prevParticleAngle as float;
+    val prevPosX as double;
+    val prevPosY as double;
+    val prevPosZ as double;
+    val rand as IRandom;
+    val width as float;
+    
+    static function particle(arg0 as IWorld, arg1 as double, arg2 as double, arg3 as double) as IParticle;
+    
+    static function particle(arg0 as IWorld, arg1 as double, arg2 as double, arg3 as double, arg4 as double, arg5 as double, arg6 as double) as IParticle;
+    
+    static function register(arg0 as string, arg1 as string, arg2 as bool, arg3 as int) as any;
+    
+    function canCollide() as bool;
+    
+    function disableDepth() as IParticle;
+    
+    function getBoundingBox() as IAxisAlignedBB;
+    
+    function getBrightnessForRender(arg0 as float) as int;
+    
+    function getHeight() as float;
+    
+    function getMotionX() as double;
+    
+    function getMotionY() as double;
+    
+    function getMotionZ() as double;
+    
+    function getParticleAge() as int;
+    
+    function getParticleAlpha() as float;
+    
+    function getParticleAngle() as float;
+    
+    function getParticleBlue() as float;
+    
+    function getParticleGravity() as float;
+    
+    function getParticleGreen() as float;
+    
+    function getParticleMaxAge() as int;
+    
+    function getParticleRed() as float;
+    
+    function getParticleScale() as float;
+    
+    function getParticleTextureIndexX() as int;
+    
+    function getParticleTextureIndexY() as int;
+    
+    function getParticleTextureJitterX() as float;
+    
+    function getParticleTextureJitterY() as float;
+    
+    function getPosX() as double;
+    
+    function getPosY() as double;
+    
+    function getPosZ() as double;
+    
+    function getPrevParticleAngle() as float;
+    
+    function getPrevPosX() as double;
+    
+    function getPrevPosY() as double;
+    
+    function getPrevPosZ() as double;
+    
+    function getRandom() as IRandom;
+    
+    function getWidth() as float;
+    
+    function getWorld() as any;
+    
+    function isExpired() as bool;
+    
+    function move(arg0 as double, arg1 as double, arg2 as double) as IParticle;
+    
+    function multipleParticleScaleBy(arg0 as float) as IParticle;
+    
+    function multiplyVelocity(arg0 as float) as IParticle;
+    
+    function onGround() as bool;
+    
+    
+    function resetPositionToBB() as IParticle;
+    
+    function setAlpha(arg0 as float) as IParticle;
+    
+    function setBoundingBox(arg0 as IAxisAlignedBB) as IParticle;
+    
+    function setBoundingBox(arg0 as double, arg1 as double, arg2 as double, arg3 as double, arg4 as double, arg5 as double) as IParticle;
+    
+    function setExpired() as void;
+    
+    function setFXLayer(arg0 as int) as IParticle;
+    
+    function setMaxAge(arg0 as int) as IParticle;
+    
+    function setPosition(arg0 as double, arg1 as double, arg2 as double) as IParticle;
+    
+    function setRGB(arg0 as float, arg1 as float, arg2 as float) as IParticle;
+    
+    function setSize(arg0 as float, arg1 as float) as IParticle;
+    
+    function setTexture() as IParticle;
+    
+    function setTexture(arg0 as int) as IParticle;
+    
+    function setTexture(arg0 as string) as IParticle;
+}

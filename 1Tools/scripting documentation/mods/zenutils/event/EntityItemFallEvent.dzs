@@ -1,0 +1,9 @@
+import crafttweaker.block.IBlockState;
+import crafttweaker.entity.IEntityItem;
+import crafttweaker.event.IEntityEvent;
+
+zenClass EntityItemFallEvent extends IEntityEvent {
+    val blockStates as [IBlockState];
+    val distance as float;
+    val item as IEntityItem;
+}

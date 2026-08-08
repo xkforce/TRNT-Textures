@@ -1,0 +1,10 @@
+import crafttweaker.block.IBlockState;
+import crafttweaker.entity.IEntityLivingBase;
+import crafttweaker.item.IItemStack;
+import crafttweaker.world.IBlockPos;
+import crafttweaker.world.IWorld;
+
+zenClass IPlacedBy {
+    
+    function (arg0 as IWorld, arg1 as IBlockPos, arg2 as IBlockState, arg3 as IEntityLivingBase, arg4 as IItemStack) as void;
+}

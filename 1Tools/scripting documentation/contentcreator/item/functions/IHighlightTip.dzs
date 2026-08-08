@@ -1,0 +1,6 @@
+import crafttweaker.item.IItemStack;
+
+zenClass IHighlightTip {
+    
+    function (arg0 as IItemStack, arg1 as string) as string;
+}

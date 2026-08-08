@@ -1,0 +1,26 @@
+import crafttweaker.entity.IEntityEquipmentSlot;
+
+zenClass Hand {
+    
+    static function fromString(handString as string) as Hand;
+    
+    static function main() as Hand;
+    
+    static function off() as Hand;
+    
+    function asEntityEquipmentSlot() as IEntityEquipmentSlot;
+    
+    operator ==(other as Hand) as bool;
+    
+    operator !=(other as Hand) as bool;
+    
+    operator >(other as Hand) as bool;
+    
+    operator >=(other as Hand) as bool;
+    
+    operator <(other as Hand) as bool;
+    
+    operator <=(other as Hand) as bool;
+    
+    operator as() as IEntityEquipmentSlot;
+}

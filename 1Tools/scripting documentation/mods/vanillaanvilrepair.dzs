@@ -1,0 +1,6 @@
+import crafttweaker.item.IIngredient;
+
+zenClass vanillaanvilrepair {
+    
+    static function addRepairEntry(arg0 as IIngredient, arg1 as IIngredient) as void;
+}

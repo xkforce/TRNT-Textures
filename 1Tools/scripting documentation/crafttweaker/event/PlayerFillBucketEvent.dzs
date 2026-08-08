@@ -1,0 +1,19 @@
+import crafttweaker.block.IBlock;
+import crafttweaker.block.IBlockState;
+import crafttweaker.event.IEventCancelable;
+import crafttweaker.event.IEventPositionable;
+import crafttweaker.event.IEventProcessable;
+import crafttweaker.event.IPlayerEvent;
+import crafttweaker.item.IItemStack;
+import crafttweaker.world.IRayTraceResult;
+import crafttweaker.world.IWorld;
+
+zenClass PlayerFillBucketEvent extends IEventCancelable, IEventPositionable, IEventProcessable, IPlayerEvent {
+    val block as IBlock;
+    val blockState as IBlockState;
+    val dimension as int;
+    val emptyBucket as IItemStack;
+    val rayTraceResult as IRayTraceResult;
+    var result as IItemStack;
+    val world as IWorld;
+}

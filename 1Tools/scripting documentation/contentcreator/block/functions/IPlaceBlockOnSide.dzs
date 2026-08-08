@@ -1,0 +1,8 @@
+import crafttweaker.world.IBlockPos;
+import crafttweaker.world.IFacing;
+import crafttweaker.world.IWorld;
+
+zenClass IPlaceBlockOnSide {
+    
+    function (arg0 as IWorld, arg1 as IBlockPos, arg2 as IFacing) as bool;
+}

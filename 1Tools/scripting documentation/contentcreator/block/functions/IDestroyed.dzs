@@ -1,0 +1,8 @@
+import crafttweaker.block.IBlockState;
+import crafttweaker.world.IBlockPos;
+import crafttweaker.world.IWorld;
+
+zenClass IDestroyed {
+    
+    function (arg0 as IWorld, arg1 as IBlockPos, arg2 as IBlockState) as void;
+}

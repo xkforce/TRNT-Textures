@@ -1,0 +1,10 @@
+import crafttweaker.item.IItemStack;
+
+zenClass Blueprint {
+    
+    static function addBlueprint(category as string) as void;
+    
+    static function addVillagerTrade(category as string, price as IItemStack) as void;
+    
+    static function getRegisteredBlueprints() as [string];
+}

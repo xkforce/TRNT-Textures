@@ -1,0 +1,6 @@
+import mods.zenutils.cotx.Block;
+import mods.zenutils.cotx.IPlacementFacingFunction;
+
+zenClass DirectionalBlock extends Block {
+    var placementFacingFunction as IPlacementFacingFunction;
+}

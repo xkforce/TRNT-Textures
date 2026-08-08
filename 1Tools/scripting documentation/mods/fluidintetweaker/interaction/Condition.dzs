@@ -1,0 +1,8 @@
+
+zenClass Condition {
+    static biome as Condition;
+    static byChance as Condition;
+    static dimension as Condition;
+    static fluidLevel as Condition;
+    static isInitiatorAbove as Condition;
+}

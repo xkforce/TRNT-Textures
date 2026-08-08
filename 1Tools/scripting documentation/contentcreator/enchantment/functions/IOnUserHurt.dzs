@@ -1,0 +1,7 @@
+import crafttweaker.entity.IEntity;
+import crafttweaker.entity.IEntityLivingBase;
+
+zenClass IOnUserHurt {
+    
+    function (arg0 as IEntityLivingBase, arg1 as IEntity, arg2 as int) as void;
+}

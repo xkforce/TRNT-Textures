@@ -1,0 +1,57 @@
+import mods.zenutils.config.ModMetaData;
+import mods.zenutils.config.elements.ConfigElement;
+
+zenClass ConfigGroup extends ConfigElement {
+    
+    function booleanArrayMap(name as string, defaultVal as bool[][string] = null) as ConfigElement;
+    
+    function booleanMap(name as string, defaultVal as bool[string] = null) as ConfigElement;
+    
+    function booleanValue(nameIn as string, defaultVal as bool) as ConfigElement;
+    
+    function booleanValues(nameIn as string, ...defaultVal as bool) as ConfigElement;
+    
+    function category(nameIn as string) as ConfigGroup;
+    
+    function configEnum(name as string, defaultValue as string, enums as string[]) as ConfigElement;
+    
+    function doubleArrayMap(name as string, defaultVal as double[][string] = null) as ConfigElement;
+    
+    function doubleMap(name as string, defaultVal as double[string] = null) as ConfigElement;
+    
+    function doubleValue(nameIn as string, defaultVal as double) as ConfigElement;
+    
+    function doubleValues(nameIn as string, ...doubles as double) as ConfigElement;
+    
+    function intArrayMap(name as string, defaultVal as int[][string] = null) as ConfigElement;
+    
+    function intMap(name as string, defaultVal as int[string] = null) as ConfigElement;
+    
+    function integer(nameIn as string, defaultVal as int) as ConfigElement;
+    
+    function integerArray(nameIn as string, ...defaultVal as int) as ConfigElement;
+    
+    function lowerRangedDouble(nameIn as string, defaultVal as double, min as double) as ConfigElement;
+    
+    function lowerRangedInteger(nameIn as string, defaultVal as int, min as int) as ConfigElement;
+    
+    function rangedDouble(nameIn as string, defaultVal as double, min as double, max as double) as ConfigElement;
+    
+    function rangedInteger(nameIn as string, defaultVal as int, min as int, max as int) as ConfigElement;
+    
+    function register() as void;
+    
+    function stringArrayMap(name as string, defaultVal as string[][string] = null) as ConfigElement;
+    
+    function stringMap(name as string, defaultVal as string[string] = null) as ConfigElement;
+    
+    function stringValue(nameIn as string, defaultVal as string) as ConfigElement;
+    
+    function stringValues(nameIn as string, ...strings as string) as ConfigElement;
+    
+    function upperRangedDouble(nameIn as string, defaultVal as double, max as double) as ConfigElement;
+    
+    function upperRangedInteger(nameIn as string, defaultVal as int, max as int) as ConfigElement;
+    
+    function withGui(modMeta as ModMetaData = null) as ConfigGroup;
+}

@@ -1,0 +1,7 @@
+import crafttweaker.world.IBlockPos;
+import crafttweaker.world.IWorld;
+
+zenClass IPlaceBlockAt {
+    
+    function (arg0 as IWorld, arg1 as IBlockPos) as bool;
+}

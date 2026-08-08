@@ -1,0 +1,6 @@
+import crafttweaker.world.IWorld;
+
+zenClass ITickRate {
+    
+    function (arg0 as IWorld) as int;
+}

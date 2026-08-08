@@ -1,0 +1,35 @@
+import crafttweaker.item.IIngredient;
+import crafttweaker.item.IItemStack;
+import crafttweaker.recipes.IRecipeAction;
+import crafttweaker.recipes.IRecipeFunction;
+
+zenClass RecipePattern {
+    val ingredients as IIngredient[][];
+    val shapelessIngredients as IIngredient[];
+    
+    static function init(recipePattern as string[]) as RecipePattern;
+    
+    static function init(output as IItemStack, recipePattern as string[]) as RecipePattern;
+    
+    static function init(name as string, output as IItemStack, recipePattern as string[]) as RecipePattern;
+    
+    function and(character as string, ingredient as IIngredient) as RecipePattern;
+    
+    function build() as void;
+    
+    function map(mapping as IIngredient[string]) as RecipePattern;
+    
+    function setAction(action as IRecipeAction) as RecipePattern;
+    
+    function setFunction(_function as IRecipeFunction) as RecipePattern;
+    
+    function setMirrored(isMirrored as bool) as RecipePattern;
+    
+    function setName(name as string) as RecipePattern;
+    
+    function setShapeless(isShapeless as bool) as RecipePattern;
+    
+    function with(character as string, ingredient as IIngredient) as RecipePattern;
+    
+    function withOutput(output as IItemStack) as RecipePattern;
+}

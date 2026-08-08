@@ -1,0 +1,14 @@
+import crafttweaker.entity.IEntityLivingBase;
+
+zenClass IDamageFunction {
+    
+    static function add(arg0 as float) as IDamageFunction;
+    
+    static function clamp(arg0 as float, arg1 as float) as IDamageFunction;
+    
+    static function multiply(arg0 as float) as IDamageFunction;
+    
+    static function threshold(arg0 as float) as IDamageFunction;
+    
+    function (arg0 as IEntityLivingBase, arg1 as float) as float;
+}

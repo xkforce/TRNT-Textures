@@ -1,0 +1,9 @@
+import crafttweaker.entity.IEntity;
+import crafttweaker.entity.IEntityItem;
+import crafttweaker.item.IItemStack;
+import crafttweaker.world.IWorld;
+
+zenClass ICustomEntity {
+    
+    function (arg0 as IWorld, arg1 as IEntityItem, arg2 as IItemStack) as IEntity;
+}

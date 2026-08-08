@@ -1,0 +1,16 @@
+import crafttweaker.entity.IEntityDefinition;
+import crafttweaker.item.IIngredient;
+import crafttweaker.item.IItemStack;
+import mods.alfinivia.IEntityFunction;
+import mods.alfinivia.IMilkFunction;
+
+zenClass Milking {
+    
+    static function add(arg0 as IIngredient, arg1 as IEntityDefinition, arg2 as IItemStack, arg3 as bool) as void;
+    
+    static function add(arg0 as IIngredient, arg1 as IEntityDefinition, arg2 as IMilkFunction, arg3 as bool) as void;
+    
+    static function add(arg0 as IIngredient, arg1 as IEntityFunction, arg2 as IItemStack, arg3 as bool) as void;
+    
+    static function add(arg0 as IIngredient, arg1 as IEntityFunction, arg2 as IMilkFunction, arg3 as bool) as void;
+}

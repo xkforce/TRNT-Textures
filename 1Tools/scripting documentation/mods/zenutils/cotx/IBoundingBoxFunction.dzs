@@ -1,0 +1,11 @@
+import crafttweaker.world.IBlockAccess;
+import mods.contenttweaker.AxisAlignedBB;
+import mods.contenttweaker.BlockPos;
+import mods.contenttweaker.BlockState;
+
+zenClass IBoundingBoxFunction {
+    
+    function (origin as AxisAlignedBB, blockState as BlockState, world as IBlockAccess, pos as BlockPos) as AxisAlignedBB;
+    
+    function apply(origin as AxisAlignedBB, blockState as BlockState, world as IBlockAccess, pos as BlockPos) as AxisAlignedBB;
+}

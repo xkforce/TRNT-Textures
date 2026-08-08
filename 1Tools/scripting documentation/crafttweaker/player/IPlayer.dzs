@@ -1,0 +1,144 @@
+import crafttweaker.chat.IChatMessage;
+import crafttweaker.container.IContainer;
+import crafttweaker.data.IData;
+import crafttweaker.entity.IEntity;
+import crafttweaker.entity.IEntityEquipmentSlot;
+import crafttweaker.entity.IEntityFishHook;
+import crafttweaker.entity.IEntityItem;
+import crafttweaker.entity.IEntityLivingBase;
+import crafttweaker.formatting.IFormattedText;
+import crafttweaker.item.IItemStack;
+import crafttweaker.player.IFoodStats;
+import crafttweaker.player.IUser;
+import crafttweaker.text.ITextComponent;
+import crafttweaker.util.Position3f;
+import crafttweaker.world.IBlockPos;
+import crafttweaker.world.IFacing;
+import mods.ctintegration.advancement.IAdvancement;
+import mods.ctintegration.advancement.IAdvancementProgress;
+import mods.zenutils.IActionResult;
+import mods.zenutils.ItemHandler;
+import mods.zenutils.PlayerStat;
+
+zenClass IPlayer extends IEntityLivingBase, IUser {
+    val adventure as bool;
+    val bedLocation as IBlockPos;
+    var canEdit as bool;
+    var canFly as bool;
+    val creative as bool;
+    val currentItem as IItemStack;
+    var damageDisabled as bool;
+    val data as IData;
+    val experience as int;
+    val fake as bool;
+    val fishHook as IEntityFishHook;
+    val foodStats as IFoodStats;
+    val hotbarSize as int;
+    val inventoryContainer as IContainer;
+    val inventorySize as int;
+    val isFullyAsleep as bool;
+    val isSleeping as bool;
+    val name as string;
+    var score as int;
+    val sleepTimer as int;
+    val spectator as bool;
+    val uuid as string;
+    var xp as int;
+    var xpPoints as int;
+    
+    function addExperience(amount as int) as void;
+    
+    function addScore(amount as int) as void;
+    
+    function addStat(stat as PlayerStat, amount as int = 1) as void;
+    
+    function changeDimension(dimensionId as int) as void;
+    
+    function dropItem(dropAll as bool) as IEntityItem;
+    
+    function dropItem(item as IItemStack) as IEntityItem;
+    
+    function executeCommand(rawCommand as string) as void;
+    
+    function getAdvancementProgress(advancement as IAdvancement) as IAdvancementProgress;
+    
+    function getBedLocation() as IBlockPos;
+    
+    function getCooldown(item as IItemStack) as float;
+    
+    function getFishHook() as IEntityFishHook;
+    
+    function getHotbarStack(i as int) as IItemStack;
+    
+    function getInventoryContainer() as IContainer;
+    
+    function getInventoryStack(i as int) as IItemStack;
+    
+    function getPlayerInventoryItemHandler() as ItemHandler;
+    
+    function getScore() as int;
+    
+    function getSleepTimer() as int;
+    
+    function getTotalXP() as int;
+    
+    function getXpPoints() as int;
+    
+    function give(stack as IItemStack) as void;
+    
+    function isFake() as bool;
+    
+    function isFake() as bool;
+    
+    function isFullyAsleep() as bool;
+    
+    function isPlayerMP() as bool;
+    
+    function isSleeping() as bool;
+    
+    function isSpectator() as bool;
+    
+    function playSound(soundResourceLocation as string, volume as float, pitch as float) as void;
+    
+    function readStat(stat as PlayerStat) as int;
+    
+    function removeExperience(amount as int) as void;
+    
+    function removeXP(xp as int) as void;
+    
+    function replaceItemInInventory(inventorySlot as int, itemStack as IItemStack) as bool;
+    
+    function sendChat(message as IChatMessage) as void;
+    
+    function sendChat(message as string) as void;
+    
+    function sendPlaySoundPacket(soundResourceLocation as string, soundCategory as string, pos as Position3f, volume as float, pitch as float) as void;
+    
+    function sendRichTextStatusMessage(textComponent as ITextComponent, hotbar as bool = true) as void;
+    
+    function sendStatusMessage(message as IFormattedText, hotBar as bool = true) as void;
+    
+    function sendStatusMessage(message as string, hotBar as bool = true) as void;
+    
+    function setCooldown(item as IItemStack, time as int) as void;
+    
+    function setScore(amount as int) as void;
+    
+    function setXpPoints(xpPoints as int) as void;
+    
+    function simulateLeftClickBlock(stack as IItemStack = null, pos as IBlockPos = null, side as IFacing = null) as IActionResult;
+    
+    function simulateRightClickBlock(stack as IItemStack, hand as IEntityEquipmentSlot = null, pos as IBlockPos = null, facing as IFacing = null, hitX as float = -1.0, hitY as float = -1.0, hitZ as float = -1.0) as IActionResult;
+    
+    function simulateRightClickEntity(entity as IEntity, stack as IItemStack = null, hand as IEntityEquipmentSlot = null) as IActionResult;
+    
+    function simulateRightClickItem(stack as IItemStack, hand as IEntityEquipmentSlot = null) as IActionResult;
+    
+    function simulateUseItemFinish(itemStack as IItemStack, hand as IEntityEquipmentSlot = null) as IItemStack;
+    
+    function takeStat(stat as PlayerStat) as void;
+    
+    function teleport(pos as Position3f) as void;
+    
+    function update(data as IData) as void;
+}

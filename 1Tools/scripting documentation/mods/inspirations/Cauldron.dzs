@@ -1,0 +1,42 @@
+import crafttweaker.item.IIngredient;
+import crafttweaker.item.IItemStack;
+import crafttweaker.liquid.ILiquidStack;
+
+zenClass Cauldron {
+    
+    static function addBrewingRecipe(output as string, input as string, reagent as IIngredient) as void;
+    
+    static function addDyeRecipe(output as IItemStack, input as IIngredient, stringDye as string) as void;
+    
+    static function addDyeRecipe(output as IItemStack, input as IIngredient, stringDye as string, levels as int) as void;
+    
+    static function addFillRecipe(input as IIngredient, fluid as ILiquidStack) as void;
+    
+    static function addFillRecipe(input as IIngredient, fluid as ILiquidStack, amount as int, container as IItemStack = null, boiling as bool = false) as void;
+    
+    static function addFluidMix(output as IItemStack, liquid1 as ILiquidStack, liquid2 as ILiquidStack) as void;
+    
+    static function addFluidRecipe(output as IItemStack, input as IIngredient, fluid as ILiquidStack) as void;
+    
+    static function addFluidRecipe(output as IItemStack, input as IIngredient, fluid as ILiquidStack, levels as int, boiling as bool = false) as void;
+    
+    static function addFluidTransform(output as ILiquidStack, input as IIngredient, fluid as ILiquidStack) as void;
+    
+    static function addFluidTransform(output as ILiquidStack, input as IIngredient, fluid as ILiquidStack, maxLevel as int, boiling as bool = false) as void;
+    
+    static function addPotionRecipe(output as IItemStack, input as IIngredient, potion as string) as void;
+    
+    static function addPotionRecipe(output as IItemStack, input as IIngredient, potion as string, levels as int, boiling as bool = false) as void;
+    
+    static function removeBrewingRecipe(output as string, input as string = null, reagent as IIngredient = null) as void;
+    
+    static function removeDyeRecipe(output as IIngredient, input as IIngredient = null, stringDye as string = null) as void;
+    
+    static function removeFillRecipe(input as IIngredient, fluid as ILiquidStack = null) as void;
+    
+    static function removeFluidRecipe(output as IIngredient, input as IIngredient = null, fluid as ILiquidStack = null) as void;
+    
+    static function removeFluidTransform(output as IIngredient, input as IIngredient = null, fluid as ILiquidStack = null) as void;
+    
+    static function removePotionRecipe(output as IIngredient, input as IIngredient = null, potion as string = null) as void;
+}

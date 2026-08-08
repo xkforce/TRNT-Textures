@@ -1,0 +1,34 @@
+import crafttweaker.entity.IEntity;
+import crafttweaker.entity.IEntityDrop;
+import crafttweaker.entity.IEntityDropFunction;
+import crafttweaker.item.IItemStack;
+import crafttweaker.item.WeightedItemStack;
+import crafttweaker.world.IBlockPos;
+import crafttweaker.world.IWorld;
+import mods.zenutils.IEntityTick;
+
+zenClass IEntityDefinition {
+    val drops as [IEntityDrop];
+    val id as string;
+    val name as string;
+    
+    function addDrop(stack as WeightedItemStack, min as int = 0, max as int = 0) as void;
+    
+    function addDrop(stack as IItemStack, min as int = 0, max as int = 0, chance as float = 0.0) as void;
+    
+    function addDropFunction(_function as IEntityDropFunction) as void;
+    
+    function addPlayerOnlyDrop(stack as WeightedItemStack, min as int = 0, max as int = 0) as void;
+    
+    function addPlayerOnlyDrop(stack as IItemStack, min as int = 0, max as int = 0, chance as float = 0.0) as void;
+    
+    function clearDrops() as void;
+    
+    function createEntity(world as IWorld) as IEntity;
+    
+    function onTick(operation as IEntityTick, interval as int = 0) as void;
+    
+    function removeDrop(stack as IItemStack) as void;
+    
+    function spawnEntity(world as IWorld, pos as IBlockPos) as IEntity;
+}

@@ -1,0 +1,38 @@
+import mods.ctintegration.date.IDate;
+
+zenClass IAdvancementProgress {
+    val completedCriteria as [string];
+    val percent as float;
+    val progressText as string;
+    val remainingCriteria as [string];
+    
+    function getCompletedCriteria() as [string];
+    
+    function getCriterionObtainedDate(criterion as string) as IDate;
+    
+    function getFirstProgressDate(criterion as string) as IDate;
+    
+    function getPercent() as float;
+    
+    function getProgressText() as string;
+    
+    function getRemainingCriteria() as [string];
+    
+    function grantCriterion(criterion as string) as bool;
+    
+    function hasProgress() as bool;
+    
+    function isCriterionObtained(criterion as string) as bool;
+    
+    function isDone() as bool;
+    
+    function obtainCriterion(criterion as string) as void;
+    
+    function resetAll() as void;
+    
+    function resetCriterion(criterion as string) as void;
+    
+    function revokeCriterion(criterion as string) as bool;
+    
+    function setCompleted() as bool;
+}

@@ -1,0 +1,9 @@
+import crafttweaker.entity.IEntity;
+import crafttweaker.world.IBlockPos;
+import crafttweaker.world.IExplosion;
+import crafttweaker.world.IWorld;
+
+zenClass IResistance {
+    
+    function (arg0 as IWorld, arg1 as IBlockPos, arg2 as IEntity, arg3 as IExplosion) as float;
+}

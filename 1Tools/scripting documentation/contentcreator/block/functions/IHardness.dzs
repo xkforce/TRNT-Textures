@@ -1,0 +1,8 @@
+import crafttweaker.block.IBlockState;
+import crafttweaker.world.IBlockPos;
+import crafttweaker.world.IWorld;
+
+zenClass IHardness {
+    
+    function (arg0 as IBlockState, arg1 as IWorld, arg2 as IBlockPos) as float;
+}

@@ -1,0 +1,8 @@
+import crafttweaker.entity.IEntity;
+import crafttweaker.item.IItemStack;
+import crafttweaker.player.IPlayer;
+
+zenClass ILeftClickEntity {
+    
+    function (arg0 as IItemStack, arg1 as IPlayer, arg2 as IEntity) as bool;
+}

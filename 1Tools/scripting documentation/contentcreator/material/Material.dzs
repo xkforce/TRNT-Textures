@@ -1,0 +1,94 @@
+import crafttweaker.block.IBlockState;
+import crafttweaker.block.IMaterial;
+import crafttweaker.item.IItemStack;
+import crafttweaker.liquid.ILiquidStack;
+
+zenClass Material {
+    val color as int;
+    val localizedName as string;
+    val name as string;
+    
+    static function get(arg0 as string, arg1 as int = 0) as Material;
+    
+    static function get(arg0 as int, arg1 as string, arg2 as int = 0) as Material;
+    
+    function addBlock(arg0 as string, arg1 as string = null) as Material;
+    
+    function addBlocks(...arg0 as string) as Material;
+    
+    function addFluid(arg0 as string, arg1 as int, arg2 as int = 0, arg3 as int = 0, arg4 as bool = false, arg5 as string = null) as Material;
+    
+    function addItem(arg0 as string, arg1 as string = null) as Material;
+    
+    function addItems(...arg0 as string) as Material;
+    
+    function addProperty(arg0 as string, arg1 as bool) as Material;
+    
+    function addProperty(arg0 as string, arg1 as byte) as Material;
+    
+    function addProperty(arg0 as string, arg1 as double) as Material;
+    
+    function addProperty(arg0 as string, arg1 as float) as Material;
+    
+    function addProperty(arg0 as string, arg1 as int) as Material;
+    
+    function addProperty(arg0 as string, arg1 as long) as Material;
+    
+    function addProperty(arg0 as string, arg1 as short) as Material;
+    
+    function addProperty(arg0 as string, arg1 as string) as Material;
+    
+    function addPropertyInfo() as Material;
+    
+    function addTooltip(...arg0 as string) as Material;
+    
+    function getBlock(arg0 as string) as IItemStack;
+    
+    function getBlockState(arg0 as string) as IBlockState;
+    
+    function getBool(arg0 as string) as bool;
+    
+    function getByte(arg0 as string) as byte;
+    
+    function getDouble(arg0 as string) as double;
+    
+    function getFloat(arg0 as string) as float;
+    
+    function getFluid(arg0 as string) as ILiquidStack;
+    
+    function getInt(arg0 as string) as int;
+    
+    function getItem(arg0 as string) as IItemStack;
+    
+    function getLong(arg0 as string) as long;
+    
+    function getShort(arg0 as string) as short;
+    
+    function getString(arg0 as string) as string;
+    
+    
+    function setBackgroundColor(arg0 as int) as Material;
+    
+    
+    function setBackgroundSize(arg0 as int) as Material;
+    
+    
+    function setBackgroundTexture(arg0 as int) as Material;
+    
+    function setBackgroundTexture(arg0 as string) as Material;
+    
+    function setColor(arg0 as int) as Material;
+    
+    function setEnchanted() as Material;
+    
+    function setMaterial(arg0 as IMaterial) as Material;
+    
+    function setOres(...arg0 as string) as Material;
+    
+    function setPulseEffect() as Material;
+    
+    
+    function setRarity(arg0 as string) as Material;
+    
+    function setTexture(arg0 as string) as Material;
+}

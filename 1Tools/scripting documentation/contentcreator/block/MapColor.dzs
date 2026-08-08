@@ -1,0 +1,9 @@
+
+zenClass MapColor {
+    
+    static function fromColor(arg0 as string) as any;
+    
+    static function fromIndex(arg0 as int) as any;
+    
+    static function fromName(arg0 as string) as any;
+}

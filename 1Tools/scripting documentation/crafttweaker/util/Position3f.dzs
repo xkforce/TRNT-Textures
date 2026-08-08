@@ -1,0 +1,25 @@
+import crafttweaker.world.IBlockPos;
+
+zenClass Position3f {
+    var x as float;
+    var y as float;
+    var z as float;
+    
+    static function create(x as float, y as float, z as float) as Position3f;
+    
+    function asBlockPos() as IBlockPos;
+    
+    function getX() as float;
+    
+    function getY() as float;
+    
+    function getZ() as float;
+    
+    function setX(x as float) as void;
+    
+    function setY(y as float) as void;
+    
+    function setZ(z as float) as void;
+    
+    operator as() as IBlockPos;
+}

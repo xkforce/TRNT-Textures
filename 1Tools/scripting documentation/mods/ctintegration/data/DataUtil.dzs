@@ -1,0 +1,24 @@
+import crafttweaker.data.IData;
+
+zenClass DataUtil {
+    
+    static function fromJson(jsonString as string) as IData;
+    
+    static function fromSNBT(nbtString as string) as IData;
+    
+    static function getRawString(data as IData) as string;
+    
+    static function parse(dataString as string) as IData;
+    
+    static function read(file as string) as IData;
+    
+    static function readSNBT(file as string) as IData;
+    
+    static function toJson(data as IData) as string;
+    
+    static function toNBTString(data as IData) as string;
+    
+    static function write(file as string, data as IData) as void;
+    
+    static function writeSNBT(file as string, data as IData) as void;
+}

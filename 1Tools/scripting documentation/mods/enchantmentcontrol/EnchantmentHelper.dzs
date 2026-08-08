@@ -1,0 +1,28 @@
+import crafttweaker.enchantments.IEnchantment;
+import crafttweaker.enchantments.IEnchantmentDefinition;
+import crafttweaker.entity.IEntityLivingBase;
+import crafttweaker.item.IItemStack;
+import crafttweaker.util.IRandom;
+
+zenClass EnchantmentHelper {
+    
+    static function addEnchantment(arg0 as IItemStack, arg1 as IEnchantment) as void;
+    
+    static function enchantRandomly(arg0 as IItemStack, arg1 as IRandom) as IItemStack;
+    
+    static function enchantWithLevels(arg0 as IItemStack, arg1 as int, arg2 as bool, arg3 as IRandom) as IItemStack;
+    
+    static function getEnchantmentLevel(arg0 as IEnchantmentDefinition, arg1 as IItemStack) as int;
+    
+    static function getEnchantments(arg0 as IItemStack) as [IEnchantment];
+    
+    static function getMaxEnchantmentLevel(arg0 as IEnchantmentDefinition, arg1 as IEntityLivingBase) as int;
+    
+    static function getRandomEnchantedItem(arg0 as IEnchantmentDefinition, arg1 as IEntityLivingBase) as IItemStack;
+    
+    static function rand() as IRandom;
+    
+    static function removeEnchantment(arg0 as IItemStack, arg1 as IEnchantmentDefinition) as void;
+    
+    static function setEnchantments(arg0 as [IEnchantment], arg1 as IItemStack) as void;
+}

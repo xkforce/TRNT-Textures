@@ -1,0 +1,4 @@
+
+zenClass Condition {
+    static byChance as Condition;
+}

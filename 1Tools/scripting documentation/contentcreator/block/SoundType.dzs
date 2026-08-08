@@ -1,0 +1,19 @@
+
+zenClass SoundType {
+    
+    static function get(arg0 as string) as SoundType;
+    
+    function getBreakSound() as any;
+    
+    function getFallSound() as any;
+    
+    function getHitSound() as any;
+    
+    function getPitch() as float;
+    
+    function getPlaceSound() as any;
+    
+    function getStepSound() as any;
+    
+    function getVolume() as float;
+}

@@ -1,0 +1,7 @@
+
+zenClass VanillaSystemOverride {
+    
+    function (arg0 as float, arg1 as int) as float;
+    
+    function handle(arg0 as float, arg1 as int) as float;
+}

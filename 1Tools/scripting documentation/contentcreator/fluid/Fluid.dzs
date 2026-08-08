@@ -1,0 +1,35 @@
+import contentcreator.sound.SoundEvent;
+import crafttweaker.block.IMaterial;
+
+zenClass Fluid {
+    
+    static function create(arg0 as string, arg1 as string = null, arg2 as string = null, arg3 as string = null) as Fluid;
+    
+    static function getFluid(arg0 as string) as Fluid;
+    
+    function addBlock(arg0 as IMaterial) as Fluid;
+    
+    function addBucket() as Fluid;
+    
+    function register() as void;
+    
+    function setColor(arg0 as int) as Fluid;
+    
+    function setDensity(arg0 as int) as Fluid;
+    
+    function setEmptySound(arg0 as SoundEvent) as Fluid;
+    
+    function setFillSound(arg0 as SoundEvent) as Fluid;
+    
+    function setGaseous() as Fluid;
+    
+    function setLuminosity(arg0 as int) as Fluid;
+    
+    function setRarity(arg0 as string) as Fluid;
+    
+    function setTemperature(arg0 as int) as Fluid;
+    
+    function setUnlocalizedName(arg0 as string) as Fluid;
+    
+    function setViscosity(arg0 as int) as Fluid;
+}

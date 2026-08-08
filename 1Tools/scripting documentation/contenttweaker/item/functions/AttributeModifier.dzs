@@ -1,0 +1,6 @@
+import crafttweaker.entity.IEntityEquipmentSlot;
+
+zenClass AttributeModifier {
+    
+    function (arg0 as IEntityEquipmentSlot) as double;
+}

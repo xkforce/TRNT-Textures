@@ -1,0 +1,6 @@
+import crafttweaker.block.IBlockState;
+
+zenClass IColor {
+    
+    function (arg0 as IBlockState, arg1 as int) as int;
+}

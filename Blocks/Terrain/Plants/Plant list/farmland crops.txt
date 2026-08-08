@@ -65,6 +65,8 @@ Quinoa
 Radish purple, black, daikon, blue
 Rutabaga
 Rye
+Black Salsify
+White Salsify
 Sesame
 Shallots
 Skirret
@@ -76,10 +78,8 @@ Strawberry (red/white)
 Sugar beets
 Sweet potato
 Taro
-Topi tambo
 Turnip
 Wheat
-Yacon
 
 
 

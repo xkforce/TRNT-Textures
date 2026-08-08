@@ -1,0 +1,47 @@
+import crafttweaker.block.IBlockState;
+import crafttweaker.liquid.ILiquidStack;
+import mods.fluidintetweaker.interaction.ComplexOutputBuilder;
+import mods.fluidintetweaker.interaction.InteractionEventBuilder;
+
+zenClass FITweaker {
+    
+    static function addJEIRecipeWrapper(blockInitiator as IBlockState, liquidSurrounding as ILiquidStack, fluidStateB as int, complexOutputBuilder as ComplexOutputBuilder, extraInfoLocalizationKey as string = null) as void;
+    
+    static function addJEIRecipeWrapper(liquidInitiator as ILiquidStack, fluidStateA as int, blockSurrounding as IBlockState, complexOutputBuilder as ComplexOutputBuilder, extraInfoLocalizationKey as string = null) as void;
+    
+    static function addJEIRecipeWrapper(liquidInitiator as ILiquidStack, fluidStateA as int, liquidSurrounding as ILiquidStack, fluidStateB as int, complexOutputBuilder as ComplexOutputBuilder, extraInfoLocalizationKey as string = null) as void;
+    
+    static function addRecipe(blockInitiator as IBlockState, liquidSurrounding as ILiquidStack, outputBlock as IBlockState, extraInfoLocalizationKey as string = null) as [string];
+    
+    static function addRecipe(blockInitiator as IBlockState, liquidSurrounding as ILiquidStack, complexOutputBuilder as ComplexOutputBuilder, extraInfoLocalizationKey as string = null) as [string];
+    
+    static function addRecipe(liquidInitiator as ILiquidStack, blockSurrounding as IBlockState, outputBlock as IBlockState, extraInfoLocalizationKey as string = null) as [string];
+    
+    static function addRecipe(liquidInitiator as ILiquidStack, blockSurrounding as IBlockState, complexOutputBuilder as ComplexOutputBuilder, extraInfoLocalizationKey as string = null) as [string];
+    
+    static function addRecipe(liquidInitiator as ILiquidStack, liquidSurrounding as ILiquidStack, outputBlock as IBlockState, extraInfoLocalizationKey as string = null) as [string];
+    
+    static function addRecipe(liquidInitiator as ILiquidStack, liquidSurrounding as ILiquidStack, complexOutputBuilder as ComplexOutputBuilder, extraInfoLocalizationKey as string = null) as [string];
+    
+    static function addRecipe(blockInitiator as IBlockState, liquidSurrounding as ILiquidStack, isSourceB as bool, outputBlock as IBlockState, extraInfoLocalizationKey as string = null) as [string];
+    
+    static function addRecipe(blockInitiator as IBlockState, liquidSurrounding as ILiquidStack, isSourceB as bool, complexOutputBuilder as ComplexOutputBuilder, extraInfoLocalizationKey as string = null) as [string];
+    
+    static function addRecipe(liquidInitiator as ILiquidStack, isSourceA as bool, blockSurrounding as IBlockState, outputBlock as IBlockState, extraInfoLocalizationKey as string = null) as [string];
+    
+    static function addRecipe(liquidInitiator as ILiquidStack, isSourceA as bool, blockSurrounding as IBlockState, complexOutputBuilder as ComplexOutputBuilder, extraInfoLocalizationKey as string = null) as [string];
+    
+    static function addRecipe(liquidInitiator as ILiquidStack, isSourceA as bool, liquidSurrounding as ILiquidStack, outputBlock as IBlockState, extraInfoLocalizationKey as string = null) as [string];
+    
+    static function addRecipe(liquidInitiator as ILiquidStack, isSourceA as bool, liquidSurrounding as ILiquidStack, complexOutputBuilder as ComplexOutputBuilder, extraInfoLocalizationKey as string = null) as [string];
+    
+    static function addRecipe(liquidInitiator as ILiquidStack, isSourceA as bool, liquidSurrounding as ILiquidStack, isSourceB as bool, outputBlock as IBlockState, extraInfoLocalizationKey as string = null) as [string];
+    
+    static function addRecipe(liquidInitiator as ILiquidStack, isSourceA as bool, liquidSurrounding as ILiquidStack, isSourceB as bool, complexOutputBuilder as ComplexOutputBuilder, extraInfoLocalizationKey as string = null) as [string];
+    
+    static function autoAddJEIRecipe(flag as bool) as void;
+    
+    static function eventBuilder() as InteractionEventBuilder;
+    
+    static function outputBuilder() as ComplexOutputBuilder;
+}

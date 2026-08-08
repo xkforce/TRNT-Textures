@@ -1,0 +1,102 @@
+
+zenClass IData {
+    val immutable as IData;
+    val length as int;
+    val rawString as string;
+    
+    static function createDataList(dataList as [IData]) as IData;
+    
+    static function createDataList(dataArray as IData[]) as IData;
+    
+    static function createEmptyMutableDataList() as IData;
+    
+    static function createEmptyMutableDataMap() as IData;
+    
+    function asBool() as bool;
+    
+    function asByte() as byte;
+    
+    function asByteArray() as byte[];
+    
+    function asDouble() as double;
+    
+    function asFloat() as float;
+    
+    function asInt() as int;
+    
+    function asIntArray() as int[];
+    
+    function asList() as [IData];
+    
+    function asLong() as long;
+    
+    function asMap() as IData[string];
+    
+    function asShort() as short;
+    
+    function asString() as string;
+    
+    function deepUpdate(toUpdate as IData, updateOperation as IData = null) as IData;
+    
+    function getRawString() as string;
+    
+    function memberGet(name as string) as IData;
+    
+    function memberSet(name as string, data as IData) as void;
+    
+    function setAtCopied(index as int, element as IData) as IData;
+    
+    function toJson() as string;
+    
+    function toNBTString() as string;
+    
+    function update(data as IData) as IData;
+    
+    operator +(other as IData) as IData;
+    
+    operator -(other as IData) as IData;
+    
+    operator *(other as IData) as IData;
+    
+    operator /(other as IData) as IData;
+    
+    operator %(other as IData) as IData;
+    
+    operator |(other as IData) as IData;
+    
+    operator &(other as IData) as IData;
+    
+    operator ^(other as IData) as IData;
+    
+    operator -() as IData;
+    
+    operator !() as IData;
+    
+    operator [](i as int) as IData;
+    
+    operator []=(i as int, value as IData) as void;
+    
+    operator has(data as IData) as bool;
+    
+    operator ==(data as IData) as bool;
+    
+    operator ==(data as IData) as bool;
+    
+    operator !=(data as IData) as bool;
+    
+    operator !=(data as IData) as bool;
+    
+    operator >(data as IData) as bool;
+    
+    operator >=(data as IData) as bool;
+    
+    operator <(data as IData) as bool;
+    
+    operator <=(data as IData) as bool;
+    
+    operator .(name as string) as IData;
+    
+    operator .=(name as string, data as IData) as void;
+    
+    operator as() as [IData] & bool & byte & byte[] & IData[string] & double & float & int & int[] & long & short & string;
+}

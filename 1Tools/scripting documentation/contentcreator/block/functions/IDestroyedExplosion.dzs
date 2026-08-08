@@ -1,0 +1,8 @@
+import crafttweaker.world.IBlockPos;
+import crafttweaker.world.IExplosion;
+import crafttweaker.world.IWorld;
+
+zenClass IDestroyedExplosion {
+    
+    function (arg0 as IWorld, arg1 as IBlockPos, arg2 as IExplosion) as void;
+}

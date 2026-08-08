@@ -1,0 +1,5 @@
+
+zenClass ICalcDamageByCreature {
+    
+    function (arg0 as int, arg1 as string) as float;
+}

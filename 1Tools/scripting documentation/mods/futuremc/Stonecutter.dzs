@@ -1,0 +1,17 @@
+import crafttweaker.item.IIngredient;
+import crafttweaker.item.IItemStack;
+
+zenClass Stonecutter {
+    
+    static function addOutput(arg0 as IIngredient, arg1 as IItemStack) as void;
+    
+    static function addOutputs(arg0 as IIngredient, ...arg1 as IItemStack) as void;
+    
+    static function clearRecipes() as void;
+    
+    static function removeAllOutputsForInput(arg0 as IItemStack) as void;
+    
+    static function removeOutputs(arg0 as IItemStack, ...arg1 as IItemStack) as void;
+    
+    static function removeRecipe(arg0 as IItemStack) as void;
+}

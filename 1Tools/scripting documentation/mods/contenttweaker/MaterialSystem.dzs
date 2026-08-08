@@ -1,0 +1,42 @@
+import mods.contenttweaker.Material;
+import mods.contenttweaker.MaterialBuilder;
+import mods.contenttweaker.MaterialPart;
+import mods.contenttweaker.MaterialPartItemStackSupplier;
+import mods.contenttweaker.Part;
+import mods.contenttweaker.PartBuilder;
+import mods.contenttweaker.PartDataPiece;
+import mods.contenttweaker.PartType;
+import mods.contenttweaker.RegisterMaterialPart;
+
+zenClass MaterialSystem {
+    
+    static function createPartDataPiece(name as string, required as bool) as PartDataPiece;
+    
+    static function createPartType(name as string, registerMaterialPart as RegisterMaterialPart) as PartType;
+    
+    static function createPartType(name as string, registerMaterialPart as RegisterMaterialPart, supplier as MaterialPartItemStackSupplier) as PartType;
+    
+    static function getMaterial(name as string) as Material;
+    
+    static function getMaterialBuilder() as MaterialBuilder;
+    
+    static function getMaterialPart(name as string) as MaterialPart;
+    
+    static function getMaterialParts() as MaterialPart[string];
+    
+    static function getMaterialPartsByRegex(regex as string) as MaterialPart[string];
+    
+    static function getMaterials() as Material[string];
+    
+    static function getPart(name as string) as Part;
+    
+    static function getPartBuilder() as PartBuilder;
+    
+    static function getPartType() as PartType[string];
+    
+    static function getPartType(name as string) as PartType;
+    
+    static function getParts() as Part[string];
+    
+    
+}

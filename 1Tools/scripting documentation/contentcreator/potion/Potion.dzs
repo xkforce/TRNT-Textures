@@ -1,0 +1,25 @@
+import contentcreator.potion.IPotionEffectApplier;
+import contentcreator.potion.IPotionReady;
+
+zenClass Potion {
+    
+    static function create(arg0 as string, arg1 as bool, arg2 as int) as Potion;
+    
+    function register() as void;
+    
+    function setBeneficial(arg0 as bool) as Potion;
+    
+    function setEffectApplier(arg0 as IPotionEffectApplier) as Potion;
+    
+    function setIcon(arg0 as string) as void;
+    
+    function setInstant(arg0 as bool) as Potion;
+    
+    function setPotionReady(arg0 as IPotionReady) as Potion;
+    
+    function setShouldRender(arg0 as bool) as Potion;
+    
+    function setShouldRenderHUD(arg0 as bool) as Potion;
+    
+    function setShouldRenderInvText(arg0 as bool) as Potion;
+}

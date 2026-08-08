@@ -1,0 +1,10 @@
+import crafttweaker.entity.IEntityLivingBase;
+import crafttweaker.event.IEventCancelable;
+import crafttweaker.event.IEventPositionable;
+import crafttweaker.world.IWorld;
+
+zenClass CustomFluidBehaviorEvent extends IEventCancelable, IEventPositionable {
+    val entityLivingBase as IEntityLivingBase;
+    val liquidBehaviorRecipeKey as string;
+    val world as IWorld;
+}

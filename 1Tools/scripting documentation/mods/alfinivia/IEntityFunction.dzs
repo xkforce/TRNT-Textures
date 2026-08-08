@@ -1,0 +1,19 @@
+import crafttweaker.entity.IEntity;
+import crafttweaker.entity.IEntityDefinition;
+
+zenClass IEntityFunction {
+    
+    static function getAnimals() as IEntityFunction;
+    
+    static function getBosses() as IEntityFunction;
+    
+    static function getCreatures() as IEntityFunction;
+    
+    static function getEntities(arg0 as IEntityDefinition[]) as IEntityFunction;
+    
+    static function getEntity(arg0 as IEntityDefinition) as IEntityFunction;
+    
+    static function getPlayers() as IEntityFunction;
+    
+    function (arg0 as IEntity) as bool;
+}

@@ -1,0 +1,7 @@
+import crafttweaker.enchantments.IEnchantmentDefinition;
+import crafttweaker.item.IItemStack;
+
+zenClass IApplyEnchantment {
+    
+    function (arg0 as IItemStack, arg1 as IEnchantmentDefinition) as bool;
+}

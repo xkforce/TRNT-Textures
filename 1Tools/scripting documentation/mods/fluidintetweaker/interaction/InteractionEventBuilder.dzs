@@ -1,0 +1,26 @@
+import crafttweaker.block.IBlockState;
+import crafttweaker.entity.IEntityDefinition;
+import crafttweaker.item.IItemStack;
+import crafttweaker.liquid.ILiquidStack;
+import mods.fluidintetweaker.interaction.Condition;
+
+zenClass InteractionEventBuilder {
+    
+    function addCondition(arg0 as Condition, arg1 as any[]) as InteractionEventBuilder;
+    
+    function createExplosionEvent(arg0 as float, arg1 as bool, arg2 as bool) as InteractionEventBuilder;
+    
+    function createSetBlockEvent(arg0 as IBlockState) as InteractionEventBuilder;
+    
+    function createSetFluidEvent(arg0 as ILiquidStack) as InteractionEventBuilder;
+    
+    function createSetFluidEvent(arg0 as ILiquidStack, arg1 as bool) as InteractionEventBuilder;
+    
+    function createSpawnEntityEvent(arg0 as IEntityDefinition) as InteractionEventBuilder;
+    
+    function createSpawnEntityItemEvent(arg0 as IItemStack, arg1 as int) as InteractionEventBuilder;
+    
+    function setParticle(arg0 as string) as InteractionEventBuilder;
+    
+    function setSound(arg0 as string) as InteractionEventBuilder;
+}
